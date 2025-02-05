@@ -10,3 +10,6 @@
 [submodule "eggs/zsh/plugins/zsh-z"]
 	path = eggs/zsh/plugins/zsh-z
 	url = https://github.com/agkozak/zsh-z
+[submodule "eggs/nvim"]
+	path = eggs/nvim
+	url = https://github.com/KatieUmbra/neovim
