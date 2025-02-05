@@ -1,0 +1,52 @@
+(defpoll battery :initial "100" :interval "1s" "upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage | grep -o '[0-9]*'")
+(deflisten batteryImg :initial "4" "./scripts/battery.sh")
+
+(defwidget scales []
+    (box
+        :class "bar-element scales-widget"
+        (box :tooltip "Battery ${battery}% remaining"
+            (circular-progress
+                :class "progress-battery progress-general"
+                :value "${battery}"
+                :thickness 3
+                (image
+                    :path "./icons/battery/${batteryImg}.png"
+                    :image-width 20
+                )
+            )
+        )
+        (box :tooltip "Ram used ${round( EWW_RAM.used_mem * 100 / EWW_RAM.total_mem, 0 )}%"
+            (circular-progress
+                :class "progress-ram progress-general"
+                :value "${EWW_RAM.used_mem * 100 / EWW_RAM.total_mem}"
+                :thickness 3
+                (image
+                    :path "./icons/ram.png"
+                    :image-width 20
+                )
+            )
+        )
+        (box :tooltip "Storage used ${round(EWW_DISK["/"].used * 100 / EWW_DISK["/"].total, 0)}%"
+            (circular-progress
+                :class "progress-disk progress-general"
+                :value "${EWW_DISK["/"].used * 100 / EWW_DISK["/"].total}"
+                :thickness 3
+                (image
+                    :path "./icons/disk.png"
+                    :image-width 20
+                )
+            )
+        )
+        (box :tooltip "CPU usage ${round(EWW_CPU.avg, 0)}%"
+            (circular-progress
+                :class "progress-cpu progress-general"
+                :value "${EWW_CPU.avg}"
+                :thickness 3
+                (image
+                    :path "./icons/cpu.png"
+                    :image-width 20
+                )
+            )
+        )
+    )
+)

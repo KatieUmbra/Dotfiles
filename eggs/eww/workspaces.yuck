@@ -1,0 +1,28 @@
+(deflisten workspaces :initial "[]" "bash ~/.config/eww/scripts/get-workspaces")
+(deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/get-active-workspace")
+
+(defwidget workspaces []
+    (eventbox
+            :onscroll "bash ~/.config/eww/scripts/change-active-workspace {} ${current_workspace}"
+            :class "workspaces-widget bar-element"
+        (box :space-evenly false
+            (label :text "${workspaces}${current_workspace}" :visible false)
+            (for workspace in workspaces
+                (eventbox
+                    :onclick "hyprctl dispatch workspace ${workspace.id}"
+                    :cursor "pointer"
+                    (box :class "workspace-entry ${workspace.windows > 0 ? "workspace-occupied" : "workspace-empty"}"
+                        (image
+                            :path "${workspace.id == current_workspace ? "./icons/workspace-selected.png" : (workspace.windows > 0 ? "./icons/workspace-full.png" : "./icons/workspace-empty.png")}"
+                            :class "workspace-entry ${workspace.id == current_workspace ? "workspace-current" : ""}"
+                            ;; {# rnum(data.icon.size) #}
+                            :image-width 20
+                            ;; {# rnum(data.icon.size) #}
+                            :image-height 20
+                        )
+                    )
+                )
+            )
+        )
+    )
+)

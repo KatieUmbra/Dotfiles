@@ -1,0 +1,52 @@
+(defvar iconFolder "/usr/share/icons/Numix-Circle-Light/48/apps/")
+
+(defwidget shortcuts []
+    (box
+        :class "bar-element shortcuts-widget"
+        (eventbox
+            :cursor "pointer"
+            :onclick "librewolf & disown librewolf"
+            (image
+                :path "${iconFolder}librewolf.svg"
+                :image-height 35
+                :image-width 35
+            )
+        )
+        (eventbox
+            :cursor "pointer"
+            :onclick "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland & disown vesktop"
+            (image
+                :path "${iconFolder}discord.svg"
+                :image-height 35
+                :image-width 35
+            )
+        )
+        (eventbox
+            :cursor "pointer"
+            :onclick "spotify-launcher & disown spotify-launcher"
+            (image
+                :path "${iconFolder}spotify.svg"
+                :image-height 35
+                :image-width 35
+            )
+        )
+        (eventbox
+            :cursor "pointer"
+            :onclick "kitty ~ & disown kitty"
+            (image
+                :path "${iconFolder}terminal.svg"
+                :image-height 35
+                :image-width 35
+            )
+        )
+        (eventbox
+            :cursor "pointer"
+            :onclick "onlyoffice-desktopeditors & disown onlyoffice-desktopeditors"
+            (image
+                :path "${iconFolder}onlyoffice.svg"
+                :image-height 35
+                :image-width 35
+            )
+        )
+    )
+)

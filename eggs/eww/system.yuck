@@ -1,0 +1,37 @@
+(deflisten wifi :initial "4" "/usr/bin/python3 ./scripts/wifi.py")
+(deflisten volume-icon :initial "5" "./scripts/volume.sh --icon")
+(deflisten time :initial `{"hour":"0","minute":"0","second":"0","meridian":"AM","weekday":"Sunday","month":"Jan","day":"01"}` "./scripts/datetime.sh")
+
+(defwidget system []
+    (box
+        :width 100
+        :hexpand false
+        :space-evenly false
+        :class "bar-element system-widget"
+        (image
+            :hexpand false
+            :path "./icons/wifi/${wifi}.png"
+            ;; {# rnum(data.icon.size) #}
+            :image-height 20
+            ;; {# rnum(data.icon.size) #}
+            :image-width 20
+        )
+        (image
+            :hexpand false
+            :path "./icons/audio/${volume-icon}.png"
+            ;; {# rnum(data.icon.size) #}
+            :image-height 20
+            ;; {# rnum(data.icon.size) #}
+            :image-width 20
+        )
+        (box
+            :hexpand false
+            :orientation "v"
+            :space-evenly false
+            :spacing 0
+            :width 50
+            (label :text "${time.hour}:${time.minute} ${time.meridian}" :class "time-label")
+            (label :text "${time.weekday}, ${time.month} ${time.day}" :class "date-label")
+        )
+    )
+)

@@ -1,0 +1,249 @@
+$base:    #232136; // {< rcol(data.color.base) >}
+$surface: #2a273f; // {< rcol(data.color.surface) >}
+$overlay: #393552; // {< rcol(data.color.overlay) >}
+$muted:   #6e6a86; // {< rcol(data.color.muted) >}
+$subtle:  #908caa; // {< rcol(data.color.subtle) >}
+$text:    #e0def4; // {< rcol(data.color.text) >}
+$love:    #eb6f92; // {< rcol(data.color.love) >}
+$gold:    #f6c177; // {< rcol(data.color.gold) >}
+$rose:    #ea9a97; // {< rcol(data.color.rose) >}
+$pine:    #3e8fb0; // {< rcol(data.color.pine) >}
+$foam:    #9ccfd8; // {< rcol(data.color.foam) >}
+$iris:    #c4a7e7; // {< rcol(data.color.iris) >}
+$hl:      #2a283e; // {< rcol(data.color.hl) >}
+$hm:      #44415a; // {< rcol(data.color.hm) >}
+$hh:      #56526e; // {< rcol(data.color.hh) >}
+
+
+$buttonPadding: 1rem;
+
+
+* {
+    all: unset;
+    font-family: "Work Sans", "MonaspaceNeon-Regular", serif;
+    font-size: 16pt;
+}
+
+.bar-element {
+    // {# rnum(data.border.rounding) #}
+    border-radius: 10px;
+    background-color: $surface;
+    padding: 0.5rem;
+}
+
+.shortcuts-widget {
+    * {
+        margin: 0 0.25rem;
+    }
+}
+
+// Main
+.main-widget {
+    padding: 0.75rem;
+    background: $base;
+    // {# rnum(data.border.rounding) #}
+    border-radius: 10px;
+}
+
+.launcher-button {
+    image {
+        margin: $buttonPadding;
+    }
+}
+
+@keyframes bg-rotate {
+    0% {
+        background-image: linear-gradient(0deg, $base, $surface, $overlay);
+        background-position: 0% 50%;
+    }
+    50% {
+        background-image: linear-gradient(180deg, $base, $surface, $overlay);
+        background-position: 100% 50%;
+    }
+    100% {
+        background-image: linear-gradient(360deg, $base, $surface, $overlay);
+        background-position: 0% 50%;
+    }
+}
+
+.menu-widget {
+    background: linear-gradient(-45deg, $base, $surface, $overlay);
+    background-size: 400% 400%;
+    animation: bg-rotate 30s linear infinite;
+    // {# rnum(data.border.rounding) #}
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+
+// Workspaces
+.workspaces-widget {
+}
+.workspace-entry {
+    margin: calc($buttonPadding / 2);
+}
+.workspace-occupied {
+}
+.workspace-empty {
+}
+.workspace-current {
+}
+.progress {
+}
+
+.title {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.bar-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    // {# rnum(data.border.rounding) #}
+    border-radius: 10px;
+}
+
+.playerbg {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    // {# rnum(data.border.rounding) #}
+    border-radius: 10px;
+    label {
+        color: white;
+        margin: 0.5rem;
+        box-shadow: black;
+    }
+    .player-button-container {
+        padding: 0.5rem 3rem;
+    }
+    .progressbar {
+        margin: 0.5rem;
+        background-color: rgba(0,0,0,0.75);
+        border-radius: 10px;
+    }
+    progress {
+        background-color: $text;
+    }
+    eventbox {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.playerbar-title {
+    color: $text;
+    font-size: 12pt;
+    font-weight: bold;
+}
+.playerbar-subtitle {
+    color: $text;
+    font-size: 10pt;
+}
+
+.playerbar-text {
+    border-right-style: solid;
+}
+
+.playerbar-widget {
+    * {
+        margin: 0 0.25rem;
+    }
+}
+
+.sliders-widget {
+    all: unset;
+    margin: 0.5rem;
+    .volume-slider trough highlight {
+          background-image: linear-gradient(to right, $love 0%, $rose 100%);
+          // {# rnum(data.border.rounding) #}
+          border-radius: 10px;
+    }
+    .brightness-slider trough highlight {
+          background-image: linear-gradient(to right, $pine 0%, $foam 100%);
+          // {# rnum(data.border.rounding) #}
+          border-radius: 10px;
+    }
+    scale trough {
+          all: unset;
+          background-color: $overlay;
+          // {# rnum(data.border.rounding) #}
+          border-radius: 10px;
+          min-height: 1rem;
+          min-width: 70px;
+          margin: 1rem;
+          margin-right: 0;
+    }
+}
+
+.progress-general {
+    margin: 0 0.25rem;
+    background-color: $overlay;
+    image {
+        margin: 0.5rem;
+    }
+}
+
+.progress-battery {
+    color: $love;
+}
+
+.progress-ram {
+    color: $gold;
+}
+
+.progress-disk {
+    color: $foam;
+}
+
+.progress-cpu {
+    color: $iris;
+}
+
+.system-widget {
+    image {
+        margin: 0.25rem 0.5rem;
+    }
+    box {
+        label {
+            margin: 0.125rem 2rem;
+            color: $text;
+        }
+    }
+}
+
+.time-label {
+    font-size: 12pt;
+}
+
+.date-label {
+    font-size: 8pt;
+}
+
+.menutime-label {
+    font-weight: bold;
+}
+
+.toggles-widget {
+    margin: 0rem 0.5rem;
+}
+
+.toggle {
+    background-color: $overlay;
+    border-radius: 1000px;
+    image {
+        padding: 1rem;
+    }
+}
+
+.toggle-on {
+      background-image: linear-gradient(225deg, $foam 0%, $pine 100%);
+}
+
+.menu-date {
+    margin: 1rem;
+}
