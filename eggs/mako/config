@@ -1,0 +1,60 @@
+on-notify=exec mpv ~/.config/yolk/eggs/assets/notification.mp3
+
+
+
+
+# {# replace_value(data.font.family.regular + "-Light") #}
+font=WorkSans-Light Regular 14
+
+# {# rcol(data.color.base) #}
+background-color=#232136
+# {# rcol(data.color.text) #}
+text-color=#e0def4
+
+
+width=300
+height=100
+
+# {# rnum(data.border.gaps) #}
+margin=10
+
+padding=15
+
+# {# rnum(data.border.size) #}
+border-size=1
+# {# rcol(data.color.pine) #}
+border-color=#3e8fb0
+# {# rnum(data.border.rounding) #}
+border-radius=10
+
+# {# rcol(data.color.pine) #}
+progress-color=over #3e8fb0
+
+# 10s
+default-timeout=10000
+
+[urgency=low]
+# {# rcol(data.color.pine) #}
+border-color=#3e8fb0
+# {# rcol(data.color.pine) #}
+progress-color=over #3e8fb0
+
+[urgency=normal]
+# {# rcol(data.color.rose) #}
+border-color=#ea9a97
+# {# rcol(data.color.rose) #}
+progress-color=over #ea9a97
+
+[urgency=critical]
+# {# rcol(data.color.love) #}
+border-color=#eb6f92
+# {# rcol(data.color.love) #}
+progress-color=over #eb6f92
+
+
+[mode=dnd]
+invisible=1
+on-notify=none
+
+[app-name=Spotify]
+on-notify=none

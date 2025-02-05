@@ -2,6 +2,7 @@
 const colorschemes = #{
     rosepine: #{
         def: #{
+            name:   "rosepine",
             base:   "#191724",
             surface:"#1f1d2e",
             overlay:"#26233a",
@@ -19,6 +20,7 @@ const colorschemes = #{
             hh:     "#524f67",
         },
         moon: #{
+            name:   "rosepine",
             base:   "#232136",
             surface:"#2a273f",
             overlay:"#393552",
@@ -36,6 +38,7 @@ const colorschemes = #{
             hh:     "#56526e",
         },
         dawn: #{
+            name:   "rosepine",
             base:   "#faf4ed",
             surface:"#fffaf3",
             overlay:"#f2e9e1",
@@ -123,6 +126,11 @@ export let eggs = #{
     mako: #{
         targets: "~/.config/mako",
         templates: ["config"],
+        enabled: true
+    },
+    nvim: #{
+        targets: "~/.config/nvim",
+        templates: ["*.lua", "*.py", "*.md", "*.json"],
         enabled: true
     }
 };
