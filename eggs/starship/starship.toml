@@ -1,8 +1,20 @@
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▖ ▗▖▗▖  ▗▖▗▄▄▖    ▗▄▄▄  ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖   ▗▄▄▄▖ ▗▄▄▖
+# ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌   
+# ▐▛▚▖ ▐▛▀▜▌ █  ▐▛▀▜▌  ▐▌  ▝▀▚▖    ▐▌  █▐▌ ▐▌ █  ▐▛▀▀▘  █  ▐▌   ▐▛▀▀▘ ▝▀▚▖
+# ▐▌ ▐▌▐▌ ▐▌ █  ▐▌ ▐▌  ▐▌ ▗▄▄▞▘    ▐▙▄▄▀▝▚▄▞▘ █  ▐▌   ▗▄█▄▖▐▙▄▄▖▐▙▄▄▖▗▄▄▞▘
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 
+# Author: Katherine C. (katherine@kaytea.dev)
+# Source: http://github.com/KatieUmbra/Dotfiles
+# License: MIT
+# Description: config file for starship
+
 # Editor completions
 "$schema" = "https://starship.rs/config-schema.json"
 
 # Prompt configuration
-format = '[](purple) [kathy](blue italic) [󰣐 ](purple) [](blue)$directory[](blue) $character'
+format = '[](purple) $username [󰣐 ](purple) [](blue)$directory[](blue) $character'
 
 right_format = """
 $localip\
@@ -152,3 +164,7 @@ symbol = " "
 format = '[$symbol $branch(:$remote_branch)]($style) '
 symbol = '󰊢 '
 
+[username]
+style_user = 'blue italic'
+format = '[$user]($style)'
+show_always = true

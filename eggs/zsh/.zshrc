@@ -1,4 +1,14 @@
-# Katherine's Zsh Config
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▖ ▗▖▗▖  ▗▖▗▄▄▖    ▗▄▄▄  ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖   ▗▄▄▄▖ ▗▄▄▖
+# ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌   
+# ▐▛▚▖ ▐▛▀▜▌ █  ▐▛▀▜▌  ▐▌  ▝▀▚▖    ▐▌  █▐▌ ▐▌ █  ▐▛▀▀▘  █  ▐▌   ▐▛▀▀▘ ▝▀▚▖
+# ▐▌ ▐▌▐▌ ▐▌ █  ▐▌ ▐▌  ▐▌ ▗▄▄▞▘    ▐▙▄▄▀▝▚▄▞▘ █  ▐▌   ▗▄█▄▖▐▙▄▄▖▐▙▄▄▖▗▄▄▞▘
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 
+# Author: Katherine C. (katherine@kaytea.dev)
+# Source: http://github.com/KatieUmbra/Dotfiles
+# License: MIT
+# Description: zsh shell config file
 # Dependencies:
 # - https://github.com/zsh-users/zsh-syntax-highlighting
 # - https://github.com/zsh-users/zsh-autosuggestions
@@ -52,9 +62,8 @@ source $PLUGINS/zsh-z/zsh-z.plugin.zsh
 source $PLUGINS/zsh-autopair/zsh-autopair.plugin.zsh
 
 autopair-init
+
 # =============
-
-
 # [[ Customization ]]
 # =============
 
@@ -70,9 +79,8 @@ setopt appendhistory
 
 # Bun Completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
 # =============
-
-
 # [[ Environment Variables ]]
 # =============
 

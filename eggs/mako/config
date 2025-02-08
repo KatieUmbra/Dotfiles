@@ -1,7 +1,16 @@
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▖ ▗▖▗▖  ▗▖▗▄▄▖    ▗▄▄▄  ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖   ▗▄▄▄▖ ▗▄▄▖
+# ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌   
+# ▐▛▚▖ ▐▛▀▜▌ █  ▐▛▀▜▌  ▐▌  ▝▀▚▖    ▐▌  █▐▌ ▐▌ █  ▐▛▀▀▘  █  ▐▌   ▐▛▀▀▘ ▝▀▚▖
+# ▐▌ ▐▌▐▌ ▐▌ █  ▐▌ ▐▌  ▐▌ ▗▄▄▞▘    ▐▙▄▄▀▝▚▄▞▘ █  ▐▌   ▗▄█▄▖▐▙▄▄▖▐▙▄▄▖▗▄▄▞▘
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 
+# Author: Katherine C. (katherine@kaytea.dev)
+# Source: http://github.com/KatieUmbra/Dotfiles
+# License: MIT
+# Description: config file for mako
+
 on-notify=exec mpv ~/.config/yolk/eggs/assets/notification.mp3
-
-
-
 
 # {# replace_value(data.font.family.regular + "-Light") #}
 font=WorkSans-Light Regular 14
@@ -15,16 +24,16 @@ text-color=#e0def4
 width=300
 height=100
 
-# {# rnum(data.border.gaps) #}
+# {# rnum(data.styling.border.gaps) #}
 margin=10
 
 padding=15
 
-# {# rnum(data.border.size) #}
+# {# rnum(data.styling.border.size) #}
 border-size=1
 # {# rcol(data.color.pine) #}
 border-color=#3e8fb0
-# {# rnum(data.border.rounding) #}
+# {# rnum(data.styling.border.rounding) #}
 border-radius=10
 
 # {# rcol(data.color.pine) #}

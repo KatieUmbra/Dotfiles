@@ -1,3 +1,14 @@
+
+/*
+*-----------------------------------------------
+*              Kathy's Dotfiles
+*-----------------------------------------------
+* Author: Katherine C. (katherine@kaytea.dev)
+* Source: http://github.com/KatieUmbra/Dotfiles
+* License: MIT
+* Description: styling file for eww
+*/
+
 $base:    #232136; // {< rcol(data.color.base) >}
 $surface: #2a273f; // {< rcol(data.color.surface) >}
 $overlay: #393552; // {< rcol(data.color.overlay) >}
@@ -14,43 +25,11 @@ $hl:      #2a283e; // {< rcol(data.color.hl) >}
 $hm:      #44415a; // {< rcol(data.color.hm) >}
 $hh:      #56526e; // {< rcol(data.color.hh) >}
 
-
-$buttonPadding: 1rem;
-
-
-* {
-    all: unset;
-    font-family: "Work Sans", "MonaspaceNeon-Regular", serif;
-    font-size: 16pt;
-}
-
-.bar-element {
-    // {# rnum(data.border.rounding) #}
-    border-radius: 10px;
-    background-color: $surface;
-    padding: 0.5rem;
-}
-
-.shortcuts-widget {
-    * {
-        margin: 0 0.25rem;
-    }
-}
-
-// Main
-.main-widget {
-    padding: 0.75rem;
-    background: $base;
-    // {# rnum(data.border.rounding) #}
-    border-radius: 10px;
-}
-
-.launcher-button {
-    image {
-        margin: $buttonPadding;
-    }
-}
-
+/*
+* =============================
+*  section: GENERAL
+* =============================
+*/
 @keyframes bg-rotate {
     0% {
         background-image: linear-gradient(0deg, $base, $surface, $overlay);
@@ -66,124 +45,71 @@ $buttonPadding: 1rem;
     }
 }
 
-.menu-widget {
-    background: linear-gradient(-45deg, $base, $surface, $overlay);
-    background-size: 400% 400%;
-    animation: bg-rotate 30s linear infinite;
-    // {# rnum(data.border.rounding) #}
-    border-radius: 10px;
-    padding: 1rem;
-}
-
-
-// Workspaces
-.workspaces-widget {
-}
-.workspace-entry {
-    margin: calc($buttonPadding / 2);
-}
-.workspace-occupied {
-}
-.workspace-empty {
-}
-.workspace-current {
-}
-.progress {
-}
-
-.title {
-    font-size: 18pt;
-    font-weight: bold;
-}
-
-.bar-image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    // {# rnum(data.border.rounding) #}
-    border-radius: 10px;
-}
-
-.playerbg {
-    background-color: rgba(0, 0, 0, 0.5);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    padding: 1rem 2rem;
-    margin: 0.5rem;
-    // {# rnum(data.border.rounding) #}
-    border-radius: 10px;
-    label {
-        color: white;
-        margin: 0.5rem;
-        box-shadow: black;
-    }
-    .player-button-container {
-        padding: 0.5rem 3rem;
-    }
-    .progressbar {
-        margin: 0.5rem;
-        background-color: rgba(0,0,0,0.75);
-        border-radius: 10px;
-    }
-    progress {
-        background-color: $text;
-    }
-    eventbox {
-        background: transparent;
-        border: none;
-        box-shadow: none;
-    }
-}
-
-.playerbar-title {
-    color: $text;
-    font-size: 12pt;
-    font-weight: bold;
-}
-.playerbar-subtitle {
-    color: $text;
-    font-size: 10pt;
-}
-
-.playerbar-text {
-    border-right-style: solid;
-}
-
-.playerbar-widget {
-    * {
-        margin: 0 0.25rem;
-    }
-}
-
-.sliders-widget {
+* {
     all: unset;
-    margin: 0.5rem;
-    .volume-slider trough highlight {
-          background-image: linear-gradient(to right, $love 0%, $rose 100%);
-          // {# rnum(data.border.rounding) #}
-          border-radius: 10px;
-    }
-    .brightness-slider trough highlight {
-          background-image: linear-gradient(to right, $pine 0%, $foam 100%);
-          // {# rnum(data.border.rounding) #}
-          border-radius: 10px;
-    }
-    scale trough {
-          all: unset;
-          background-color: $overlay;
-          // {# rnum(data.border.rounding) #}
-          border-radius: 10px;
-          min-height: 1rem;
-          min-width: 70px;
-          margin: 1rem;
-          margin-right: 0;
+    font-family: "Work Sans", "MonaspaceNeon-Regular", serif;
+    font-size: 16pt;
+}
+
+.main-widget {
+    // {# rnum(data.styling.padding.large) #}
+    padding: 0.75rem;
+    background: $base;
+    // {# rnum(data.styling.border.rounding) #}
+    border-radius: 10px;
+}
+
+tooltip {
+    background-color: $base;
+    // {# rnum(data.styling.border.rounding) #}
+    border-radius: 10px;
+}
+
+.bar-element {
+    // {# rnum(data.styling.border.rounding) #}
+    border-radius: 10px;
+    background-color: $surface;
+    // {# rnum(data.styling.padding.medium) #}
+    padding: 0.5rem;
+}
+
+/*
+* =============================
+*  section: LAUNCHER
+* =============================
+*/
+.launcher-button {
+    image {
+        // {# rnum(data.styling.margin.largest) #}
+        margin: 1rem;
     }
 }
 
+/*
+* =============================
+*  section: SHORTCUTS
+* =============================
+*/
+.shortcuts-widget {
+    * {
+        margin: 0
+                // {# rnum(data.styling.margin.small) #}
+                0.25rem;
+    }
+}
+
+/*
+* =============================
+*  section: SYSTEM PROGRESS
+* =============================
+*/
 .progress-general {
-    margin: 0 0.25rem;
+    margin: 0 
+    // {# rnum(data.styling.margin.small) #}
+    0.25rem;
     background-color: $overlay;
     image {
+        // {# rnum(data.styling.margin.medium) #}
         margin: 0.5rem;
     }
 }
@@ -204,38 +130,177 @@ $buttonPadding: 1rem;
     color: $iris;
 }
 
+/*
+* =============================
+*  section: TRAY
+* =============================
+*/
+.tray-widget {
+    background-color: $base;
+    // {# rnum(data.styling.border.rounding) #}
+    border-radius: 10px;
+    // {# rnum(data.styling.padding.largest) #}
+    padding: 1rem;
+    image {
+        // {# rnum(data.styling.padding.medium) #}
+        padding: 0.5rem;
+        // {# rnum(data.styling.margin.small) #}
+        margin: 0.25rem;
+        background-color: $overlay;
+        // {# rnum(data.styling.border.rounding) #}
+        border-radius: 10px;
+    }
+}
+
+.tray-button {
+    image {
+        padding: 0 
+        // {# rnum(data.styling.padding.large) #}
+        0.75rem;
+    }
+}
+
+.popup {
+    background-color: $base;
+    // {# rnum(data.styling.border.rounding) #}
+    border-radius: 10px;
+    menu {
+        // {# rnum(data.styling.padding.largest) #}
+        padding: 1rem;
+    }
+}
+
+
+/*
+* =============================
+*  section: WORKSPACES
+* =============================
+*/
+.workspace-entry { 
+    margin: 0.5rem;
+}
+
+.title {
+    // {# rnum(data.font.size.title) #}
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+/*
+* =============================
+*  section: BAR PLAYER
+* =============================
+*/
+.playerbar-widget {
+    * {
+        margin: 0
+        // {# rnum(data.styling.margin.small) #}
+                0.25rem;
+    }
+}
+
+.bar-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    // {# rnum(data.styling.border.rounding) #}
+    border-radius: 10px;
+}
+
+.playerbar-title {
+    color: $text;
+    // {# rnum(data.font.size.small) #}
+    font-size: 12pt;
+    font-weight: bold;
+}
+.playerbar-subtitle {
+    color: $text;
+    // {# rnum(data.font.size.tiny) #}
+    font-size: 10pt;
+}
+
+.playerbar-text {
+    border-right-style: solid;
+}
+
+/*
+* =============================
+*  section: SYSTEM INFO
+* =============================
+*/
 .system-widget {
     image {
-        margin: 0.25rem 0.5rem;
+        // {# rnum(data.styling.margin.small) #}
+        margin: 0.25rem 
+        // {# rnum(data.styling.margin.medium) #}
+        0.5rem;
     }
     box {
         label {
-            margin: 0.125rem 2rem;
+            // {# rnum(data.styling.margin.tiny) #}
+            margin: 0.125rem
+            // {# rnum(data.styling.margin.xl) #}
+            2rem;
             color: $text;
         }
     }
 }
 
 .time-label {
+    // {# rnum(data.font.size.small) #}
     font-size: 12pt;
 }
 
 .date-label {
+    // {# rnum(data.font.size.speck) #}
     font-size: 8pt;
 }
 
+
+/*
+* =============================
+*  section: MENU
+* =============================
+*/
+.menu-widget {
+    background: linear-gradient(-45deg, $base, $surface, $overlay);
+    background-size: 400% 400%;
+    animation: bg-rotate 30s linear infinite;
+    // {# rnum(data.styling.border.rounding) #}
+    border-radius: 10px;
+    // {# rnum(data.styling.padding.largest) #}
+    padding: 1rem;
+}
+
+/*
+* =============================
+*  section: MENU TOP INFO
+* =============================
+*/
 .menutime-label {
     font-weight: bold;
 }
 
+.menu-date {
+    // {# rnum(data.styling.margin.largest) #}
+    margin: 1rem;
+}
+
+/*
+* =============================
+*  section: MENU TOGGLES
+* =============================
+*/
 .toggles-widget {
-    margin: 0rem 0.5rem;
+    margin: 0rem
+    // {# rnum(data.styling.margin.medium) #}
+    0.5rem;
 }
 
 .toggle {
     background-color: $overlay;
     border-radius: 1000px;
     image {
+        // {# rnum(data.styling.padding.largest) #}
         padding: 1rem;
     }
 }
@@ -244,41 +309,80 @@ $buttonPadding: 1rem;
       background-image: linear-gradient(225deg, $foam 0%, $pine 100%);
 }
 
-.menu-date {
-    margin: 1rem;
+/*
+* =============================
+*  section: MENU SLIDERS
+* =============================
+*/
+.sliders-widget {
+    all: unset;
+    // {# rnum(data.styling.margin.medium) #}
+    margin: 0.5rem;
+    .volume-slider trough highlight {
+          background-image: linear-gradient(to right, $love 0%, $rose 100%);
+          // {# rnum(data.styling.border.rounding) #}
+          border-radius: 10px;
+    }
+    .brightness-slider trough highlight {
+          background-image: linear-gradient(to right, $pine 0%, $foam 100%);
+          // {# rnum(data.styling.border.rounding) #}
+          border-radius: 10px;
+    }
+    scale trough {
+          all: unset;
+          background-color: $overlay;
+          // {# rnum(data.styling.border.rounding) #}
+          border-radius: 10px;
+          min-height: 1rem;
+          min-width: 70px;
+          // {# rnum(data.styling.margin.large) #}
+          margin: 0.75rem;
+          margin-right: 0;
+    }
 }
 
-.tray-widget {
-    background-color: $base;
-    // {# rnum(data.border.radius) #}
+/*
+* =============================
+*  section: MENU PLAYER
+* =============================
+*/
+.playerbg {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    // {# rnum(data.styling.padding.largest) #}
+    padding:  1rem
+              // {# rnum(data.styling.padding.xl) #}
+              2rem;
+    // {# rnum(data.styling.margin.medium) #}
+    margin: 0.5rem;
+    // {# rnum(data.styling.border.rounding) #}
     border-radius: 10px;
-    padding: 1rem;
-    image {
-        padding: 0.5rem;
-        margin: 0.25rem;
-        background-color: $overlay;
-        // {# rnum(data.border.radius) #}
+    label {
+        color: white;
+        // {# rnum(data.styling.margin.medium) #}
+        margin: 0.5rem;
+        box-shadow: black;
+    }
+    .player-button-container {
+        // {# rnum(data.styling.margin.medium) #}
+        padding: 0.5rem
+                 3rem;
+    }
+    .progressbar {
+        // {# rnum(data.styling.margin.medium) #}
+        margin: 0.5rem;
+        background-color: rgba(0,0,0,0.75);
+        // {# rnum(data.styling.border.rounding) #}
         border-radius: 10px;
+        }
+        progress {
+            background-color: $text;
+        }
+        eventbox {
+            background: transparent;
+            border: none;
+            box-shadow: none;
     }
-}
-
-.tray-button {
-    image {
-        padding: 0 0.75rem;
-    }
-}
-
-.popup {
-    background-color: $base;
-    // {# rnum(data.border.radius) #}
-    border-radius: 10px;
-    menu {
-        padding: 1rem;
-    }
-}
-
-tooltip {
-    background-color: $base;
-    // {# rnum(data.border.radius) #}
-    border-radius: 10px;
 }

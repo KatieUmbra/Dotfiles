@@ -13,3 +13,6 @@
 [submodule "eggs/nvim"]
 	path = eggs/nvim
 	url = https://github.com/KatieUmbra/neovim
+[submodule "eggs/wofi/wofi-emoji"]
+	path = eggs/wofi/wofi-emoji
+	url = https://github.com/Zeioth/wofi-emoji.git

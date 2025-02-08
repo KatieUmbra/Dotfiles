@@ -37,6 +37,7 @@ THIS PART IS WORK IN PROGRESS
 - [x] Starship config
 - [x] Zsh config
 - [ ] Gtk config
+- [ ] Cava config
 - [ ] Hyprland
     - [x] Base config
     - [x] Clipboard management
@@ -49,6 +50,7 @@ THIS PART IS WORK IN PROGRESS
     - [ ] Calendar widget
     - [ ] Filler for main bar
     - [ ] Refactor
+    - [ ] Per-colorscheme icons
 - [x] Gowall colorscheme
 - [X] Bat colorscheme
 - [X] Btop colorscheme
@@ -57,4 +59,4 @@ THIS PART IS WORK IN PROGRESS
 ## Acknowledgements
 
 - [Lightly inspired by](https://github.com/gh0stzk/dotfiles)
-- [Icons by Icons8](https://icons8.com)
+- [some icons by Icons8](https://icons8.com)
