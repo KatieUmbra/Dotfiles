@@ -247,3 +247,38 @@ $buttonPadding: 1rem;
 .menu-date {
     margin: 1rem;
 }
+
+.tray-widget {
+    background-color: $base;
+    // {# rnum(data.border.radius) #}
+    border-radius: 10px;
+    padding: 1rem;
+    image {
+        padding: 0.5rem;
+        margin: 0.25rem;
+        background-color: $overlay;
+        // {# rnum(data.border.radius) #}
+        border-radius: 10px;
+    }
+}
+
+.tray-button {
+    image {
+        padding: 0 0.75rem;
+    }
+}
+
+.popup {
+    background-color: $base;
+    // {# rnum(data.border.radius) #}
+    border-radius: 10px;
+    menu {
+        padding: 1rem;
+    }
+}
+
+tooltip {
+    background-color: $base;
+    // {# rnum(data.border.radius) #}
+    border-radius: 10px;
+}

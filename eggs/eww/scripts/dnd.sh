@@ -5,7 +5,7 @@ toggle="--toggle"
 status="--status"
 
 if [[ $arg = $toggle ]]; then
-    makoctl mode -t dnd
+    makoctl mode -t dnd &> /dev/null
 elif [[ $arg = $status ]]; then
     while sleep 1; do
         stat=$(makoctl mode | awk '/dnd/ { print $1 }')

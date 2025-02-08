@@ -51,7 +51,7 @@ window {
 }
 
 #scroll {
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     /* {# rcol(data.color.base) #} */
     background-color: #232136;
     /* {# rnum(data.border.rounding) #} */

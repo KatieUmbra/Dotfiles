@@ -6,6 +6,7 @@
 (include "./shortcuts.yuck")
 (include "./system.yuck")
 (include "./toggles.yuck")
+(include "./tray.yuck")
 
 (defwidget launcher []
     (box
@@ -42,7 +43,7 @@
               (launcher)
               (shortcuts)
               (scales)
-              (systray :icon-size 20)
+              (bar-tray)
           )
           (box
               :spacing 10

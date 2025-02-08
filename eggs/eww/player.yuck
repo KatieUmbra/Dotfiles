@@ -7,8 +7,8 @@
         :width 320
         :hexpand false
         (image
-            :style "background-image: url('${substring(playerMetadata?.art, 0, 1) == "f" ? 
-            substring(playerMetadata?.art, 7, strlength(playerMetadata?.art) - 7) : playerMetadata?.art 
+            :style "background-image: url('${(substring(playerMetadata?.art, 0, 1) == "f" ? 
+            substring(playerMetadata?.art, 7, strlength(playerMetadata?.art) - 7) : playerMetadata?.art) ?: "./icons/music.png"
             }')"
             :class "bar-image"
             :width 50

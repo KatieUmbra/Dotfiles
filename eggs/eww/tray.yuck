@@ -1,0 +1,29 @@
+(defwidget bar-tray []
+    (box
+        :class "bar-element tray-button"
+        (eventbox
+            :cursor "pointer"
+            :onclick "${EWW_CMD} open tray --toggle"
+            (image :path "./icons/tray.png" :image-width 20)
+        )
+    )
+)
+
+(defwindow tray
+    :monitor 0
+    :geometry (geometry :x "30%"
+                        :y "1%"
+                        :width "5%"
+                        :height "7%"
+                        :anchor "top left")
+    :stacking "fg"
+    :exclusive "false"
+    :focusable "false"
+    :namespace "tray"
+    (box
+        :class "tray-widget"
+        (scroll
+            (systray)
+        )
+    )
+)

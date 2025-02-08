@@ -44,9 +44,9 @@ THIS PART IS WORK IN PROGRESS
     - [ ] Missing bspwm keybindings
     - [ ] Screen lock
 - [ ] Eww
+    - [X] Tray
     - [ ] Airplane mode
     - [ ] Calendar widget
-    - [ ] Tray
     - [ ] Filler for main bar
     - [ ] Refactor
 - [x] Gowall colorscheme

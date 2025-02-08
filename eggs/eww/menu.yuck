@@ -28,7 +28,7 @@
             (eventbox
                 :cursor "pointer"
                 :halign "end"
-                :onclick "kitty --directory ~/.config/yolk/eggs nvim &"
+                :onclick "kitty --directory ~/.config/yolk/eggs nvim & eww close menu &"
                 (image :path "./icons/settings.png" :image-width 20)
             )
         )
