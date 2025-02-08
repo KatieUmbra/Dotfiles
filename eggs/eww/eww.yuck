@@ -14,10 +14,8 @@
             :cursor "pointer"
             :onclick "${EWW_CMD} open menu --toggle"
             (image :path "./icons/home-icon.png"
-                    ;; {# rnum(data.icon.size) #}
-                   :image-height 20
-                    ;; {# rnum(data.icon.size) #}
-                   :image-width 20
+                   :image-height 25
+                   :image-width 25
             )
         )
     )

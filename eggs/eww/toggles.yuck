@@ -1,6 +1,7 @@
 (deflisten bluetooth :initial "1" "./scripts/bluetooth.sh --status")
 (deflisten wifiToggles :initial "1" "./scripts/wifi.sh --status")
 (deflisten nightlight :initial "1" "./scripts/sunset.sh --status")
+(deflisten dnd :initial "1" "./scripts/dnd.sh --status")
 
 (defwidget toggles []
     (box
@@ -8,11 +9,12 @@
         :class "toggles-widget"
         :spacing 10
         (eventbox
+            :timeout "2000ms"
             :cursor "pointer"
             :onclick "./scripts/wifi.sh --toggle"
             :width 50
             :halign "center"
-            :class "toggle ${wifiToggles == "0" ? "toggle-on" : ""}"
+            :class "toggle ${wifi == 5 ? "" : "toggle-on"}"
             (image :path "./icons/wifi/4.png" :image-width 40)
         )
         (eventbox
@@ -30,6 +32,14 @@
             :halign "center"
             :class "toggle ${nightlight == "0" ? "toggle-on" : ""}"
             (image :path "./icons/night-light.png" :image-width 40)
+        )
+        (eventbox
+            :cursor "pointer"
+            :onclick "./scripts/dnd.sh --toggle"
+            :width 50
+            :halign "center"
+            :class "toggle ${dnd == "0" ? "toggle-on" : ""}"
+            (image :path "./icons/dnd.png" :image-width 40)
         )
     )
 )

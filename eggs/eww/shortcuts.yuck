@@ -48,5 +48,14 @@
                 :image-width 35
             )
         )
+        (eventbox
+            :cursor "pointer"
+            :onclick "obsidian & disown obsidan"
+            (image
+                :path "${iconFolder}obsidian.svg"
+                :image-height 35
+                :image-width 35
+            )
+        )
     )
 )

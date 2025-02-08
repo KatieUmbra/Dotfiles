@@ -1,0 +1,132 @@
+# Main background
+# {# rcol(data.color.base) #}
+theme[main_bg]="#232136"
+
+# Main text color
+# {# rcol(data.color.text) #}
+theme[main_fg]="#e0def4"
+
+# Title color for boxes
+# {# rcol(data.color.text) #}
+theme[title]="#e0def4"
+
+# Highlight color for keyboard shortcuts
+# {# rcol(data.color.iris) #}
+theme[hi_fg]="#c4a7e7"
+
+# Background color of selected item in processes box
+# {# rcol(data.color.pine) #}
+theme[selected_bg]="#3e8fb0"
+
+# Foreground color of selected item in processes box
+# {# rcol(data.color.text) #}
+theme[selected_fg]="#e0def4"
+
+# Color of inactive/disabled text
+# {# rcol(data.color.foam) #}
+theme[inactive_fg]="#9ccfd8"
+
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+# {# rcol(data.color.iris) #}
+theme[graph_text]="#c4a7e7"
+
+# Background color of the percentage meters
+# {# rcol(data.color.pine) #}
+theme[meter_bg]="#3e8fb0"
+
+# Misc colors for processes box including mini cpu graphs#
+# {# rcol(data.color.iris) #}
+theme[proc_misc]="#c4a7e7"
+
+# Cpu box outline color
+# {# rcol(data.color.pine) #}
+theme[cpu_box]="#3e8fb0"
+
+# Memory/disks box outline color
+# {# rcol(data.color.iris) #}
+theme[mem_box]="#c4a7e7"
+
+# Net up/down box outline color
+# {# rcol(data.color.foam) #}
+theme[net_box]="#9ccfd8"
+
+# Processes box outline color
+# {# rcol(data.color.love) #}
+theme[proc_box]="#eb6f92"
+
+# Box divider line and small boxes line color
+# {# rcol(data.color.pine) #}
+theme[div_line]="#3e8fb0"
+
+# Temperature graph colors
+# {# rcol(data.color.foam) #}
+theme[temp_start]="#9ccfd8"
+# {# rcol(data.color.gold) #}
+theme[temp_mid]="#f6c177"
+# {# rcol(data.color.love) #}
+theme[temp_end]="#eb6f92"
+
+# CPU graph colors
+# {# rcol(data.color.foam) #}
+theme[cpu_start]="#9ccfd8"
+# {# rcol(data.color.rose) #}
+theme[cpu_mid]="#ea9a97"
+# {# rcol(data.color.love) #}
+theme[cpu_end]="#eb6f92"
+
+# Mem/Disk free meter
+# {# rcol(data.color.foam) #}
+theme[free_end]="#9ccfd8"
+# {# rcol(data.color.rose) #}
+theme[free_mid]="#ea9a97"
+# {# rcol(data.color.love) #}
+theme[free_start]="#eb6f92"
+
+# Mem/Disk cached meter
+# {# rcol(data.color.foam) #}
+theme[cached_start]="#9ccfd8"
+# {# rcol(data.color.rose) #}
+theme[cached_mid]="#ea9a97"
+# {# rcol(data.color.love) #}
+theme[cached_end]="#eb6f92"
+
+# Mem/Disk available meter
+# {# rcol(data.color.love) #}
+theme[available_start]="#eb6f92"
+# {# rcol(data.color.rose) #}
+theme[available_mid]="#ea9a97"
+# {# rcol(data.color.foam) #}
+theme[available_end]="#9ccfd8"
+
+# Mem/Disk used meter
+# {# rcol(data.color.foam) #}
+theme[used_start]="#9ccfd8"
+# {# rcol(data.color.rose) #}
+theme[used_mid]="#ea9a97"
+# {# rcol(data.color.love) #}
+theme[used_end]="#eb6f92"
+
+# Download graph colors
+# {# rcol(data.color.foam) #}
+theme[download_start]="#9ccfd8"
+# {# rcol(data.color.gold) #}
+theme[download_mid]="#f6c177"
+# {# rcol(data.color.love) #}
+theme[download_end]="#eb6f92"
+
+# Upload graph colors
+# {# rcol(data.color.foam) #}
+theme[upload_start]="#9ccfd8"
+# {# rcol(data.color.gold) #}
+theme[upload_mid]="#f6c177"
+# {# rcol(data.color.love) #}
+theme[upload_end]="#eb6f92"
+
+# Process box color gradient for threads, mem and cpu usage
+# {# rcol(data.color.foam) #}
+theme[process_start]="#9ccfd8"
+# {# rcol(data.color.pine) #}
+theme[process_mid]="#3e8fb0"
+# {# rcol(data.color.iris) #}
+theme[process_end]="#c4a7e7"
+

@@ -1,20 +1,26 @@
 #!/bin/sh
 
+compare() (IFS=" "
+  exec awk "BEGIN{if (!($*)) exit(1)}"
+)
+
 arg=$1
 icon="--icon"
 volume="--volume"
 
 if [[ $arg = $icon ]]; then
     while sleep 0.1;do
-        volume=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer sget Master) | grep -o ".[0-9]")
-        muted=$(amixer get Master | sed 6q | grep -q '\[on\]')
-        if !($muted); then
+        volume=$(awk '{ print $2 }' <(wpctl get-volume @DEFAULT_AUDIO_SINK@))
+        muted=$(amixer get Master | tail -2 | grep -c '\[on\]')
+        if [[ $muted -eq 0 ]]; then
             echo 5
-        elif [[ $volume -lt 25 ]]; then
+        elif compare "$volume == 0"; then
+            echo 5
+        elif compare "$volume < 0.25"; then
             echo 1
-        elif [[ $volume -lt 50 ]]; then
+        elif compare "$volume < 0.50"; then
             echo 2
-        elif [[ $volume -lt 75 ]]; then
+        elif compare "$volume < 0.75"; then
             echo 3
         else
             echo 4
@@ -23,7 +29,7 @@ if [[ $arg = $icon ]]; then
 elif [[ $arg = $volume ]]; then
     echo "0"
     while sleep 0.1;do
-        volume=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer sget Master) | grep -o ".[0-9]")
+        volume=$(awk '{ print $2 }' <(wpctl get-volume @DEFAULT_AUDIO_SINK@))
         echo $volume
     done
 fi

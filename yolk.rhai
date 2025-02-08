@@ -132,5 +132,15 @@ export let eggs = #{
         targets: "~/.config/nvim",
         templates: ["*.lua", "*.py", "*.md", "*.json"],
         enabled: true
+    },
+    btop: #{
+        targets: "~/.config/btop",
+        templates: ["themes/rice.theme", "btop.conf"],
+        enabled: true
+    },
+    bat: #{
+        targets: "~/.config/bat",
+        templates: ["themes/rice.tmTheme", "config"],
+        enabled: true
     }
 };

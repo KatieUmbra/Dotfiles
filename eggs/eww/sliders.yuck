@@ -19,7 +19,7 @@
                     :hexpand true
                     :orientation "h"
                     :round-digits 0
-                    :value volume
+                    :value "${( volume * 100 ) ?: 0}"
                     :height 20
                     :active true
                     :onchange "wpctl set-volume @DEFAULT_AUDIO_SINK@ {}%"
