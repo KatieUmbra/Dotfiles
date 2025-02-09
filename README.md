@@ -43,7 +43,7 @@ THIS PART IS WORK IN PROGRESS
     - [x] Clipboard management
     - [x] Emoji
     - [ ] Missing bspwm keybindings
-    - [ ] Screen lock
+    - [x] Screen lock
 - [ ] Eww
     - [X] Tray
     - [x] Filler for main bar
