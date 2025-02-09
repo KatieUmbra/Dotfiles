@@ -1,4 +1,4 @@
-# Hyprose Dots
+# Kathy's Dotfiles
 
 ## Instalation
 
