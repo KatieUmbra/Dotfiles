@@ -12,7 +12,7 @@ THIS PART IS WORK IN PROGRESS
         export HISTFILE="$ZDOTDIR/.zsh_history"
         ```
 
-2. clone repo inside `~/.config` DON'T FORGET SUBMODULES
+2. clone repo inside `~/.config/yolk/` DON'T FORGET SUBMODULES
 
 3. run `yolk sync`
 
@@ -30,14 +30,14 @@ THIS PART IS WORK IN PROGRESS
 ## Roadmap
 
 - [ ] Collect and list all dependencies
-- [ ] Comment every file with credits
+- [x] Comment every file with credits
 - [x] Mako config
 - [x] Kitty config
 - [x] Wofi config
 - [x] Starship config
 - [x] Zsh config
 - [ ] Gtk config
-- [ ] Cava config
+- [x] Cava config
 - [ ] Hyprland
     - [x] Base config
     - [x] Clipboard management
@@ -46,10 +46,10 @@ THIS PART IS WORK IN PROGRESS
     - [ ] Screen lock
 - [ ] Eww
     - [X] Tray
+    - [x] Filler for main bar
+    - [x] Refactor
     - [ ] Airplane mode
     - [ ] Calendar widget
-    - [ ] Filler for main bar
-    - [ ] Refactor
     - [ ] Per-colorscheme icons
 - [x] Gowall colorscheme
 - [X] Bat colorscheme

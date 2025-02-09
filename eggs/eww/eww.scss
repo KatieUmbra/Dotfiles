@@ -56,18 +56,18 @@ $hh:      #56526e; // {< rcol(data.color.hh) >}
     padding: 0.75rem;
     background: $base;
     // {# rnum(data.styling.border.rounding) #}
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 tooltip {
     background-color: $base;
     // {# rnum(data.styling.border.rounding) #}
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .bar-element {
     // {# rnum(data.styling.border.rounding) #}
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: $surface;
     // {# rnum(data.styling.padding.medium) #}
     padding: 0.5rem;
@@ -138,7 +138,7 @@ tooltip {
 .tray-widget {
     background-color: $base;
     // {# rnum(data.styling.border.rounding) #}
-    border-radius: 10px;
+    border-radius: 5px;
     // {# rnum(data.styling.padding.largest) #}
     padding: 1rem;
     image {
@@ -148,7 +148,7 @@ tooltip {
         margin: 0.25rem;
         background-color: $overlay;
         // {# rnum(data.styling.border.rounding) #}
-        border-radius: 10px;
+        border-radius: 5px;
     }
 }
 
@@ -163,7 +163,7 @@ tooltip {
 .popup {
     background-color: $base;
     // {# rnum(data.styling.border.rounding) #}
-    border-radius: 10px;
+    border-radius: 5px;
     menu {
         // {# rnum(data.styling.padding.largest) #}
         padding: 1rem;
@@ -203,7 +203,7 @@ tooltip {
     background-repeat: no-repeat;
     background-size: cover;
     // {# rnum(data.styling.border.rounding) #}
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .playerbar-title {
@@ -266,7 +266,7 @@ tooltip {
     background-size: 400% 400%;
     animation: bg-rotate 30s linear infinite;
     // {# rnum(data.styling.border.rounding) #}
-    border-radius: 10px;
+    border-radius: 5px;
     // {# rnum(data.styling.padding.largest) #}
     padding: 1rem;
 }
@@ -321,18 +321,18 @@ tooltip {
     .volume-slider trough highlight {
           background-image: linear-gradient(to right, $love 0%, $rose 100%);
           // {# rnum(data.styling.border.rounding) #}
-          border-radius: 10px;
+          border-radius: 5px;
     }
     .brightness-slider trough highlight {
           background-image: linear-gradient(to right, $pine 0%, $foam 100%);
           // {# rnum(data.styling.border.rounding) #}
-          border-radius: 10px;
+          border-radius: 5px;
     }
     scale trough {
           all: unset;
           background-color: $overlay;
           // {# rnum(data.styling.border.rounding) #}
-          border-radius: 10px;
+          border-radius: 5px;
           min-height: 1rem;
           min-width: 70px;
           // {# rnum(data.styling.margin.large) #}
@@ -358,7 +358,7 @@ tooltip {
     // {# rnum(data.styling.margin.medium) #}
     margin: 0.5rem;
     // {# rnum(data.styling.border.rounding) #}
-    border-radius: 10px;
+    border-radius: 5px;
     label {
         color: white;
         // {# rnum(data.styling.margin.medium) #}
@@ -375,7 +375,7 @@ tooltip {
         margin: 0.5rem;
         background-color: rgba(0,0,0,0.75);
         // {# rnum(data.styling.border.rounding) #}
-        border-radius: 10px;
+        border-radius: 5px;
         }
         progress {
             background-color: $text;

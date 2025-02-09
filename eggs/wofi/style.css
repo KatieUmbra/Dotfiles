@@ -19,14 +19,14 @@ Description: style file for wofi
     font-size: 16pt;
     outline: none;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 window {
     /* {# rcol(data.color.base) #} */
     background-color: #232136;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #input {
@@ -34,9 +34,9 @@ window {
     /* {# rnum(data.styling.border.size) #} */
     border-width: 1px;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-top-left-radius: 10px;
+    border-top-left-radius: 5px;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-top-right-radius: 10px;
+    border-top-right-radius: 5px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     /* {# rcol(data.color.base) #} */
@@ -57,14 +57,14 @@ window {
     /* {# rcol(data.color.base) #} */
     background-color: #232136;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #outer-box {
     /* {# rcol(data.color.base) #} */
     background-color: #232136;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #scroll {
@@ -78,14 +78,14 @@ window {
     /* {# rcol(data.color.base) #} */
     background-color: #232136;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #entry {
     /* {# rnum(data.styling.padding.large) #} */
     padding: 0.75rem;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #text {

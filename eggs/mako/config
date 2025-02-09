@@ -34,7 +34,7 @@ border-size=1
 # {# rcol(data.color.pine) #}
 border-color=#3e8fb0
 # {# rnum(data.styling.border.rounding) #}
-border-radius=10
+border-radius=5
 
 # {# rcol(data.color.pine) #}
 progress-color=over #3e8fb0

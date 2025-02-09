@@ -40,18 +40,34 @@ export const data = #{
             xl: 2,
         },
         border: #{
-            rounding: 10,
+            rounding: 5,
             gaps: 10,
             size: 1,
         },
     }
 };
 
+fn rgba_hyprland_color(color, alpha, padding) {
+    const my_color = color - "#";
+    let line = get_yolk_text();
+    let pad = "";
+    pad.pad(padding, " ");
+    return pad + line.split()[0] + " = rgba(" + my_color + alpha + ")";
+}
+
+fn rgb_hyprland_color(color, padding) {
+    const my_color = color - "#";
+    let line = get_yolk_text();
+    let pad = "";
+    pad.pad(padding, " ");
+    return pad + line.split()[0] + " = rgb(" + my_color + ")";
+}
+
 // Eggs
 export let eggs = #{
     hypr: #{
         targets: "~/.config/hypr",
-        templates: ["hyprland.conf", "hyprpaper.conf"],
+        templates: ["hyprland.conf", "hyprpaper.conf", "hyprlock.conf"],
         enabled: true,
     },
     kitty: #{
