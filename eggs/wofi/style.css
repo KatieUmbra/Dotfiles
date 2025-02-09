@@ -41,7 +41,7 @@ window {
     border-bottom-left-radius: 0;
     /* {# rcol(data.color.base) #} */
     background-color: #232136;
-    min-height: 5rem;
+    min-height: 4rem;
     /* {# rnum(data.styling.padding.large) #} */
     padding: 0.75rem
     /* {# rnum(data.styling.padding.xl) #} */
@@ -68,7 +68,8 @@ window {
 }
 
 #scroll {
-    padding: 0
+    /* {# rnum(data.styling.padding.xl) #} */
+    padding: 2rem
     /* {# rnum(data.styling.padding.xl) #} */
     2rem
     /* {# rnum(data.styling.padding.xl) #} */
@@ -89,8 +90,8 @@ window {
 }
 
 #text {
-    /* {# rnum(data.styling.padding.largest) #} */
-    margin: 1rem
+    /* {# rnum(data.styling.padding.large) #} */
+    margin: 0.75rem
     /* {# rnum(data.styling.padding.xl) #} */
     2rem;
     /* {# rcol(data.color.text) #} */
