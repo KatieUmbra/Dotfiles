@@ -27,7 +27,7 @@
             :class "launcher-button bar-element"
             :cursor "pointer"
             :onclick "${EWW_CMD} open menu --toggle"
-            (image :path "./icons/home-icon.png"
+            (image :path "./icons/home-icon.svg"
                    :image-height 25
                    :image-width 25
             )

@@ -25,7 +25,7 @@
                     :cursor "pointer"
                     (box :class "workspace-entry ${workspace.windows > 0 ? "workspace-occupied" : "workspace-empty"}"
                         (image
-                            :path "${workspace.id == current_workspace ? "./icons/workspace-selected.png" : (workspace.windows > 0 ? "./icons/workspace-full.png" : "./icons/workspace-empty.png")}"
+                            :path "${workspace.id == current_workspace ? "./icons/workspace-selected.svg" : (workspace.windows > 0 ? "./icons/workspace-full.svg" : "./icons/workspace-empty.svg")}"
                             :class "workspace-entry ${workspace.id == current_workspace ? "workspace-current" : ""}"
                             ;; {# rnum(data.icon.size) #}
                             :image-width 20

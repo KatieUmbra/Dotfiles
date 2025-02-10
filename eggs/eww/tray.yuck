@@ -16,7 +16,7 @@
         (eventbox
             :cursor "pointer"
             :onclick "${EWW_CMD} open tray --toggle"
-            (image :path "./icons/tray.png" :image-width 20)
+            (image :path "./icons/tray.svg" :image-width 20)
         )
     )
 )

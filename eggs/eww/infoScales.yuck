@@ -22,8 +22,9 @@
                 :value "${battery}"
                 :thickness 3
                 (image
-                    :path "./icons/battery/${batteryImg}.png"
+                    :path "./icons/battery/${batteryImg}.svg"
                     :image-width 20
+                    :image-height 20
                 )
             )
         )
@@ -33,8 +34,9 @@
                 :value "${EWW_RAM.used_mem * 100 / EWW_RAM.total_mem}"
                 :thickness 3
                 (image
-                    :path "./icons/ram.png"
+                    :path "./icons/ram.svg"
                     :image-width 20
+                    :image-height 20
                 )
             )
         )
@@ -44,8 +46,9 @@
                 :value "${EWW_DISK["/"].used * 100 / EWW_DISK["/"].total}"
                 :thickness 3
                 (image
-                    :path "./icons/disk.png"
+                    :path "./icons/disk.svg"
                     :image-width 20
+                    :image-height 20
                 )
             )
         )
@@ -55,8 +58,9 @@
                 :value "${EWW_CPU.avg}"
                 :thickness 3
                 (image
-                    :path "./icons/cpu.png"
+                    :path "./icons/cpu.svg"
                     :image-width 20
+                    :image-height 20
                 )
             )
         )

@@ -22,7 +22,7 @@
         :class "bar-element system-widget"
         (image
             :hexpand false
-            :path "./icons/wifi/${wifi}.png"
+            :path "./icons/wifi/${wifi}.svg"
             ;; {# rnum(data.icon.size) #}
             :image-height 20
             ;; {# rnum(data.icon.size) #}
@@ -30,7 +30,7 @@
         )
         (image
             :hexpand false
-            :path "./icons/audio/${volume-icon}.png"
+            :path "./icons/audio/${volume-icon}.svg"
             ;; {# rnum(data.icon.size) #}
             :image-height 20
             ;; {# rnum(data.icon.size) #}

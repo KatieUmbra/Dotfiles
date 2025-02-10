@@ -41,7 +41,7 @@
                 :cursor "pointer"
                 :halign "end"
                 :onclick "kitty --directory ~/.config/yolk/eggs nvim & eww close menu &"
-                (image :path "./icons/settings.png" :image-width 20)
+                (image :path "./icons/settings.svg" :image-width 20)
             )
         )
         (toggles)

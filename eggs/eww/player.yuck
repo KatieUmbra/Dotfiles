@@ -20,11 +20,10 @@
         :hexpand false
         (image
             :style "background-image: url('${(substring(playerMetadata?.art, 0, 1) == "f" ? 
-            substring(playerMetadata?.art, 7, strlength(playerMetadata?.art) - 7) : playerMetadata?.art) ?: "./icons/music.png"
+            substring(playerMetadata?.art, 7, strlength(playerMetadata?.art) - 7) : playerMetadata?.art) ?: "./icons/music.svg"
             }')"
             :class "bar-image"
             :width 50
-            :image-width 40
             :hexpand false
         )
         (box
@@ -40,7 +39,7 @@
                 :onclick "playerctl previous"
                 :cursor "pointer"
                 (image
-                    :path "./icons/previous.png"
+                    :path "./icons/previous.svg"
                     ;; {# rnum(data.icon.size) #}
                     :image-width "20"
                     ;; {# rnum(data.icon.size) #}
@@ -51,7 +50,7 @@
                 :cursor "pointer"
                 :onclick "playerctl play-pause"
                 (image
-                    :path "${playerMetadata?.status == "Playing" ? "./icons/pause.png" : "./icons/play.png"}"
+                    :path "${playerMetadata?.status == "Playing" ? "./icons/pause.svg" : "./icons/play.svg"}"
                     ;; {# rnum(data.icon.size) #}
                     :image-width "20"
                     ;; {# rnum(data.icon.size) #}
@@ -62,7 +61,7 @@
                 :cursor "pointer"
                 :onclick "playerctl next"
                 (image
-                    :path "./icons/next.png"
+                    :path "./icons/next.svg"
                     ;; {# rnum(data.icon.size) #}
                     :image-width "20"
                     ;; {# rnum(data.icon.size) #}
@@ -96,7 +95,7 @@
                 :space-evenly true
                 (eventbox
                     (image
-                        :path "${playerMetadata?.shuffle == "true" ? "./icons/shuffle-selected.png" : "./icons/shuffle.png"}"
+                        :path "${playerMetadata?.shuffle == "true" ? "./icons/shuffle-selected.svg" : "./icons/shuffle.svg"}"
                         ;; {# rnum(data.icon.size) #}
                         :image-width "20"
                         ;; {# rnum(data.icon.size) #}
@@ -107,7 +106,7 @@
                     :onclick "playerctl previous"
                     :cursor "pointer"
                     (image
-                        :path "./icons/previous.png"
+                        :path "./icons/previous.svg"
                         ;; {# rnum(data.icon.size) #}
                         :image-width "20"
                         ;; {# rnum(data.icon.size) #}
@@ -118,7 +117,7 @@
                     :cursor "pointer"
                     :onclick "playerctl play-pause"
                     (image
-                        :path "${playerMetadata?.status == "Playing" ? "./icons/pause.png" : "./icons/play.png"}"
+                        :path "${playerMetadata?.status == "Playing" ? "./icons/pause.svg" : "./icons/play.svg"}"
                         ;; {# rnum(data.icon.size) #}
                         :image-width "20"
                         ;; {# rnum(data.icon.size) #}
@@ -129,7 +128,7 @@
                     :cursor "pointer"
                     :onclick "playerctl next"
                     (image
-                        :path "./icons/next.png"
+                        :path "./icons/next.svg"
                         ;; {# rnum(data.icon.size) #}
                         :image-width "20"
                         ;; {# rnum(data.icon.size) #}
@@ -139,9 +138,9 @@
                 ;; {# rnum(data.icon.size) #}
                 (eventbox
                     (image
-                        :path "${playerMetadata?.loop == "None" ? "./icons/loop.png" : "./icons/loop-selected.png"}"
+                        :path "${playerMetadata?.loop == "None" ? "./icons/loop.svg" : "./icons/loop-selected.svg"}"
                         :image-width "25"
-                        :image-height "30"
+                        :image-height "25"
                     )
                 )
             )

@@ -24,7 +24,7 @@
             (box
                 :space-evenly false
                 :width "500"
-                (image :path "./icons/audio/4.png" :image-width 20)
+                (image :path "./icons/audio/4.svg" :image-width 20)
                 (scale
                     :min 0
                     :max 100
@@ -43,7 +43,7 @@
             (box
                 :space-evenly false
                 :width "500"
-                (image :path "./icons/brightness.png" :image-width 20)
+                (image :path "./icons/brightness.svg" :image-width 20)
                 (scale
                     :min 0
                     :max 100

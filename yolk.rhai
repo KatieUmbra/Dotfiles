@@ -2,7 +2,7 @@ import "colors" as colors;
 
 // Data
 export const data = #{
-    color: colors::colorschemes.rosepine.def,
+    color: colors::colorschemes.rosepine.moon,
     font: #{
 
         family: #{
@@ -82,7 +82,7 @@ export let eggs = #{
     },
     eww: #{
         targets: "~/.config/eww",
-        templates: ["*"],
+        templates: ["*", "**/*.svg", "**/**/*.svg"],
         enabled: true,
     },
     starship : #{
@@ -135,6 +135,11 @@ export let eggs = #{
     wlogout: #{
         targets: "~/.config/wlogout",
         templates: ["layout", "style.css"],
+        enabled: true
+    },
+    scripts: #{
+        targets: "~.config/scripts",
+        templates: ["*.sh"],
         enabled: true
     }
 };

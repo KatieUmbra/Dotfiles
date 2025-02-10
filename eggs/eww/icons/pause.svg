@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.5 82.49">
+  <defs>
+    <style>
+      .cls-1 {
+        /* {# rcol(data.color.text) #} */
+        fill: #e0def4;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="22.21" height="81.91" rx="5.54" ry="5.54"/>
+  <rect class="cls-1" x="40.3" y=".57" width="22.21" height="81.91" rx="5.54" ry="5.54"/>
+</svg>

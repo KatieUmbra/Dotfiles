@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 92 92">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="14.97" cy="11.96" fx="14.97" fy="11.96" r="92.25" gradientTransform="translate(11.91 -5.54) rotate(47.5) scale(1 .8)" gradientUnits="userSpaceOnUse">
+      <!-- {# rcol(data.color.foam) #}  -->
+      <stop offset="0" stop-color="#9ccfd8"/>
+      <!-- {# rcol(data.color.pine) #}  -->
+      <stop offset="1" stop-color="#3e8fb0"/>
+    </radialGradient>
+  </defs>
+  <circle class="cls-1" cx="46" cy="46" r="46"/>
+</svg>

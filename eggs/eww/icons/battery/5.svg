@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 84.08">
+  <defs>
+    <style>
+      .cls-1 {
+        /* {# rcol(data.color.love) #} */
+        fill: #eb6f92;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M42,9.08h-4v-4c0-2.76-2.24-5-5-5h-16c-2.76,0-5,2.24-5,5v4h-4C3.58,9.08,0,12.66,0,17.08v59C0,80.5,3.58,84.08,8,84.08h34c4.42,0,8-3.58,8-8V17.08c0-4.42-3.58-8-8-8ZM20.69,68.18v-21.13h-8.63l17.26-29.89v21.13h8.63l-17.26,29.89Z"/>
+</svg>

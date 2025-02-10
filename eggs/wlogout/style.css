@@ -31,7 +31,7 @@ button {
     /* {# rcol(data.color.text) #} */
     color: #e0def4;
     /* {# rcol(data.color.base) #} */
-    background-color: #191724;
+    background-color: #232136;
     border-style: solid;
     /* {# rnum(data.styling.border.size) #} */
     border-width: 1px;
@@ -44,7 +44,7 @@ button {
 
 button:focus, button:active, button:hover {
     /* {# rcol(data.color.overlay) #} */
-	background-color: #26233a;
+	background-color: #393552;
 	outline-style: none;
 }
 

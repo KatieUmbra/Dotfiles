@@ -43,18 +43,24 @@ THIS PART IS WORK IN PROGRESS
     - [x] Emoji
     - [x] Screen lock
     - [ ] Missing bspwm keybindings
-- [ ] Eww
+    - [ ] Showcase mode
+- [x] Eww
     - [x] Tray
     - [x] Filler for main bar
     - [x] Refactor
     - [x] Calendar widget
-    - [ ] Per-colorscheme icons
+    - [x] Per-colorscheme icons
 - [x] Gowall colorscheme
 - [x] Bat colorscheme
 - [x] Btop colorscheme
 - [x] Neovim colorscheme compatibility
+- [ ] Colorscheme
+    - [x] Nord
+    - [x] Catpuccin
+    - [ ] Nightfox
+    - [ ] Solarized
 
 ## Acknowledgements
 
 - [Lightly inspired by](https://github.com/gh0stzk/dotfiles)
-- [some icons by Icons8](https://icons8.com)
+- [Icons heavily based on icons8](https://icons8.com)
