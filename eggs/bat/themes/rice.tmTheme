@@ -26,22 +26,22 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
       <dict>
         <key>background</key>
         <!-- {# rcol(data.color.base) #} -->
-        <string>#232136</string>
+        <string>#191724</string>
         <key>caret</key>
         <!-- {# rcol(data.color.hh) #} -->
-        <string>#56526e</string>
+        <string>#524f67</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.text) #} -->
         <string>#e0def4</string>
         <key>invisibles</key>
         <!-- {# rcol(data.color.surface) #} -->
-        <string>#2a273f</string>
+        <string>#1f1d2e</string>
         <key>lineHighlight</key>
         <!-- {# rcol(data.color.hl) #} -->
-        <string>#2a283e</string>
+        <string>#21202e</string>
         <key>selection</key>
         <!-- {# rcol(data.color.hm) #} -->
-        <string>#44415a</string>
+        <string>#403d52</string>
       </dict>
     </dict>
     <dict>
@@ -131,7 +131,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
       <dict>
         <key>foreground</key>
         <!-- {# rcol(data.color.pine) #} -->
-        <string>#3e8fb0</string>
+        <string>#31748f</string>
       </dict>
     </dict>
     <dict>
@@ -173,7 +173,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>bold</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.pine) #} -->
-        <string>#3e8fb0</string>
+        <string>#31748f</string>
       </dict>
     </dict>
     <dict>
@@ -187,7 +187,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>italic </string>
         <key>foreground</key>
         <!-- {# rcol(data.color.pine) #} -->
-        <string>#3e8fb0</string>
+        <string>#31748f</string>
       </dict>
     </dict>
     <dict>
@@ -201,7 +201,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>italic</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.rose) #} -->
-        <string>#ea9a97</string>
+        <string>#ebbcba</string>
       </dict>
     </dict>
     <dict>
@@ -229,7 +229,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>bold</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.pine) #} -->
-        <string>#3e8fb0</string>
+        <string>#31748f</string>
       </dict>
     </dict>
     <dict>
@@ -257,7 +257,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>bold</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.rose) #} -->
-        <string>#ea9a97</string>
+        <string>#ebbcba</string>
       </dict>
     </dict>
     <dict>

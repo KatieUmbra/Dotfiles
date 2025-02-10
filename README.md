@@ -44,15 +44,15 @@ THIS PART IS WORK IN PROGRESS
     - [x] Screen lock
     - [ ] Missing bspwm keybindings
 - [ ] Eww
-    - [X] Tray
+    - [x] Tray
     - [x] Filler for main bar
     - [x] Refactor
     - [x] Calendar widget
     - [ ] Per-colorscheme icons
 - [x] Gowall colorscheme
-- [X] Bat colorscheme
-- [X] Btop colorscheme
-- [ ] Neovim colorscheme compatibility
+- [x] Bat colorscheme
+- [x] Btop colorscheme
+- [x] Neovim colorscheme compatibility
 
 ## Acknowledgements
 

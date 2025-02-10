@@ -2,7 +2,7 @@ import "colors" as colors;
 
 // Data
 export const data = #{
-    color: colors::colorschemes.rosepine.moon,
+    color: colors::colorschemes.rosepine.def,
     font: #{
 
         family: #{
@@ -114,7 +114,7 @@ export let eggs = #{
     },
     nvim: #{
         targets: "~/.config/nvim",
-        templates: ["*.lua", "*.py", "*.md", "*.json"],
+        templates: ["*.lua", "**/*.lua", "**/**/*.lua", "*.py", "*.md", "*.json"],
         enabled: true
     },
     btop: #{
