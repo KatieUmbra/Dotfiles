@@ -23,10 +23,10 @@
 
 (defwindow tray
     :monitor 0
-    :geometry (geometry :x "30%"
+    :geometry (geometry :x "29.6%"
                         :y "1%"
-                        :width "5%"
-                        :height "7%"
+                        :width "75px"
+                        :height "75px"
                         :anchor "top left")
     :stacking "fg"
     :exclusive "false"

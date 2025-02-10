@@ -17,7 +17,7 @@
 
 (defwidget toggles []
     (box
-        :space-evenly false
+        :space-evenly true
         :class "toggles-widget"
         :spacing 10
         (eventbox
@@ -52,6 +52,24 @@
             :halign "center"
             :class "toggle ${dnd == "0" ? "toggle-on" : ""}"
             (image :path "./icons/dnd.png" :image-width 40)
+        )
+        (eventbox
+            :timeout "20000ms"
+            :cursor "pointer"
+            :onclick "hyprpicker -a &"
+            :width 50
+            :halign "center"
+            :class "toggle"
+            (image :path "./icons/picker.png" :image-width 40)
+        )
+        (eventbox
+            :timeout "20000ms"
+            :cursor "pointer"
+            :onclick "${EWW_CMD} close menu & wlogout"
+            :width 50
+            :halign "center"
+            :class "toggle"
+            (image :path "./icons/logout.png" :image-width 40)
         )
     )
 )

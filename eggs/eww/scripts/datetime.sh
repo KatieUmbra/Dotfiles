@@ -13,5 +13,5 @@
 # Description: eww helper schell script that tracks the time
 
 while sleep 1; do
-    date +'{"hour":"%I","minute":"%M","second":"%S","meridian":"%p","weekday":"%A","month":"%b","day":"%d"}'
+    date +'{"hour":"%I","minute":"%M","second":"%S","meridian":"%p","weekday":"%A","month":"%b","monthFull":"%B","monthNum":"%m","day":"%d","year":"%G"}'
 done

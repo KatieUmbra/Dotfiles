@@ -29,27 +29,25 @@ THIS PART IS WORK IN PROGRESS
 
 ## Roadmap
 
-- [ ] Collect and list all dependencies
+- [x] Collect and list all dependencies
 - [x] Comment every file with credits
 - [x] Mako config
 - [x] Kitty config
 - [x] Wofi config
 - [x] Starship config
 - [x] Zsh config
-- [ ] Gtk config
 - [x] Cava config
 - [ ] Hyprland
     - [x] Base config
     - [x] Clipboard management
     - [x] Emoji
-    - [ ] Missing bspwm keybindings
     - [x] Screen lock
+    - [ ] Missing bspwm keybindings
 - [ ] Eww
     - [X] Tray
     - [x] Filler for main bar
     - [x] Refactor
-    - [ ] Airplane mode
-    - [ ] Calendar widget
+    - [x] Calendar widget
     - [ ] Per-colorscheme icons
 - [x] Gowall colorscheme
 - [X] Bat colorscheme

@@ -2,8 +2,11 @@ hyprland
 hyprshot
 hyprsunset
 hyprlock
+hyprpicker
+wlogout
 yazi
 kitty
+yolk
 git
 mesa
 neovim
@@ -39,3 +42,7 @@ numix-circle-icon-theme
 ttf-work-sans
 otf-monaspace
 ttf-nerd-fonts-symbols
+xdg-desktop-portal
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+hyprpolkitagent

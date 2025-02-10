@@ -75,8 +75,8 @@
 
 (defwidget playerFull []
       (box
-            :style "background-image: url('${substring(playerMetadata?.art, 0, 1) == "f" ? 
-            substring(playerMetadata?.art, 7, strlength(playerMetadata?.art) - 7) : playerMetadata?.art 
+            :style "background-image: url('${(substring(playerMetadata?.art, 0, 1) == "f" ? 
+            substring(playerMetadata?.art, 7, strlength(playerMetadata?.art) - 7) : playerMetadata?.art) ?: "../assets/player-default.jpg"
             }')"
             :class "playerbg"
             :hexpand false
@@ -84,7 +84,7 @@
             :height "150"
             :orientation "v"
             :space-evenly "false"
-            (label  :text "${playerMetadata?.title ?: "—"}" :halign "start" :limit-width "70" :class "title")
+            (label  :text "${playerMetadata?.title ?: "Nothing playing!"}" :halign "start" :limit-width "70" :class "title")
             (label  :text "${playerMetadata?.artist ?: ""}" :halign "start" :limit-width "70")
             (progress :class "progressbar"  :value "${(( playerPosition?.position ?: 0 ) / ( playerMetadata?.length ?: 1 )) * 100}")
             (box

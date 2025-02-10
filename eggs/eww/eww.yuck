@@ -19,6 +19,7 @@
 (include "./system.yuck")
 (include "./toggles.yuck")
 (include "./tray.yuck")
+(include "./calendar.yuck")
 
 (defwidget launcher []
     (box

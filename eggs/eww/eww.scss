@@ -144,8 +144,8 @@ tooltip {
     image {
         // {# rnum(data.styling.padding.medium) #}
         padding: 0.5rem;
-        // {# rnum(data.styling.margin.small) #}
-        margin: 0.25rem;
+        // {# rnum(data.styling.margin.tiny) #}
+        margin: 0.125rem;
         background-color: $overlay;
         // {# rnum(data.styling.border.rounding) #}
         border-radius: 5px;
@@ -165,8 +165,8 @@ tooltip {
     // {# rnum(data.styling.border.rounding) #}
     border-radius: 5px;
     menu {
-        // {# rnum(data.styling.padding.largest) #}
-        padding: 1rem;
+        // {# rnum(data.styling.padding.medium) #}
+        padding: 0.5;
     }
 }
 
@@ -254,7 +254,6 @@ tooltip {
     // {# rnum(data.font.size.speck) #}
     font-size: 8pt;
 }
-
 
 /*
 * =============================
@@ -377,12 +376,66 @@ tooltip {
         // {# rnum(data.styling.border.rounding) #}
         border-radius: 5px;
         }
-        progress {
-            background-color: $text;
-        }
-        eventbox {
-            background: transparent;
-            border: none;
-            box-shadow: none;
+    progress {
+        background-color: $text;
     }
+    eventbox {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+/*
+* =============================
+*  section: CALENDAR
+* =============================
+*/
+.calendar-widget {
+    // {# rnum(data.styling.padding.largest) #}
+    padding: 1rem;
+    background-color: $base;
+    // {# rnum(data.styling.border.rounding) #}
+    border-radius: 5px;
+    .calendar-wrapper {
+        background-color: $surface;
+        // {# rnum(data.styling.border.rounding) #}
+        border-radius:5px;
+        // {# rnum(data.styling.padding.largest) #}
+        padding: 1rem;
+        color: $subtle;
+        calendar {
+            &:indeterminate {
+                color: $hm;
+            }
+            &:selected {
+                font-weight: bolder;
+                color: $text;
+            }
+            .header {
+                font-weight: bolder;
+                color: $iris;
+            }
+            .button {
+                color: $iris;
+            }
+            .highlight {
+                color: $foam;
+            }
+        }
+    }
+}
+
+.calendar-time {
+    font-size: 30pt;
+    // {# rnum(data.styling.margin.largest) #}
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+.calendar-date {
+    font-size: 15pt;
+    // {# rnum(data.styling.margin.largest) #}
+    margin: 1rem;
+    color: $hh;
 }

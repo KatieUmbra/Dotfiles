@@ -36,14 +36,20 @@
             ;; {# rnum(data.icon.size) #}
             :image-width 20
         )
-        (box
+        (eventbox
             :hexpand false
-            :orientation "v"
-            :space-evenly false
-            :spacing 0
             :width 50
-            (label :text "${time.hour}:${time.minute} ${time.meridian}" :class "time-label")
-            (label :text "${time.weekday}, ${time.month} ${time.day}" :class "date-label")
+            :onclick "${EWW_CMD} open calendar --toggle"
+            :cursor "pointer"
+            (box
+                :hexpand false
+                :orientation "v"
+                :space-evenly false
+                :spacing 0
+                :width 50
+                (label :text "${time.hour}:${time.minute} ${time.meridian}" :class "time-label")
+                (label :text "${time.weekday}, ${time.month} ${time.day}" :class "date-label")
+            )
         )
     )
 )

@@ -131,5 +131,10 @@ export let eggs = #{
         targets: "~/.config/cava",
         templates: ["config"],
         enabled: true
+    },
+    wlogout: #{
+        targets: "~/.config/wlogout",
+        templates: ["layout", "style.css"],
+        enabled: true
     }
 };
