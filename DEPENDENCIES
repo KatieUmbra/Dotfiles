@@ -46,3 +46,9 @@ xdg-desktop-portal
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
 hyprpolkitagent
+plymouth-openrc-plugin
+grub
+grub-silent
+connman
+connman-openrc
+ntp-openrc
