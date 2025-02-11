@@ -5,6 +5,7 @@ hyprlock
 hyprpicker
 wlogout
 yazi
+poppler
 kitty
 yolk
 git
@@ -54,3 +55,4 @@ grub-silent
 connman
 connman-openrc
 ntp-openrc
+mpv

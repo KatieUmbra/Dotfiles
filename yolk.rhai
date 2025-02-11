@@ -137,8 +137,13 @@ export let eggs = #{
         templates: ["layout", "style.css"],
         enabled: true
     },
+    yazi: #{
+        targets: "~/.config/yazi",
+        templates: ["*"],
+        enabled: true
+    },
     scripts: #{
-        targets: "~.config/scripts",
+        targets: "~/.config/scripts",
         templates: ["*.sh"],
         enabled: true
     }

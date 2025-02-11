@@ -1,0 +1,4 @@
+[manager]
+keymap = [
+    { on = "u", run = "plugin restore", desc = "Restore last deleted file(s)/folder(s)" }
+]

@@ -16,3 +16,6 @@
 [submodule "eggs/wofi/wofi-emoji"]
 	path = eggs/wofi/wofi-emoji
 	url = https://github.com/Zeioth/wofi-emoji.git
+[submodule "eggs/yazi/plugins/restore.yazi"]
+	path = eggs/yazi/plugins/restore.yazi
+	url = https://github.com/boydaihungst/restore.yazi
