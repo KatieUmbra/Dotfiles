@@ -1,4 +1,4 @@
-#files: 825	version: 5.9
+#files: 810	version: 5.9
 
 _comps=(
 '${ZSHZ_CMD:-${_Z_CMD:-z}}' '_zshz'
@@ -93,8 +93,6 @@ _comps=(
 'Mail' '_mail'
 'Mosaic' '_webbrowser'
 '_arguments' '__arguments'
-'_dunst' '_dunst'
-'_dunstctl' '_dunstctl'
 'a2ps' '_a2ps'
 'aaaa' '_hosts'
 'aap' '_aap'
@@ -171,8 +169,6 @@ _comps=(
 'bibtex' '_bibtex'
 'bindkey' '_bindkey'
 'bison' '_bison'
-'bluetooth' '_tlp-radio-device'
-'bluetoothctl' '_bluetoothctl'
 'bmake' '_make'
 'bogofilter' '_bogofilter'
 'bogotune' '_bogofilter'
@@ -189,7 +185,6 @@ _comps=(
 'brctl' '_brctl'
 'bsdgrep' '_grep'
 'bsdtar' '_tar'
-'bspc' '_bspc'
 'btdownloadcurses' '_bittorrent'
 'btdownloadgui' '_bittorrent'
 'btdownloadheadless' '_bittorrent'
@@ -203,7 +198,6 @@ _comps=(
 'bttrack' '_bittorrent'
 'buildhash' '_ispell'
 'builtin' '_builtin'
-'bun' '_bun'
 'bunzip2' '_bzip2'
 'burst' '_mh'
 'busctl' '_busctl'
@@ -349,8 +343,6 @@ _comps=(
 'dsh' '_dsh'
 'dtruss' '_dtruss'
 'du' '_du'
-'dunst' '_dunst'
-'dunstctl' '_dunstctl'
 'dvibook' '_dvi'
 'dviconcat' '_dvi'
 'dvicopy' '_dvi'
@@ -426,7 +418,6 @@ _comps=(
 'fixwpps' '_psutils'
 'fixwwps' '_psutils'
 'flac' '_flac'
-'flameshot' '_flameshot'
 'flex' '_flex'
 'flex++' '_flex'
 'flipdiff' '_patchutils'
@@ -710,7 +701,6 @@ _comps=(
 'jobs' '_jobs_builtin'
 'joe' '_joe'
 'join' '_join'
-'jp2a' '_jp2a'
 'jq' '_jq'
 'kdeconnect-cli' '_kdeconnect'
 'keystone' '_openstack'
@@ -824,7 +814,6 @@ _comps=(
 'mencal' '_mencal'
 'mere' '_mere'
 'merge' '_rcs'
-'meson' '_meson'
 'metaflac' '_flac'
 'mformat' '_mtools'
 'mgv' '_pspdf'
@@ -912,7 +901,6 @@ _comps=(
 'new' '_mh'
 'newgrp' '_groups'
 'next' '_mh'
-'nfc' '_tlp-radio-device'
 'nginx' '_nginx'
 'ngrep' '_ngrep'
 'nice' '_nice'
@@ -1142,8 +1130,6 @@ _comps=(
 'ruby' '_ruby'
 'ruby-mri' '_ruby'
 'run-help' '_run-help'
-'run-on-ac' '_tlp-run-on'
-'run-on-bat' '_tlp-run-on'
 'rup' '_hosts'
 'rusage' '_precommand'
 'rview' '_vim'
@@ -1301,8 +1287,6 @@ _comps=(
 'tkinfo' '_texinfo'
 'tla' '_tla'
 'tload' '_tload'
-'tlp' '_tlp'
-'tlp-stat' '_tlp-stat'
 'tmux' '_tmux'
 'todo' '_devtodo'
 'todo.sh' '_todo.sh'
@@ -1343,7 +1327,6 @@ _comps=(
 'type' '_which'
 'typeset' '_typeset'
 'udevadm' '_udevadm'
-'udisksctl' '_udisks2'
 'ulimit' '_ulimit'
 'uml_mconsole' '_uml'
 'uml_moo' '_uml'
@@ -1415,7 +1398,6 @@ _comps=(
 'watch' '_watch'
 'watcher' '_openstack'
 'wc' '_wc'
-'web-greeter' '_web-greeter'
 'wget' '_wget'
 'what' '_sccs'
 'whatis' '_man'
@@ -1427,7 +1409,6 @@ _comps=(
 'whoami' '_nothing'
 'whois' '_whois'
 'whom' '_mh'
-'wifi' '_tlp-radio-device'
 'wiggle' '_wiggle'
 'wipefs' '_wipefs'
 'wl-copy' '_wl-copy'
@@ -1437,7 +1418,6 @@ _comps=(
 'wpa_cli' '_wpa_cli'
 'wpctl' '_wpctl'
 'write' '_users_on'
-'wwan' '_tlp-radio-device'
 'www' '_webbrowser'
 'xargs' '_xargs'
 'xattr' '_attr'
@@ -1668,17 +1648,14 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _zshz _bat _bluetoothctl _bspc _bun \
-            _busctl _cargo _curl _dkms _dunst \
-            _dunstctl _elogind-inhibit _fastfetch _flameshot _git \
-            _hyprctl _hyprpm _img2sixel _jp2a _kitty \
-            _libinput _loginctl _lsd _mako _makoctl \
-            _mdcat _mdless _meson _mkinitcpio _mpv \
-            _ninja _openrc _pacman _pip _playerctl \
-            _pulseaudio _rc-service _rc-status _rc-update _rclone \
-            _sqv _starship _tlp _tlp-radio-device _tlp-run-on \
-            _tlp-stat _trash _trash-empty _trash-list _trash-put \
-            _trash-restore _udevadm _udisks2 _upower _web-greeter \
+autoload -Uz _zshz _bat _busctl _cargo _curl \
+            _elogind-inhibit _fastfetch _git _hyprctl _hyprpm \
+            _img2sixel _kitty _libinput _loginctl _lsd \
+            _mako _makoctl _mdcat _mdless _mkinitcpio \
+            _mpv _ninja _openrc _pacman _pip \
+            _playerctl _pulseaudio _rc-service _rc-status _rc-update \
+            _rclone _sqv _starship _trash _trash-empty \
+            _trash-list _trash-put _trash-restore _udevadm _upower \
             _wl-copy _wl-paste _wlogout _wpctl _yay \
             _yazi _cdr _all_labels _all_matches _alternative \
             _approximate _arg_compile _arguments _bash_completions _cache_invalid \

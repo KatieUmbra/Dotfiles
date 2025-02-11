@@ -3,11 +3,18 @@ hyprshot
 hyprsunset
 hyprlock
 hyprpicker
+hyprpaper
+sof-firmware
+alsa-utils
 wlogout
 yazi
 poppler
 kitty
 yolk
+imagemagick
+wget
+iw
+wireless_tools
 git
 mesa
 neovim
@@ -51,7 +58,6 @@ plymouth-openrc-plugin
 plymouth-theme-cuts-alt-git
 plymouth
 grub
-grub-silent
 connman
 connman-openrc
 ntp-openrc

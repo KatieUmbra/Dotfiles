@@ -1,5 +1,5 @@
 #!/bin/sh
 
 clear
-setcolors /home/Wayland/solarized
+setcolors /usr/local/bin/kangel-colors
 cat /etc/issue > /dev/tty
