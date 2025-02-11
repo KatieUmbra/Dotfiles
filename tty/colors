@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+name="acc"
+description="changes agetty colors"
+command="/usr/local/bin/colors.sh"
+command_background=true
+pidfile="/run/${RC_SVCNAME}.pid"
+
+depend() {
+    after local
+}
