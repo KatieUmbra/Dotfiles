@@ -404,7 +404,7 @@ tooltip {
         border-radius:5px;
         // {# rnum(data.styling.padding.largest) #}
         padding: 1rem;
-        color: $subtle;
+        color: $text;
         calendar {
             &:indeterminate {
                 color: $hm;
@@ -432,6 +432,7 @@ tooltip {
     // {# rnum(data.styling.margin.largest) #}
     margin: 1rem;
     margin-bottom: 0;
+    color: $text;
 }
 
 .calendar-date {
