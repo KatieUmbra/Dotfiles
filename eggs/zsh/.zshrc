@@ -86,6 +86,7 @@ setopt appendhistory
 
 # Local binary
 export PATH="$PATH:$HOME/.bin"
+export PATH="$PATH:$HOME/.config/scripts"
 
 # C / C++ Compiler
 export CC=clang

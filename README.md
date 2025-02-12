@@ -1,30 +1,36 @@
 # Kathy's Dotfiles
 
+## Preparation
+
+1. Have a clean install of artix linux
+2. Make sure arch repositories are enabled
+
 ## Instalation
 
 1. get files
     - create `.config/yolk/`
     - clone repository inside `git clone --recurse-submodules -j8 git://github.com/KatieUmbra/Dotfiles ~/.config/yolk`
 
-2. install deps `yay -S < DEPENDENCIES`
-    - add lines to `/etc/zsh/zshenv`
-        ```sh
-        export ZDOTDIR="$HOME/.config/zsh"
-        export HISTFILE="$ZDOTDIR/.zsh_history"
-        ```
+2. install deps `yay -S - < DEPENDENCIES`
 
-3. run `yolk sync`
+3. add lines to `/etc/zsh/zshenv`
+    ```sh
+    export ZDOTDIR="$HOME/.config/zsh"
+    export HISTFILE="$ZDOTDIR/.zsh_history"
+    ```
 
-4. change GTK settings using `nwg-look`
+4. run `yolk sync`
+
+5. change GTK settings using `nwg-look`
     - Theme: WhiteSur-Light-Purple
     - Font: Work Sans Regular 12
     - Icons: Numix Circle
     - Cursor: Bibata Modern Ice
 
-5. change QT settings using `kvantum`
+6. change QT settings using `kvantum`
     - Theme: WhiteSur
 
-6. **OPTIONAL** display managers are bloat, check the `tty` folder
+7. **OPTIONAL** display managers are bloat, check the `tty` folder
 
 ## Roadmap
 

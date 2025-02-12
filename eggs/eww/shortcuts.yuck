@@ -53,15 +53,6 @@
         )
         (eventbox
             :cursor "pointer"
-            :onclick "onlyoffice-desktopeditors & disown onlyoffice-desktopeditors"
-            (image
-                :path "${iconFolder}onlyoffice.svg"
-                :image-height 35
-                :image-width 35
-            )
-        )
-        (eventbox
-            :cursor "pointer"
             :onclick "obsidian & disown obsidan"
             (image
                 :path "${iconFolder}obsidian.svg"

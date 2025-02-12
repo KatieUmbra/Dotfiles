@@ -14,6 +14,7 @@
 
 yolk sync
 makoctl reload
-eww reload
 pkill hyprpaper
+pkill eww
 nohup hyprpaper >> ~/.cache/hyprland/hyprland_logs.txt &
+eww open bar

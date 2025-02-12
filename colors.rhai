@@ -72,7 +72,7 @@ export const colorschemes = #{
             love:   "#d20f39", // Red
             gold:   "#df8e1d", // Yellow
             rose:   "#ea76cb", // Pink
-            pine:   "#40a02b", // Green
+            pine:   "#209fb5", // Sapphire
             foam:   "#04a5e5", // Sky
             iris:   "#8839ef", // Mauve
             hl:     "#e6e9ef", // Mantle
@@ -91,7 +91,7 @@ export const colorschemes = #{
             love:   "#e78284", // Red
             gold:   "#e5c890", // Yellow
             rose:   "#f4b8e4", // Pink
-            pine:   "#a6d189", // Green
+            pine:   "#85c1dc", // Sapphire
             foam:   "#99d1db", // Sky
             iris:   "#ca9ee6", // Mauve
             hl:     "#838ba7", // overlay1
@@ -110,7 +110,7 @@ export const colorschemes = #{
             love:   "#ed8796", // Red
             gold:   "#eed49f", // Yellow
             rose:   "#f5bde6", // Pink
-            pine:   "#a6da95", // Green
+            pine:   "#7dc4e4", // Sapphire
             foam:   "#91d7e3", // Sky
             iris:   "#c6a0f6", // Mauve
             hl:     "#8087a2", // overlay1
@@ -129,7 +129,7 @@ export const colorschemes = #{
             love:   "#f38ba8", // Red
             gold:   "#f9e2af", // Yellow
             rose:   "#f5c2e7", // Pink
-            pine:   "#a6e3a1", // Green
+            pine:   "#74c7ec", // Sapphire
             foam:   "#89dceb", // Sky
             iris:   "#cba6f7", // Mauve
             hl:     "#7f849c", // overlay1
@@ -150,7 +150,7 @@ export const colorschemes = #{
             love:   "#bf616a",
             gold:   "#ebcb8b",
             rose:   "#d08770",
-            pine:   "#a3be8c",
+            pine:   "#8fbcbb",
             foam:   "#88c0d0",
             iris:   "#b48ead",
             hl:     "#8fbcbb",
