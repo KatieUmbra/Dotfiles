@@ -68,21 +68,23 @@ All the config files are available inside `~/.config/yolk`
 
 1. Main config file `~/.config/yolk/yolk.rhai`
     - To change the colorscheme change the field `data.color`
-    ```rhai
-    export const data = ${
-        color: colors::colorschemes.{THEME}.{VARIANT},
-        ...
-    }
-    ```
-    check the showcases section to see all the possible options, or look inside `colors.rhai`
+      ```rhai
+      export const data = ${
+          color: colors::colorschemes.{THEME}.{VARIANT},
+          ...
+      }
+      ```
+      check the showcases section to see all the possible options, or look inside `colors.rhai`
+
     - To change the wallpaper type change the field `data.wallpaper_type`, the options are `weeb`, `plain`, `landscape`
-    ```rhai
-    export const data = #{
-        ...
-        wallpaper_type: "weeb",
-        ...
-    }
-    ```
+      ```rhai
+      export const data = #{
+          ...
+          wallpaper_type: "weeb",
+          ...
+      }
+      ```
+
     - The rest of options are pretty self explaining, good luck ;)
 
 ## Roadmap
