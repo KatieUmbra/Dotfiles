@@ -1,30 +1,18 @@
-# Kathy's Dotfiles
-
-## Showcase
-
 <div align="center">
-    
-### Rose Pine
-![moon](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/rosepine-moon.gif?raw=true)
-![dawn](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/rosepine-dawn.gif?raw=true)
-![default](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/rosepine-default.gif?raw=true)
 
-### Catppuccin
-![latte](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/catppuccin-latte.gif?raw=true)
-![frappe](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/catppuccin-frappe.gif?raw=true)
-![macchiato](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/catppuccin-macchiato.gif?raw=true)
-![mocha](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/catppuccin-mocha.gif?raw=true)
+# Kathy's Dotfiles
+![Main image](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/main.png?raw=true)
 
-### Nord
-![default](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/nord-default.gif?raw=true)
 </div>
 
-## Preparation
+## Instalation
+
+### Preinstall steps
 
 1. Have a clean install of artix linux
 2. Make sure arch repositories are enabled
 
-## Instalation
+### Install
 
 1. get files
     - create `.config/yolk/`
@@ -51,12 +39,59 @@
 
 7. **OPTIONAL** display managers are bloat, check the `tty` folder
 
+## Showcase
+
+<div align="center">
+    
+### Rose Pine
+![moon](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/rosepine-moon.gif?raw=true)
+![dawn](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/rosepine-dawn.gif?raw=true)
+![default](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/rosepine-default.gif?raw=true)
+
+### Catppuccin
+![latte](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/catppuccin-latte.gif?raw=true)
+![frappe](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/catppuccin-frappe.gif?raw=true)
+![macchiato](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/catppuccin-macchiato.gif?raw=true)
+![mocha](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/catppuccin-mocha.gif?raw=true)
+
+### Nord
+![default](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/nord-default.gif?raw=true)
+
+### Login screen
+![login screen](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/login.png?raw=true)
+
+</div>
+
+## Configuration
+
+All the config files are available inside `~/.config/yolk`
+
+1. Main config file `~/.config/yolk/yolk.rhai`
+    - To change the colorscheme change the field `data.color`
+    ```rhai
+    export const data = ${
+        color: colors::colorschemes.{THEME}.{VARIANT},
+        ...
+    }
+    ```
+    check the showcases section to see all the possible options, or look inside `colors.rhai`
+    - To change the wallpaper type change the field `data.wallpaper_type`, the options are `weeb`, `plain`, `landscape`
+    ```rhai
+    export const data = #{
+        ...
+        wallpaper_type: "weeb",
+        ...
+    }
+    ```
+    - The rest of options are pretty self explaining, good luck ;)
+
 ## Roadmap
 
-- [ ] Vanity
-    - [ ] Collect wallpapers for each colorscheme and use gowall
-    - [ ] Create showcase gifs for each colorscheme (inspired by [gh0stzk](https://github.com/gh0stzk/dotfiles))
-    - [ ] Missing comment credits
+- [x] Vanity
+    - [x] Nice looking readme
+    - [x] Collect wallpapers for each colorscheme
+    - [x] Create showcase gifs for each colorscheme (inspired by [gh0stzk](https://github.com/gh0stzk/dotfiles))
+    - [x] Missing comment credits
 - [ ] Eww
     - [x] Tray
     - [x] Filler for main bar

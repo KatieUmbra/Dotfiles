@@ -60,6 +60,7 @@ export const data = #{
             largest: 1,
             xl: 2,
         },
+        // Css values in pixels
         border: #{
             rounding: 5,
             gaps: 10,
