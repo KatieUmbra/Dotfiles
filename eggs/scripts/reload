@@ -13,6 +13,7 @@
 # Description: script to quickly reload the config
 
 yolk sync
+kill -USR1 $(pidof kitty)
 makoctl reload
 pkill hyprpaper
 pkill eww

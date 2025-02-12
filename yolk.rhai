@@ -2,7 +2,7 @@ import "colors" as colors;
 
 // Data
 export const data = #{
-    color: colors::colorschemes.catppuccin.macchiato,
+    color: colors::colorschemes.rosepine.moon,
     /*
      * options:
      * - weeb

@@ -25,13 +25,13 @@ button {
     /* {# rnum(data.styling.border.rounding) #} */
     border-radius: 5px;
     /* {# rcol(data.color.iris) #} */
-    border-color: #c6a0f6;
+    border-color: #c4a7e7;
     /* {# rcol(data.color.text) #} */
-    text-decoration-color: #c6d0f5;
+    text-decoration-color: #e0def4;
     /* {# rcol(data.color.text) #} */
-    color: #c6d0f5;
+    color: #e0def4;
     /* {# rcol(data.color.base) #} */
-    background-color: #24273B;
+    background-color: #232136;
     border-style: solid;
     /* {# rnum(data.styling.border.size) #} */
     border-width: 1px;
@@ -44,7 +44,7 @@ button {
 
 button:focus, button:active, button:hover {
     /* {# rcol(data.color.overlay) #} */
-	background-color: #6e738d;
+	background-color: #393552;
 	outline-style: none;
 }
 
