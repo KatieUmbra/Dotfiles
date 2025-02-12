@@ -55,9 +55,6 @@ xdg-desktop-portal
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
 hyprpolkitagent
-plymouth-openrc-plugin
-plymouth-theme-cuts-alt-git
-plymouth
 grub
 connman
 connman-openrc
