@@ -1,5 +1,24 @@
 # Kathy's Dotfiles
 
+## Showcase
+
+### Rose Pine
+
+![moon](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/rosepine-moon.gif?raw=true)
+![dawn](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/rosepine-dawn.gif?raw=true)
+![default](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/rosepine-default.gif?raw=true)
+
+### Catppuccin
+
+![latte](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/catppuccin-latte.gif?raw=true)
+![frappe](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/catppuccin-frappe.gif?raw=true)
+![macchiato](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/catppuccin-macchiato.gif?raw=true)
+![mocha](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/catppuccin-mocha.gif?raw=true)
+
+### Nord
+
+![default](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/nord-default.gif?raw=true)
+
 ## Preparation
 
 1. Have a clean install of artix linux
