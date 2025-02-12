@@ -10,12 +10,12 @@
 
       .cls-1, .cls-2 {
         /* {# rcol(data.color.text) #} */
-        fill: #eceff4;
+        fill: #c6d0f5;
       }
 
       .cls-3 {
         /* {# rcol(data.color.overlay) #} */
-        fill: #4c566a;
+        fill: #6e738d;
       }
     </style>
   </defs>

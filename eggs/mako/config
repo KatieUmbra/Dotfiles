@@ -16,9 +16,9 @@ on-notify=exec mpv ~/.config/yolk/eggs/assets/notification.mp3
 font=WorkSans-Light Regular 14
 
 # {# rcol(data.color.base) #}
-background-color=#2e3440
+background-color=#24273B
 # {# rcol(data.color.text) #}
-text-color=#eceff4
+text-color=#c6d0f5
 
 
 width=300
@@ -32,33 +32,33 @@ padding=15
 # {# rnum(data.styling.border.size) #}
 border-size=1
 # {# rcol(data.color.pine) #}
-border-color=#8fbcbb
+border-color=#7dc4e4
 # {# rnum(data.styling.border.rounding) #}
 border-radius=5
 
 # {# rcol(data.color.pine) #}
-progress-color=over #8fbcbb
+progress-color=over #7dc4e4
 
 # 10s
 default-timeout=10000
 
 [urgency=low]
 # {# rcol(data.color.pine) #}
-border-color=#8fbcbb
+border-color=#7dc4e4
 # {# rcol(data.color.pine) #}
-progress-color=over #8fbcbb
+progress-color=over #7dc4e4
 
 [urgency=normal]
 # {# rcol(data.color.rose) #}
-border-color=#d08770
+border-color=#f5bde6
 # {# rcol(data.color.rose) #}
-progress-color=over #d08770
+progress-color=over #f5bde6
 
 [urgency=critical]
 # {# rcol(data.color.love) #}
-border-color=#bf616a
+border-color=#ed8796
 # {# rcol(data.color.love) #}
-progress-color=over #bf616a
+progress-color=over #ed8796
 
 
 [mode=dnd]

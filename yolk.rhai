@@ -2,7 +2,14 @@ import "colors" as colors;
 
 // Data
 export const data = #{
-    color: colors::colorschemes.nord.def,
+    color: colors::colorschemes.catppuccin.macchiato,
+    /*
+     * options:
+     * - weeb
+     * - plain
+     * - landscape
+     */
+    wallpaper_type: "weeb",
     font: #{
 
         family: #{
@@ -61,6 +68,14 @@ fn rgb_hyprland_color(color, padding) {
     let pad = "";
     pad.pad(padding, " ");
     return pad + line.split()[0] + " = rgb(" + my_color + ")";
+}
+
+fn preload_wallpaper() {
+    return "preload = ~/.config/share/wallpaper/" + data.color.name + "/" + data.color.variant + "/" + data.wallpaper_type + ".png"
+}
+
+fn set_wallpaper() {
+    return "wallpaper = eDP-1, ~/.config/share/wallpaper/" + data.color.name + "/" + data.color.variant + "/" + data.wallpaper_type + ".png"
 }
 
 // Eggs

@@ -4,6 +4,7 @@ export const colorschemes = #{
         def: #{
             name:   "rosepine",
             variant:"default",
+            hl_text: false,
             base:   "#191724",
             surface:"#1f1d2e",
             overlay:"#26233a",
@@ -23,6 +24,7 @@ export const colorschemes = #{
         moon: #{
             name:   "rosepine",
             variant:"moon",
+            hl_text: false,
             base:   "#232136",
             surface:"#2a273f",
             overlay:"#393552",
@@ -42,6 +44,7 @@ export const colorschemes = #{
         dawn: #{
             name:   "rosepine",
             variant:"dawn",
+            hl_text: false,
             base:   "#faf4ed",
             surface:"#fffaf3",
             overlay:"#f2e9e1",
@@ -63,6 +66,7 @@ export const colorschemes = #{
         latte: #{
             name:   "catppuccin",
             variant:"latte",
+            hl_text: false,
             base:   "#eff1f6", // Base
             surface:"#ccd0da", // Surface0
             overlay:"#9ca0b0", // Overlay0
@@ -82,6 +86,7 @@ export const colorschemes = #{
         frappe: #{
             name:   "catppuccin",
             variant:"frappe",
+            hl_text: true,
             base:   "#303447", // Base
             surface:"#414559", // Surface0
             overlay:"#737994", // Overlay0
@@ -101,6 +106,7 @@ export const colorschemes = #{
         macchiato: #{
             name:   "catppuccin",
             variant:"macchiato",
+            hl_text: true,
             base:   "#24273B", // Base
             surface:"#363a4f", // Surface0
             overlay:"#6e738d", // Overlay0
@@ -120,6 +126,7 @@ export const colorschemes = #{
         mocha: #{
             name:   "catppuccin",
             variant:"mocha",
+            hl_text: true,
             base:   "#1e1e2f", // Base
             surface:"#313244", // Surface0
             overlay:"#6c7086", // Overlay0
@@ -141,6 +148,7 @@ export const colorschemes = #{
         def: #{
             name:   "nord",
             variant:"default",
+            hl_text: false,
             base:   "#2e3440",
             surface:"#3b4252",
             overlay:"#4c566a",
