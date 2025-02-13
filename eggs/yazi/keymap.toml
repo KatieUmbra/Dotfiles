@@ -1,0 +1,45 @@
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▖ ▗▖▗▖  ▗▖▗▄▄▖    ▗▄▄▄  ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖   ▗▄▄▄▖ ▗▄▄▖
+# ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌   
+# ▐▛▚▖ ▐▛▀▜▌ █  ▐▛▀▜▌  ▐▌  ▝▀▚▖    ▐▌  █▐▌ ▐▌ █  ▐▛▀▀▘  █  ▐▌   ▐▛▀▀▘ ▝▀▚▖
+# ▐▌ ▐▌▐▌ ▐▌ █  ▐▌ ▐▌  ▐▌ ▗▄▄▞▘    ▐▙▄▄▀▝▚▄▞▘ █  ▐▌   ▗▄█▄▖▐▙▄▄▖▐▙▄▄▖▗▄▄▞▘
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 
+# Author: Katherine C. (katherine@kaytea.dev)
+# Source: http://github.com/KatieUmbra/Dotfiles
+# License: MIT
+# Description: yazi keymap config file
+
+[manager]
+prepend_keymap = [
+    # Convert images plugin
+    { on   = [ "c", "j" ], run  = "plugin convert --args='--extension=jpg'", desc = "Convert image to JPG" },
+    { on   = [ "c", "p" ], run  = "plugin convert --args='--extension=png'", desc = "Convert image to PNG" },
+    { on   = [ "c", "w" ], run  = "plugin convert --args='--extension=webp'", desc = "Convert image to WEBP" },
+
+    # Jump to char plugin
+    { on   = [ "f" ], run = "plugin jump-to-char", desc = "Hide or show preview" },
+
+    # Toggle preview plugin
+    { on   = [ "T" ], run = "plugin hide-peview", desc = "Hide or show preview" },
+
+    # Sudo plugin
+    { on   = [ "R", "p", "p" ], run = "plugin sudo --paste", desc = "sudo paste" },
+    { on   = [ "R", "P" ], run = "plugin sudo -- paste --force", desc = "sudo cp/mv --foce" },
+    { on   = [ "R", "r" ], run = "plugin sudo -- rename", desc = "sudo rename" },
+    { on   = [ "R", "p", "l" ], run = "plugin sudo -- link", desc = "sudo link" },
+    { on   = [ "R", "p", "r" ], run = "plugin sudo -- link --relative", desc = "sudo link relative path" },
+    { on   = [ "R", "p", "L" ], run = "plugin sudo -- hardlink", desc = "sudo hardlink" },
+    { on   = [ "R", "a" ], run = "plugin sudo -- create", desc = "sudo create" },
+    { on   = [ "R", "d" ], run = "plugin sudo -- remove", desc = "sudo trash" },
+    { on   = [ "R", "D" ], run = "plugin sudo -- remove --permanently", desc = "sudo delete" },
+
+    # Chmod plugin
+    { on   = [ "c", "m" ], run = "plugin chmod", desc = "Chmod selected files" },
+
+    # Archive plugin
+    { on   = [ "c", "a" ], run = "plugin compress", desc = "Archive selected files" },
+
+    # Shell
+    { on   = [ "!" ], run = "shell $SHELL --block", desc = "Open shell here" },
+]

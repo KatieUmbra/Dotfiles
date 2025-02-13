@@ -60,3 +60,6 @@ connman
 connman-openrc
 ntp-openrc
 mpv
+mediainfo
+ffmpegthumbnailer
+tumbler

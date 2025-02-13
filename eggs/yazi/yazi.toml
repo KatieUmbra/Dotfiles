@@ -11,4 +11,38 @@
 # Description: main yazi config file
 
 [manager]
+ratio = [2, 3, 3]
 sort_by = "extension"
+sort_dir_first = true
+linemode = "size"
+show_symlink = false
+
+[opener]
+play = [
+    { run = 'vlc "$@"', orphan = true, for = "linux" }
+]
+edit = [
+    { run = '$EDITOR "$@"', block = true, for = "linux" }
+]
+open = [
+    { run = 'xdg-open "$@"', desc = "Open" }
+]
+md = [
+    { run = 'mdless "$@"', block = true, desc = "Read markdown file", for = "linux" }
+]
+
+[open]
+prepend_rules = [
+    { name = "*.md", use = ["md", "edit"] }
+]
+
+[plugin]
+prepend_previewers = [
+    { name = "*.md", run = "mdcat" },
+    { mime = "{image,audio,video}/*", run = "mediainfo"},
+    { mime = "application/subrip", run = "mediainfo"},
+]
+prepend_fetchers = [
+    { id = "git", name = "*", run = "git" },
+    { id = "git", name = "*/", run = "git" },
+]

@@ -16,7 +16,7 @@ Description: config file for fastfetch
     "logo": {
         "type": "kitty",
         "source": "~/.config/fastfetch/logo.png",
-        "width": 23,
+        "width": 24,
         "height": 11,
         "padding": {
             "top": 2,

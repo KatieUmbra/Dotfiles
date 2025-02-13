@@ -28,16 +28,22 @@
 
 4. run `yolk sync`
 
-5. change GTK settings using `nwg-look`
+### Post install
+
+1. change GTK settings using `nwg-look`
     - Theme: WhiteSur-Light-Purple
     - Font: Work Sans Regular 12
     - Icons: Numix Circle
     - Cursor: Bibata Modern Ice
 
-6. change QT settings using `kvantum`
+2. change QT settings using `kvantum`
     - Theme: WhiteSur
 
-7. **OPTIONAL** display managers are bloat, check the `tty` folder
+3. install yazi plugins
+    - `cd ~/.config/yazi`
+    - `ya pack -i`
+
+4. **OPTIONAL** display managers are bloat, check the `tty` folder
 
 ## Showcase
 
