@@ -17,6 +17,7 @@ wget
 iw
 wireless_tools
 git
+btop
 mesa
 neovim
 python-pynvim
