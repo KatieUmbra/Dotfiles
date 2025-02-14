@@ -17,16 +17,16 @@ status="--status"
 toggle="--toggle"
 
 if [[ $arg = $toggle ]]; then
-    pgrep hyprsunset &> /dev/null
+    pgrep wlsunset &> /dev/null
     state=$?
     if [[ $state -eq 0 ]];then
-        pkill hyprsunset
+        pkill wlsunset
     else
-        nohup hyprsunset -t 4000 &> /dev/null &
+        nohup wlsunset -t 4000 &> /dev/null &
     fi
 elif [[ $arg = $status ]]; then
     while sleep 0.5; do
-        pgrep hyprsunset &> /dev/null
+        pgrep wlsunset &> /dev/null
         echo $?
     done
 else

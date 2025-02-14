@@ -13,6 +13,9 @@
 (deflisten playerMetadata :initial '{"title":"","album":"","artist":"","art":"","url":"","length":"0","lengthFormat":"0:0","status":"","shuffle":"false","loop":"None"}' "./scripts/media.sh --player")
 (deflisten playerPosition :initial '{"position":"1","positionFormat":"0:00"}' "./scripts/media.sh --position")
 
+(deflisten volume :initial "0" "./scripts/volume.sh --volume")
+(deflisten brightness :initial '{"current":"1","max":"1"}' "./scripts/brightness.sh")
+
 (defwidget playerBar []
     (centerbox
         :class "bar-element playerbar-widget"

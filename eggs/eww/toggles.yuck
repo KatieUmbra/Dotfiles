@@ -56,7 +56,7 @@
         (eventbox
             :timeout "20000ms"
             :cursor "pointer"
-            :onclick "hyprpicker -a &"
+            :onclick "wl-color-picker clipboard &"
             :width 50
             :halign "center"
             :class "toggle"

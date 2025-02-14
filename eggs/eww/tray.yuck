@@ -10,32 +10,25 @@
 ;; License: MIT
 ;; Description: eww config file for the tray widget
 
+(defvar revealed false)
+
 (defwidget bar-tray []
     (box
         :class "bar-element tray-button"
         (eventbox
-            :cursor "pointer"
-            :onclick "${EWW_CMD} open tray --toggle"
-            (image :path "./icons/tray.svg" :image-width 20)
-        )
-    )
-)
-
-(defwindow tray
-    :monitor 0
-    :geometry (geometry :x "29.6%"
-                        :y "1%"
-                        :width "75px"
-                        :height "75px"
-                        :anchor "top left")
-    :stacking "fg"
-    :exclusive "false"
-    :focusable "false"
-    :namespace "tray"
-    (box
-        :class "tray-widget"
-        (scroll
-            (systray)
+            :onhover "${EWW_CMD} update revealed='true'"
+            :onhoverlost "${EWW_CMD} update revealed='false'"
+            (box
+                :space-evenly false
+                :width 0
+                (image :path "./icons/tray-alt.svg" :image-width 20 :image-height 25)
+                (revealer
+                    :width 0
+                    :transition "slideright"
+                    :reveal revealed
+                    (systray)
+                )
+            )
         )
     )
 )

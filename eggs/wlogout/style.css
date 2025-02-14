@@ -24,8 +24,8 @@ window {
 button {
     /* {# rnum(data.styling.border.rounding) #} */
     border-radius: 5px;
-    /* {# rcol(data.color.iris) #} */
-    border-color: #c4a7e7;
+    /* {# rcol(data.color.text) #} */
+    border-color: #e0def4;
     /* {# rcol(data.color.text) #} */
     text-decoration-color: #e0def4;
     /* {# rcol(data.color.text) #} */

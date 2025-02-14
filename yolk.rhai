@@ -181,5 +181,10 @@ export let eggs = #{
         targets: "~/.config/swaylock",
         templates: ["config"],
         enabled: true,
+    },
+    discord: #{
+        targets: "~/.config/vesktop/themes",
+        templates: ["rice.theme.css"],
+        enabled: true,
     }
 };
