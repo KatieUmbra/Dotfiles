@@ -121,12 +121,12 @@ All the config files are available inside `~/.config/yolk`
 - [x] Starship config
 - [x] Zsh config
 - [x] Cava config
-- [x] Hyprland
+- [x] Niri
     - [x] Base config
     - [x] Clipboard management
     - [x] Emoji
     - [x] Screen lock
-    - [x] Showcase mode
+    - [ ] Showcase mode
     - [x] Missing bspwm utilities
 - [x] Gowall colorscheme
 - [x] Bat colorscheme

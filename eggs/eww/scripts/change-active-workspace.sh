@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # ▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▖ ▗▖▗▖  ▗▖▗▄▄▖    ▗▄▄▄  ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖   ▗▄▄▄▖ ▗▄▄▖
@@ -7,11 +7,28 @@
 # ▐▌ ▐▌▐▌ ▐▌ █  ▐▌ ▐▌  ▐▌ ▗▄▄▞▘    ▐▙▄▄▀▝▚▄▞▘ █  ▐▌   ▗▄█▄▖▐▙▄▄▖▐▙▄▄▖▗▄▄▞▘
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 
-# Source: https://wiki.hyprland.org/Useful-Utilities/Status-Bars/#eww
-# Description: script that tracks the current workspace
-# Acknowledgements: The script source is the hyprland wiki, I didn't write it!
+# Author: Katherine C. (katherine@kaytea.dev)
+# Source: http://github.com/KatieUmbra/Dotfiles
+# License: MIT
+# Description: eww helper shell script that changes the active workspace
 
-hyprctl monitors -j | jq '.[] | select(.focused) | .activeWorkspace.id'
+function clamp {
+    min=$1
+    max=$2
+    val=$3
+    python -c "print(max($min, min($val, $max)))"
+}
 
-socat -u UNIX-CONNECT:$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock - |
-  stdbuf -o0 awk -F '>>|,' -e '/^workspace>>/ {print $2}' -e '/^focusedmon>>/ {print $3}'
+direction=$1
+current=$2
+if test "$direction" = "down"
+then
+  target=$(clamp 1 10 $(($current+1)))
+  echo "jumping to $target"
+  niri msg action focus-workspace $target
+elif test "$direction" = "up"
+then
+  target=$(clamp 1 10 $(($current-1)))
+  echo "jumping to $target"
+  niri msg action focus-workspace $target
+fi

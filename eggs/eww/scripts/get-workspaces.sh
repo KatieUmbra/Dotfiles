@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # ▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▖ ▗▖▗▖  ▗▖▗▄▄▖    ▗▄▄▄  ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖   ▗▄▄▄▖ ▗▄▄▖
 # ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌   
@@ -8,9 +10,13 @@
 # Author: Katherine C. (katherine@kaytea.dev)
 # Source: http://github.com/KatieUmbra/Dotfiles
 # License: MIT
-# Description: config file for hyprpaper
+# Description: eww helper shell script that tracks workspaces
 
-# {# preload_wallpaper() #}
-preload = ~/.config/share/wallpaper/rosepine/moon/weeb.png
-# {# set_wallpaper() #}
-wallpaper = eDP-1, ~/.config/share/wallpaper/rosepine/moon/weeb.png
+workspaces () {
+    niri msg -j workspaces | jq -cM '[.[] | {id: .idx, name, empty: .active_window_id}] | sort_by(.id)'
+}
+
+workspaces
+niri msg event-stream | while read -r line; do
+    workspaces
+done

@@ -11,7 +11,7 @@
 ;; Description: eww config file for music/media players
 
 (deflisten playerMetadata :initial '{"title":"","album":"","artist":"","art":"","url":"","length":"0","lengthFormat":"0:0","status":"","shuffle":"false","loop":"None"}' "./scripts/media.sh --player")
-(deflisten playerPosition "./scripts/media.sh --position")
+(deflisten playerPosition :initial '{"position":"1","positionFormat":"0:00"}' "./scripts/media.sh --position")
 
 (defwidget playerBar []
     (centerbox

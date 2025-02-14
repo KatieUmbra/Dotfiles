@@ -29,20 +29,12 @@ upower
 wlogout
 poppler
 connman
-connman
 tumbler
-hyprland
-hyprshot
-hyprlock
 nwg-look
 starship
-hyprpaper
 fastfetch
 playerctl
 mediainfo
-hyprsunset
-hyprpicker
-alsa-utils
 alsa-utils
 ntp-openrc
 imagemagick
@@ -54,7 +46,6 @@ ttf-work-sans
 otf-monaspace
 wireless_tools
 connman-openrc
-hyprpolkitagent
 bibata-cursor-git
 ffmpegthumbnailer
 whitesur-gtk-theme
@@ -63,4 +54,7 @@ kvantum-theme-whitesur
 ttf-nerd-fonts-symbols
 xdg-desktop-portal-gtk
 numix-circle-icon-theme
-xdg-desktop-portal-hyprland
+niri
+polkit-kde-agent
+xdg-desktop-portal-gnome
+swaylock

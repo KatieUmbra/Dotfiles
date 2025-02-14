@@ -85,24 +85,19 @@ fn rgb_hyprland_color(color, padding) {
     return pad + line.split()[0] + " = rgb(" + my_color + ")";
 }
 
-fn preload_wallpaper() {
-    return "preload = ~/.config/share/wallpaper/" + data.color.name + "/" + data.color.variant + "/" + data.wallpaper_type + ".png"
+fn image_mako() {
+    return "image=~/.config/share/wallpaper/" + data.color.name + "/" + data.color.variant + "/" + data.wallpaper_type + ".png"
 }
 
-fn set_wallpaper() {
-    return "wallpaper = eDP-1, ~/.config/share/wallpaper/" + data.color.name + "/" + data.color.variant + "/" + data.wallpaper_type + ".png"
+fn variables_wallpaper() {
+    return "THEME="+data.color.name+";VARIANT="+data.color.variant+";TYPE="+data.wallpaper_type+";"
 }
 
 // Eggs
 export let eggs = #{
-    hypr: #{
-        targets: "~/.config/hypr",
-        templates: ["hyprland.conf", "hyprpaper.conf", "hyprlock.conf"],
-        enabled: true,
-    },
     kitty: #{
         targets: "~/.config/kitty",
-        templates: ["kitty.conf"],
+        templates: ["kitty.conf", "kitty_system.conf"],
         enabled: true
     },
     zsh: #{
@@ -174,7 +169,17 @@ export let eggs = #{
     },
     scripts: #{
         targets: "~/.config/scripts",
-        templates: ["*.sh"],
+        templates: ["*.sh", "reload"],
         enabled: true
+    },
+    niri: #{
+        targets: "~/.config/niri",
+        templates: ["config.kdl"],
+        enabled: true
+    },
+    swaylock: #{
+        targets: "~/.config/swaylock",
+        templates: ["config"],
+        enabled: true,
     }
 };

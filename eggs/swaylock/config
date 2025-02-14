@@ -1,0 +1,71 @@
+# {# image_mako() #}
+image=~/.config/share/wallpaper/rosepine/moon/weeb.png
+# {# replace_value(data.font.family.regular + "-Regular") #}
+font=WorkSans-Regular
+# {# rnum(data.font.size.title) #}
+font-size=16
+
+indicator-idle-visible
+
+scaling=fill
+indicator-x-position=965
+indicator-y-position=540
+indicator-radius=100
+indicator-thickness=20
+
+# {# replace_value(data.color.rose - "#") #}
+bs-hl-color=ea9a97
+# {# replace_value(data.color.rose - "#") #}
+caps-lock-bs-hl-color=ea9a97
+# {# replace_value(data.color.iris - "#") #}
+caps-lock-key-hl-color=c4a7e7
+# {# replace_value(data.color.base - "#") #}
+inside-color=232136
+# {# replace_value(data.color.base - "#") #}
+inside-clear-color=232136
+# {# replace_value(data.color.base - "#") #}
+inside-caps-lock-color=232136
+# {# replace_value(data.color.base - "#") #}
+inside-ver-color=232136
+# {# replace_value(data.color.base - "#") #}
+inside-wrong-color=232136
+# {# replace_value(data.color.foam - "#") #}
+key-hl-color=9ccfd8
+# {# replace_value(data.color.foam - "#") #}
+layout-bg-color=9ccfd8
+# {# replace_value(data.color.base - "#") #}
+layout-border-color=232136
+# {# replace_value(data.color.gold - "#") #}
+layout-text-color=f6c177
+# {# replace_value(data.color.base - "#") #}
+line-color=232136
+# {# replace_value(data.color.base - "#") #}
+line-clear-color=232136
+# {# replace_value(data.color.base - "#") #}
+line-caps-lock-color=232136
+# {# replace_value(data.color.base - "#") #}
+line-ver-color=232136
+# {# replace_value(data.color.base - "#") #}
+line-wrong-color=232136
+# {# replace_value(data.color.base - "#") #}
+ring-color=232136
+# {# replace_value(data.color.rose - "#") #}
+ring-clear-color=ea9a97
+# {# replace_value(data.color.base - "#") #}
+ring-caps-lock-color=232136
+# {# replace_value(data.color.pine - "#") #}
+ring-ver-color=3e8fb0
+# {# replace_value(data.color.base - "#") #}
+ring-wrong-color=232136
+# {# replace_value(data.color.surface - "#") #}
+separator-color=2a273f
+# {# replace_value(data.color.gold - "#") #}
+text-color=f6c177
+# {# replace_value(data.color.rose - "#") #}
+text-clear-color=ea9a97
+# {# replace_value(data.color.iris - "#") #}
+text-caps-lock-color=c4a7e7
+# {# replace_value(data.color.gold - "#") #}
+text-ver-color=f6c177
+# {# replace_value(data.color.love - "#") #}
+text-wrong-color=eb6f92

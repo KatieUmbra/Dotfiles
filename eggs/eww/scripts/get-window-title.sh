@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # ▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▖ ▗▖▗▖  ▗▖▗▄▄▖    ▗▄▄▄  ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖   ▗▄▄▄▖ ▗▄▄▖
@@ -7,27 +7,12 @@
 # ▐▌ ▐▌▐▌ ▐▌ █  ▐▌ ▐▌  ▐▌ ▗▄▄▞▘    ▐▙▄▄▀▝▚▄▞▘ █  ▐▌   ▗▄█▄▖▐▙▄▄▖▐▙▄▄▖▗▄▄▞▘
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 
-# Source: https://wiki.hyprland.org/Useful-Utilities/Status-Bars/#eww
-# Description: script that changes the active workspace
-# Acknowledgements: The script source is the hyprland wiki, I didn't write it!
+# Author: Katherine C. (katherine@kaytea.dev)
+# Source: http://github.com/KatieUmbra/Dotfiles
+# License: MIT
+# Description: eww helper shell script that prints the current window title
 
-function clamp {
-  min=$1
-  max=$2
-  val=$3
-  python -c "print(max($min, min($val, $max)))"
-}
-
-direction=$1
-current=$2
-if test "$direction" = "down"
-then
-  target=$(clamp 1 10 $(($current+1)))
-  echo "jumping to $target"
-  hyprctl dispatch workspace $target
-elif test "$direction" = "up"
-then
-  target=$(clamp 1 10 $(($current-1)))
-  echo "jumping to $target"
-  hyprctl dispatch workspace $target
-fi
+niri msg -j focused-window | jq --raw-output '.title'
+niri msg event-stream | while read -r line; do
+    niri msg -j focused-window | jq --raw-output '.title'
+done

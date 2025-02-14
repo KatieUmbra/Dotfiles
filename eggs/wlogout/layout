@@ -1,6 +1,6 @@
 {
     "label"     : "lock",
-    "action"    : "hyprlock",
+    "action"    : "swaylock",
     "text"      : "Lock",
     "keybind"   : "l"
 }
@@ -29,8 +29,8 @@
     "keybind"   : "r"
 }
 {
-    "label"     : "hyprland",
-    "action"    : "hyprctl dispatch exit",
-    "text"      : "Leave Hyprland",
-    "keybind"   : "h"
+    "label"     : "niri",
+    "action"    : "niri msg action quit",
+    "text"      : "Leave Niri",
+    "keybind"   : "k"
 }
