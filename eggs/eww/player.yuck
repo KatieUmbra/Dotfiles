@@ -15,60 +15,75 @@
 
 (deflisten volume :initial "0" "./scripts/volume.sh --volume")
 (deflisten brightness :initial '{"current":"1","max":"1"}' "./scripts/brightness.sh")
+(defvar playerRev false)
 
 (defwidget playerBar []
-    (centerbox
-        :class "bar-element playerbar-widget"
-        :width 320
-        :hexpand false
-        (image
-            :style "background-image: url('${(substring(playerMetadata?.art, 0, 1) == "f" ? 
-            substring(playerMetadata?.art, 7, strlength(playerMetadata?.art) - 7) : playerMetadata?.art) ?: "./icons/music.svg"
-            }')"
-            :class "bar-image"
-            :width 50
-            :hexpand false
-        )
+    (eventbox
+        :onhover "${EWW_CMD} update playerRev='true'"
+        :onhoverlost "${EWW_CMD} update playerRev='false'"
         (box
-            :orientation "v"
-            :width 220
-            :class "playerbar-text"
-            (label :text "${playerMetadata?.title ?: "Nothing playing!"}" :limit-width "20" :class "playerbar-title" :justify "fill" :halign "start")
-            (label :text "${playerMetadata?.artist ?: "No artist found"}" :limit-width "20" :class "playerbar-subtitle" :halign "start")
-        )
-        (box
-            :width 50
-            (eventbox
-                :onclick "playerctl previous"
-                :cursor "pointer"
-                (image
-                    :path "./icons/previous.svg"
-                    ;; {# rnum(data.icon.size) #}
-                    :image-width "20"
-                    ;; {# rnum(data.icon.size) #}
-                    :image-height "20"
+            :class "bar-element playerbar-widget"
+            :hexpand playerRev
+            :space-evenly false
+            (revealer
+                :reveal playerRev
+                :transition "slideleft"
+                (box
+                    :space-evenly false
+                    (image
+                        :style "background-image: url('${(substring(playerMetadata?.art, 0, 1) == "f" ? 
+                        substring(playerMetadata?.art, 7, strlength(playerMetadata?.art) - 7) : playerMetadata?.art) ?: "./icons/music.svg"
+                        }')"
+                        :class "bar-image"
+                        :width 50
+                        :hexpand false
+                    )
+                    (box
+                        :orientation "v"
+                        :width 220
+                        :class "playerbar-text"
+                        :space-evenly false
+                        (label :text "${playerMetadata?.title ?: "Nothing playing!"}" :limit-width "20" :class "playerbar-title" :justify "fill" :halign "start")
+                        (label :text "${playerMetadata?.artist ?: "No artist found"}" :limit-width "20" :class "playerbar-subtitle" :halign "start")
+                    )
                 )
             )
-            (eventbox
-                :cursor "pointer"
-                :onclick "playerctl play-pause"
-                (image
-                    :path "${playerMetadata?.status == "Playing" ? "./icons/pause.svg" : "./icons/play.svg"}"
-                    ;; {# rnum(data.icon.size) #}
-                    :image-width "20"
-                    ;; {# rnum(data.icon.size) #}
-                    :image-height "20"
+            (box
+                :space-evenly false
+                :spacing 10
+                :width 50
+                (eventbox
+                    :onclick "playerctl previous"
+                    :cursor "pointer"
+                    (image
+                        :path "./icons/previous.svg"
+                        ;; {# rnum(data.icon.size) #}
+                        :image-width "20"
+                        ;; {# rnum(data.icon.size) #}
+                        :image-height "20"
+                    )
                 )
-            )
-            (eventbox
-                :cursor "pointer"
-                :onclick "playerctl next"
-                (image
-                    :path "./icons/next.svg"
-                    ;; {# rnum(data.icon.size) #}
-                    :image-width "20"
-                    ;; {# rnum(data.icon.size) #}
-                    :image-height "20"
+                (eventbox
+                    :cursor "pointer"
+                    :onclick "playerctl play-pause"
+                    (image
+                        :path "${playerMetadata?.status == "Playing" ? "./icons/pause.svg" : "./icons/play.svg"}"
+                        ;; {# rnum(data.icon.size) #}
+                        :image-width "20"
+                        ;; {# rnum(data.icon.size) #}
+                        :image-height "20"
+                    )
+                )
+                (eventbox
+                    :cursor "pointer"
+                    :onclick "playerctl next"
+                    (image
+                        :path "./icons/next.svg"
+                        ;; {# rnum(data.icon.size) #}
+                        :image-width "20"
+                        ;; {# rnum(data.icon.size) #}
+                        :image-height "20"
+                    )
                 )
             )
         )

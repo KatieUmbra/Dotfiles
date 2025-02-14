@@ -44,6 +44,16 @@ $hh:      #56526e; // {< rcol(data.color.hh) >}
     }
 }
 
+@keyframes tray-open {
+    0% { -gtk-icon-transform: rotate(0turn) }
+    100% { -gtk-icon-transform: rotate(1turn) }
+}
+
+@keyframes tray-closed {
+    0% { -gtk-icon-transform: rotate(1turn) }
+    100% { -gtk-icon-transform: rotate(0turn) }
+}
+
 * {
     all: unset;
     font-family: "Work Sans", "MonaspaceNeon-Regular", serif;
@@ -153,11 +163,21 @@ tooltip {
 }
 
 .tray-button {
+    background: transparent;
     image {
-        padding: 0 
-        // {# rnum(data.styling.padding.large) #}
-        0.75rem;
+        padding: 0
+        // {# rnum(data.styling.padding.medium) #}
+        0.5rem;
+        background: transparent;
     }
+}
+
+.tray-opened {
+    animation: tray-open 0.25s ease-out;
+}
+
+.tray-closed {
+    animation: tray-closed 0.25s ease-out;
 }
 
 .popup {

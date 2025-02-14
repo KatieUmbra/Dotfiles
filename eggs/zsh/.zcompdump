@@ -1,4 +1,4 @@
-#files: 812	version: 5.9
+#files: 817	version: 5.9
 
 _comps=(
 '${ZSHZ_CMD:-${_Z_CMD:-z}}' '_zshz'
@@ -169,6 +169,7 @@ _comps=(
 'bibtex' '_bibtex'
 'bindkey' '_bindkey'
 'bison' '_bison'
+'bluetooth' '_tlp-radio-device'
 'bmake' '_make'
 'bogofilter' '_bogofilter'
 'bogotune' '_bogofilter'
@@ -198,6 +199,7 @@ _comps=(
 'bttrack' '_bittorrent'
 'buildhash' '_ispell'
 'builtin' '_builtin'
+'bun' '_bun'
 'bunzip2' '_bzip2'
 'burst' '_mh'
 'busctl' '_busctl'
@@ -900,6 +902,7 @@ _comps=(
 'new' '_mh'
 'newgrp' '_groups'
 'next' '_mh'
+'nfc' '_tlp-radio-device'
 'nginx' '_nginx'
 'ngrep' '_ngrep'
 'nice' '_nice'
@@ -1129,6 +1132,8 @@ _comps=(
 'ruby' '_ruby'
 'ruby-mri' '_ruby'
 'run-help' '_run-help'
+'run-on-ac' '_tlp-run-on'
+'run-on-bat' '_tlp-run-on'
 'rup' '_hosts'
 'rusage' '_precommand'
 'rview' '_vim'
@@ -1288,6 +1293,8 @@ _comps=(
 'tkinfo' '_texinfo'
 'tla' '_tla'
 'tload' '_tload'
+'tlp' '_tlp'
+'tlp-stat' '_tlp-stat'
 'tmux' '_tmux'
 'todo' '_devtodo'
 'todo.sh' '_todo.sh'
@@ -1411,6 +1418,7 @@ _comps=(
 'whoami' '_nothing'
 'whois' '_whois'
 'whom' '_mh'
+'wifi' '_tlp-radio-device'
 'wiggle' '_wiggle'
 'wipefs' '_wipefs'
 'wl-copy' '_wl-copy'
@@ -1420,6 +1428,7 @@ _comps=(
 'wpa_cli' '_wpa_cli'
 'wpctl' '_wpctl'
 'write' '_users_on'
+'wwan' '_tlp-radio-device'
 'www' '_webbrowser'
 'xargs' '_xargs'
 'xattr' '_attr'
@@ -1650,13 +1659,14 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _zshz _bat _busctl _bwrap _cargo \
-            _curl _elogind-inhibit _fastfetch _git _img2sixel \
-            _kitty _libinput _loginctl _lsd _mako \
-            _makoctl _mdcat _mdless _mkinitcpio _mpv \
-            _ninja _openrc _pacman _pip _playerctl \
-            _pulseaudio _rc-service _rc-status _rc-update _rclone \
-            _sqv _starship _swaylock _swww _trash \
+autoload -Uz _zshz _bat _bun _busctl _bwrap \
+            _cargo _curl _elogind-inhibit _fastfetch _git \
+            _img2sixel _kitty _libinput _loginctl _lsd \
+            _mako _makoctl _mdcat _mdless _mkinitcpio \
+            _mpv _ninja _openrc _pacman _pip \
+            _playerctl _pulseaudio _rc-service _rc-status _rc-update \
+            _rclone _sqv _starship _swaylock _swww \
+            _tlp _tlp-radio-device _tlp-run-on _tlp-stat _trash \
             _trash-empty _trash-list _trash-put _trash-restore _udevadm \
             _udisks2 _upower _wl-copy _wl-paste _wlogout \
             _wpctl _yay _yazi _cdr _all_labels \

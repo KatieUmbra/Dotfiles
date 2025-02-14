@@ -14,19 +14,25 @@
 
 (defwidget bar-tray []
     (box
-        :class "bar-element tray-button"
+        :class "tray-button"
         (eventbox
             :onhover "${EWW_CMD} update revealed='true'"
             :onhoverlost "${EWW_CMD} update revealed='false'"
             (box
+                :style "background-color: none;"
                 :space-evenly false
                 :width 0
-                (image :path "./icons/tray-alt.svg" :image-width 20 :image-height 25)
                 (revealer
                     :width 0
-                    :transition "slideright"
+                    :transition "slideleft"
                     :reveal revealed
                     (systray)
+                )
+                (image
+                    :path "${revealed ? "./icons/tray-open.svg" : "./icons/tray-closed.svg"}"
+                    :class "${revealed ? "tray-opened" : "tray-closed"}"
+                    :image-width 30
+                    :image-height 30
                 )
             )
         )
