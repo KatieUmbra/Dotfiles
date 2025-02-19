@@ -23,7 +23,7 @@ window {
 
 button {
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 5px;
+    border-radius: 0px;
     /* {# rcol(data.color.text) #} */
     border-color: #e0def4;
     /* {# rcol(data.color.text) #} */

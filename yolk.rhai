@@ -62,28 +62,12 @@ export const data = #{
         },
         // Css values in pixels
         border: #{
-            rounding: 5,
+            rounding: 0,
             gaps: 10,
             size: 0,
         },
     }
 };
-
-fn rgba_hyprland_color(color, alpha, padding) {
-    const my_color = color - "#";
-    let line = get_yolk_text();
-    let pad = "";
-    pad.pad(padding, " ");
-    return pad + line.split()[0] + " = rgba(" + my_color + alpha + ")";
-}
-
-fn rgb_hyprland_color(color, padding) {
-    const my_color = color - "#";
-    let line = get_yolk_text();
-    let pad = "";
-    pad.pad(padding, " ");
-    return pad + line.split()[0] + " = rgb(" + my_color + ")";
-}
 
 fn image_mako() {
     return "image=~/.config/share/wallpaper/" + data.color.name + "/" + data.color.variant + "/" + data.wallpaper_type;
