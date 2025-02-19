@@ -33,11 +33,19 @@ md = [
 pdf = [
     { run = "tdf $@", block = true, desc = "Read PDF file", for = "linux" }
 ]
+img = [
+    { run = "qimgv $@", orphan = true, desc = "View image file", for = "linux" }
+]
 
 [open]
 prepend_rules = [
     { name = "*.md", use = ["md", "edit"] },
     { name = "*.pdf", use = ["pdf"] },
+#     { name = "*.png", use = ["img"] },
+#     { name = "*.jpg", use = ["img"] },
+#     { name = "*.jpeg", use = ["img"] },
+#     { name = "*.gif", use = ["img"] },
+#     { name = "*.webp", use = ["img"] },
 ]
 
 [plugin]

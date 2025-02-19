@@ -14,11 +14,7 @@
 
 yolk sync
 kill -USR1 $(pidof kitty)
-
-# {# variables_wallpaper() #}
-THEME=rosepine;VARIANT=moon;TYPE=weeb;
-swww img "$HOME/.config/share/wallpaper/$THEME/$VARIANT/$TYPE.png"
-
+$HOME/.config/scripts/reload_wallpaper
 makoctl reload
 pkill eww
 eww open bar

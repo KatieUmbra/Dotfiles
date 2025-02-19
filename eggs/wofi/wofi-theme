@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SELECTION="$(sed '1,/^### DATA ###$/d' $0 | wofi -p "theme" --show dmenu -i | cut -d ' ' -f 2,3 | tr -d '\n' | awk '{print tolower($0)}')"
+COLORSCHEME="$(echo $SELECTION | cut -d ' ' -f 1)"
+VARIANT="$(echo $SELECTION | cut -d ' ' -f 2)"
+if [[ $VARIANT = "default" ]]; then
+    VARIANT="def"
+fi
+sed -i "s/colorschemes.*/colorschemes.$COLORSCHEME.$VARIANT,/" ~/.config/yolk/yolk.rhai
+$HOME/.config/yolk/eggs/scripts/reload &> /dev/null
+exit
+### DATA ###
+ Nord Default
+󰄛 Catppuccin Latte
+󰄛 Catppuccin Frappe
+󰄛 Catppuccin Macchiato
+󰄛 Catppuccin Mocha
+󰧱 Rosepine Default
+󰧱 Rosepine Moon
+󰧱 Rosepine Dawn

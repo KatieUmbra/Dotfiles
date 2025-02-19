@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SELECTION="$(sed '1,/^### DATA ###$/d' $0 | wofi -p "theme" --show dmenu -i | cut -d ' ' -f 2 | tr -d '\n' | awk '{print tolower($0)}')"
+sed -i "s/    wallpaper_type.*/    wallpaper_type: \"$SELECTION\",/" ~/.config/yolk/yolk.rhai
+$HOME/.config/yolk/eggs/scripts/reload_wallpaper &> /dev/null
+exit
+### DATA ###
+ Plain
+ Landscape
+󰄛 Weeb

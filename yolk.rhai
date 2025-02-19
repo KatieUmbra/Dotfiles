@@ -64,7 +64,7 @@ export const data = #{
         border: #{
             rounding: 5,
             gaps: 10,
-            size: 1,
+            size: 0,
         },
     }
 };
@@ -86,11 +86,11 @@ fn rgb_hyprland_color(color, padding) {
 }
 
 fn image_mako() {
-    return "image=~/.config/share/wallpaper/" + data.color.name + "/" + data.color.variant + "/" + data.wallpaper_type + ".png"
+    return "image=~/.config/share/wallpaper/" + data.color.name + "/" + data.color.variant + "/" + data.wallpaper_type;
 }
 
 fn variables_wallpaper() {
-    return "THEME="+data.color.name+";VARIANT="+data.color.variant+";TYPE="+data.wallpaper_type+";"
+    return "THEME="+data.color.name+";VARIANT="+data.color.variant+";TYPE="+data.wallpaper_type;
 }
 
 // Eggs
@@ -169,7 +169,7 @@ export let eggs = #{
     },
     scripts: #{
         targets: "~/.config/scripts",
-        templates: ["*.sh", "reload"],
+        templates: ["*.sh", "reload", "reload_wallpaper"],
         enabled: true
     },
     niri: #{

@@ -32,7 +32,7 @@ window {
 #input {
     border-color: transparent;
     /* {# rnum(data.styling.border.size) #} */
-    border-width: 1px;
+    border-width: 0px;
     /* {# rnum(data.styling.border.rounding) #} */
     border-top-left-radius: 5px;
     /* {# rnum(data.styling.border.rounding) #} */

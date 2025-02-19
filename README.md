@@ -107,6 +107,15 @@ All the config files are available inside `~/.config/yolk`
     - [x] Calendar widget
     - [x] Per-colorscheme icons
     - [ ] Cheatsheet
+    - [ ] System information window
+        - [ ] Ram
+        - [ ] Disk
+        - [ ] Delatiled battery
+        - [ ] Cpu
+        - [ ] Graphs
+        - [ ] Username
+        - [ ] User face
+        - [ ] Pacman updates
 - [ ] Colorscheme
     - [x] Nord
     - [x] Catpuccin

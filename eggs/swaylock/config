@@ -11,7 +11,7 @@
 # Description: main config file for swaylock
 
 # {# image_mako() #}
-image=~/.config/share/wallpaper/rosepine/moon/weeb.png
+image=~/.config/share/wallpaper/rosepine/moon/weeb
 # {# replace_value(data.font.family.regular + "-Regular") #}
 font=WorkSans-Regular
 # {# rnum(data.font.size.title) #}

@@ -11,3 +11,5 @@
 # Description: main config file for bat
 
 --theme="rice"
+--pager="less -RF"
+--style="plain"

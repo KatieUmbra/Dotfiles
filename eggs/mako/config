@@ -30,7 +30,7 @@ margin=10
 padding=15
 
 # {# rnum(data.styling.border.size) #}
-border-size=1
+border-size=0
 # {# rcol(data.color.pine) #}
 border-color=#3e8fb0
 # {# rnum(data.styling.border.rounding) #}

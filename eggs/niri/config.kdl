@@ -79,7 +79,7 @@ layout {
         // {% end %}
 
         // {# rnum(data.styling.border.size) #}
-        width 1
+        width 0
         // {# rcol(data.color.hh) #}
         inactive-color "#56526e"
         // {# rcol(data.color.iris) #}
@@ -150,6 +150,8 @@ binds {
 
     Mod+Return { spawn "kitty"; }
     Mod+Space { spawn "wofi" "--show" "drun" "-I" "-a" ; }
+    Mod+Shift+T { spawn "~/.config/wofi/wofi-theme"; }
+    Mod+Shift+W { spawn "~/.config/wofi/wofi-wallpaper"; }
 
     Mod+W { close-window; }
     Mod+R { spawn "~/.config/scripts/reload"; }
@@ -160,8 +162,8 @@ binds {
 
     XF86MonBrightnessUp     allow-when-locked=true { spawn "brightnessctl" "s" "5%+"; }
     XF86MonBrightnessDown   allow-when-locked=true { spawn "brightnessctl" "s" "5%-"; }
-    XF86AudioRaiseVolume    allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
-    XF86AudioLowerVolume    allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
+    XF86AudioRaiseVolume    allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
+    XF86AudioLowerVolume    allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
     XF86AudioMute           allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
     XF86AudioNext           allow-when-locked=true { spawn "playerctl" "next"; }
