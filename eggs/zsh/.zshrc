@@ -45,7 +45,10 @@ bindkey -e
 
 # Starship Prompt
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
-eval "$(starship init zsh)"
+eval "$(timeout 5 starship init zsh)"
+
+# fzf completion
+source <(fzf --zsh)
 
 PLUGINS="$HOME/.config/zsh/plugins"
 
@@ -108,6 +111,9 @@ export GOPATH="$HOME/.go"
 
 # Spicetify
 export PATH="$PATH:/home/Kathy/.spicetify"
+
+# Wakatime
+export WAKATIME_HOME="$HOME/.wakatime"
 
 # =============
 # Extension Scripts

@@ -26,12 +26,13 @@
             :onclick "./scripts/wifi.sh --toggle"
             :width 50
             :halign "center"
-            :class "toggle ${wifi == 5 ? "" : "toggle-on"}"
+            :class "toggle ${wifiToggles == 1 ? "" : "toggle-on"}"
             (image :path "./icons/wifi/4.svg" :image-width 40)
         )
         (eventbox
             :cursor "pointer"
             :onclick "./scripts/bluetooth.sh --toggle"
+            :onrightclick "overskride &"
             :width 50
             :halign "center"
             :class "toggle ${bluetooth == "0" ? "toggle-on" : ""}"

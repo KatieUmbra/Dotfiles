@@ -19,14 +19,14 @@ Description: style file for wofi
     font-size: 16pt;
     outline: none;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 window {
     /* {# rcol(data.color.base) #} */
     background-color: #232136;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 #input {
@@ -34,20 +34,18 @@ window {
     /* {# rnum(data.styling.border.size) #} */
     border-width: 0px;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-top-left-radius: 0px;
+    border-top-left-radius: 10px;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-top-right-radius: 0px;
+    border-top-right-radius: 10px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    /* {# rcol(data.color.base) #} */
-    background-color: #232136;
+    /* {# rcol(data.color.overlay) #} */
+    background-color: #393552;
     min-height: 4rem;
     /* {# rnum(data.styling.padding.large) #} */
     padding: 0.75rem
     /* {# rnum(data.styling.padding.xl) #} */
     2rem;
-    /* {# rcol(data.color.hh) #} */
-    border-bottom-color: #56526e;
     /* {# rcol(data.color.text) #} */
     color: #e0def4;
     box-shadow: none;
@@ -57,14 +55,14 @@ window {
     /* {# rcol(data.color.base) #} */
     background-color: #232136;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 #outer-box {
     /* {# rcol(data.color.base) #} */
     background-color: #232136;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 #scroll {
@@ -79,14 +77,14 @@ window {
     /* {# rcol(data.color.base) #} */
     background-color: #232136;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 #entry {
     /* {# rnum(data.styling.padding.large) #} */
     padding: 0.75rem;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 #text {

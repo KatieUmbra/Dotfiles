@@ -25,7 +25,6 @@ export const data = #{
      */
     wallpaper_type: "weeb",
     font: #{
-
         family: #{
             monospaced: "MonaspaceNeon-Regular",
             regular: "WorkSans",
@@ -62,7 +61,7 @@ export const data = #{
         },
         // Css values in pixels
         border: #{
-            rounding: 0,
+            rounding: 10,
             gaps: 10,
             size: 0,
         },
@@ -169,6 +168,11 @@ export let eggs = #{
     discord: #{
         targets: "~/.config/vesktop/themes",
         templates: ["rice.theme.css"],
+        enabled: true,
+    },
+    fum: #{
+        targets: "~/.config/fum",
+        templates: ["config.jsonc"],
         enabled: true,
     }
 };
