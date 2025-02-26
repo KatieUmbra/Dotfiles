@@ -33,13 +33,13 @@ alias bashtop="btop"
 alias fetch="fastfetch"
 alias neofetch="fastfetch"
 alias clock="tty-clock -c -t -r -D -C 5"
+alias kitty-image="kitty icat $1"
 alias kitty-video="mpv --vo=kitty --profile=sw-fast --vo-kitty-use-shm=yes $1"
 
 # Disable Vim Mode
 bindkey -e
+
 # =============
-
-
 # [[ Plugins ]]
 # =============
 
@@ -111,13 +111,9 @@ export PATH="$PATH:/home/Kathy/.spicetify"
 # Wakatime
 export WAKATIME_HOME="$HOME/.wakatime"
 
-# =============
-# Extension Scripts
-# =============
-
-# source $ZDOTDIR/ssh_agent.sh
-
-# =============
+# ================
+# [[ Vanity ]]
+# ================
 
 # Starship Prompt
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
