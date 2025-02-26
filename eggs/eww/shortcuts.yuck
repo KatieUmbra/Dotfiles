@@ -53,7 +53,7 @@
         )
         (eventbox
             :cursor "pointer"
-            :onclick "obsidian & disown obsidan"
+            :onclick "obsidian --enable-features=UseOzonePlatform --ozone-platform=wayland & disown obsidan"
             (image
                 :path "${iconFolder}obsidian.svg"
                 :image-height 35

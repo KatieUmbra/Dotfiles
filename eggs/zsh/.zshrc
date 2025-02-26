@@ -43,10 +43,6 @@ bindkey -e
 # [[ Plugins ]]
 # =============
 
-# Starship Prompt
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-eval "$(timeout 5 starship init zsh)"
-
 # fzf completion
 source <(fzf --zsh)
 
@@ -122,3 +118,10 @@ export WAKATIME_HOME="$HOME/.wakatime"
 # source $ZDOTDIR/ssh_agent.sh
 
 # =============
+
+# Starship Prompt
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+PROMPT_COMMAND="export PROMPT_COMMAND=echo"
+precmd() { precmd() { echo "" } }
+alias clear="precmd() { precmd() { echo } } && clear"
+eval "$(timeout 5 starship init zsh)"

@@ -13,6 +13,7 @@
 # Editor completions
 "$schema" = "https://starship.rs/config-schema.json"
 
+add_newline = false
 # Prompt configuration
 format = '[](purple) $username [󰣐 ](purple) [](blue)$directory[](blue) $character'
 
@@ -95,6 +96,9 @@ $status\
 $os\
 $container\
 $shell"""
+
+[line_break]
+disabled = true
 
 [character]
 success_symbol = '[❯](purple)'

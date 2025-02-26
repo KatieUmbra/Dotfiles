@@ -405,4 +405,6 @@ window-rule {
 }
 window-rule {
     match app-id="vesktop"
+    block-out-from "screencast"
+    default-column-width { proportion 1.0; }
 }
