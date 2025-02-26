@@ -1,3 +1,4 @@
 .z_data
+.z_data*
 .zcompdump
 .zsh_history
