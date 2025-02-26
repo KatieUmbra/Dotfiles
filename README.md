@@ -26,7 +26,9 @@
     export HISTFILE="$ZDOTDIR/.zsh_history"
     ```
 
-4. run `yolk sync`
+4. run `sudo ln -s /usr/bin/kitty /usr/bin/gnome-terminal` for wofi terminal apps
+
+5. run `yolk sync`
 
 ### Post install
 
