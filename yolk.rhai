@@ -109,6 +109,7 @@ export let eggs = #{
     assets: #{
         targets: "~/.config/share/",
         enabled: true,
+        templates: ["wofi-bg.svg"]
     },
     wofi: #{
         targets: "~/.config/wofi",

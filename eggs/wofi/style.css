@@ -34,13 +34,9 @@ window {
     /* {# rnum(data.styling.border.size) #} */
     border-width: 0px;
     /* {# rnum(data.styling.border.rounding) #} */
-    border-top-left-radius: 10px;
-    /* {# rnum(data.styling.border.rounding) #} */
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    /* {# rcol(data.color.overlay) #} */
-    background-color: #393552;
+    border-radius: 10px;
+    /* {# rcol(data.color.base) #} */
+    background-color: #232136;
     min-height: 4rem;
     /* {# rnum(data.styling.padding.large) #} */
     padding: 0.75rem
@@ -49,6 +45,7 @@ window {
     /* {# rcol(data.color.text) #} */
     color: #e0def4;
     box-shadow: none;
+    margin: 4rem 2rem;
 }
 
 #inner-box {
@@ -59,25 +56,25 @@ window {
 }
 
 #outer-box {
-    /* {# rcol(data.color.base) #} */
-    background-color: #232136;
+    /* {# replace_in(`"`, "/home/" + SYSTEM.username + "/.config/yolk/eggs/assets/wofi-bg.svg") #} */
+    background-image: url("/home/Kathy/.config/yolk/eggs/assets/wofi-bg.svg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: top;
     /* {# rnum(data.styling.border.rounding) #} */
     border-radius: 10px;
 }
 
 #scroll {
     /* {# rnum(data.styling.padding.xl) #} */
-    padding: 2rem
-    /* {# rnum(data.styling.padding.xl) #} */
-    2rem
-    /* {# rnum(data.styling.padding.xl) #} */
-    2rem
-    /* {# rnum(data.styling.padding.xl) #} */
-    2rem;
+    padding: 2rem;
     /* {# rcol(data.color.base) #} */
     background-color: #232136;
+    border-radius:  0 0
     /* {# rnum(data.styling.border.rounding) #} */
-    border-radius: 10px;
+                    10px
+    /* {# rnum(data.styling.border.rounding) #} */
+                    10px;
 }
 
 #entry {
