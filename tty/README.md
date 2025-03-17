@@ -3,7 +3,7 @@
 > [!WARNING]
 > YOU MUST BE USING OPENRC FOR THIS TO WORK
 
-I made this little openrc service and `issue` file because no DM worked nicely with hyprland, you're welcome to try `greetd` or `gdm` if you want, or if you use artix you can use this little package to have a cute looking tty login, the zsh config automatically starts hyprland anyways so it'll go away automatically :p
+I made this little openrc service and `issue` file because no DM worked nicely with hyprland (I moved on from it eventually but now it works nicely with niri too), you're welcome to try `greetd` or `gdm` if you want, or if you use artix you can use this little package to have a cute looking tty login, the zsh config automatically starts hyprland anyways so it'll go away automatically :p
 
 ## Instalation
 
