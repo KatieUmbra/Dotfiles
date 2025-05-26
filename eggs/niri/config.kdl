@@ -107,6 +107,11 @@ layout {
         // {# rnum(data.styling.border.gaps) #}
         //bottom 10
     }
+
+    tab-indicator {
+        hide-when-single-tab
+        position "bottom";
+    }
 }
 
 spawn-at-startup "pipewire"
@@ -125,6 +130,7 @@ spawn-at-startup "swww-daemon"
 
 environment {
     DISPLAY ":0"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
     MOZ_ENABLE_WAYLAND "1"
 
     QT_QPA_PLATFORMTHEME "qt5ct"
@@ -287,7 +293,7 @@ binds {
 
     Mod+Shift+R { switch-preset-window-width; }
     Mod+Ctrl+R { reset-window-height; }
-    Mod+F { maximize-column; }
+    Mod+F { expand-column-to-available-width; }
     Mod+Shift+F { fullscreen-window; }
     Mod+C { center-column; }
 
@@ -302,11 +308,12 @@ binds {
     Mod+Alt+K { set-window-height "+10%"; }
 
     Mod+T       { toggle-window-floating; }
+    Mod+G       { toggle-column-tabbed-display; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
 
     Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
+    Ctrl+Print { screenshot-screen write-to-disk=false; }
+    Alt+Print { screenshot-window write-to-disk=false; }
 
     Mod+Shift+M { quit; }
     Ctrl+Alt+Delete { quit; }
@@ -365,6 +372,11 @@ window-rule {
     // {# rnum(data.styling.border.rounding) #}
     geometry-corner-radius 10
     clip-to-geometry true
+
+    shadow {
+        on
+        color "#00000070"
+    }
 }
 
 window-rule {
@@ -393,7 +405,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="Librewolf"
+    match app-id="LibreWolf"
     open-on-workspace "browser"
     default-column-width { proportion 1.0; }
 }
@@ -407,4 +419,24 @@ window-rule {
     match app-id="vesktop"
     block-out-from "screencast"
     default-column-width { proportion 1.0; }
+}
+
+layer-rule {
+    match namespace="menu"
+    match namespace="calendar"
+    match namespace="notifications"
+
+    // {# rnum(data.styling.border.rounding) #}
+    geometry-corner-radius 10
+
+    shadow {
+        on
+        color "#00000070"
+    }
+}
+
+layer-rule {
+    match namespace="notifications"
+
+    block-out-from "screencast"
 }

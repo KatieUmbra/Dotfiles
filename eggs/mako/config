@@ -24,8 +24,9 @@ text-color=#e0def4
 width=300
 height=100
 
+margin=0
 # {# rnum(data.styling.border.gaps) #}
-margin=10
+outer-margin=10
 
 padding=15
 
