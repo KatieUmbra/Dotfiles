@@ -88,9 +88,9 @@ layout {
         // {# rnum(data.styling.border.size) #}
         width 0
         // {# rcol(data.color.hh) #}
-        inactive-color "#5e81ac"
+        inactive-color "#56526e"
         // {# rcol(data.color.iris) #}
-        active-gradient from="#b48ead" to="#bbddff" angle=45 // {< rcol(data.color.foam) >}
+        active-gradient from="#c4a7e7" to="#bbddff" angle=45 // {< rcol(data.color.foam) >}
     }
 
     border {

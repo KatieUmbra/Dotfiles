@@ -4,7 +4,7 @@
     <style>
       .cls-1 {
         /* {# rcol(data.color.gold) #} */
-        fill: #ebcb8b;
+        fill: #f6c177;
       }
     </style>
   </defs>

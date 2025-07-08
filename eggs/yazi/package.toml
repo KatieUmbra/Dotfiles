@@ -1,22 +1,22 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "8945e54"
-hash = "ae9e1d0c6bfd68cdebc98cc684c22b45"
+rev = "b886025"
+hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "8945e54"
-hash = "af11685de39c366ec1137fcbccacdbff"
+rev = "b886025"
+hash = "d2f04875bbd4ed3dd5696e8c4b094fde"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "8945e54"
-hash = "771f18427fb75fb19990ce602bb322f4"
+rev = "b886025"
+hash = "63b6c222bf2103b3023389dde5e2ecfe"
 
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
-rev = "d1cd0a3"
-hash = "d1fee6d0f74cb52d4e031dc6b9207f31"
+rev = "6a0f3f7"
+hash = "d5a74d95c2e8194ac352c5e10e81e64f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:hide-preview"

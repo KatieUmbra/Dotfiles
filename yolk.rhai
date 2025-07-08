@@ -16,14 +16,14 @@ import "colors" as colors;
 
 // Data
 export const data = #{
-    color: colors::colorschemes.nord.def,
+    color: colors::colorschemes.rosepine.moon,
     /*
      * options:
      * - weeb
      * - plain
      * - landscape
      */
-    wallpaper_type: "weeb",
+    wallpaper_type: "landscape",
     font: #{
         family: #{
             monospaced: "MonaspaceNeon-Regular",
@@ -70,6 +70,10 @@ export const data = #{
 
 fn image_mako() {
     return "image=~/.config/share/wallpaper/" + data.color.name + "/" + data.color.variant + "/" + data.wallpaper_type;
+}
+
+fn image_swaylock() {
+    return image_mako() + ".png";
 }
 
 fn variables_wallpaper() {
