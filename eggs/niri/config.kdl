@@ -88,9 +88,9 @@ layout {
         // {# rnum(data.styling.border.size) #}
         width 0
         // {# rcol(data.color.hh) #}
-        inactive-color "#56526e"
+        inactive-color "#5e81ac"
         // {# rcol(data.color.iris) #}
-        active-gradient from="#c4a7e7" to="#bbddff" angle=45 // {< rcol(data.color.foam) >}
+        active-gradient from="#b48ead" to="#bbddff" angle=45 // {< rcol(data.color.foam) >}
     }
 
     border {
@@ -139,7 +139,7 @@ environment {
     QT_WAYLAND_DISABLE_WINDOW_DECORATION "1"
 
     GTK_THEME "WhiteSure-Light-purple"
-    GDK_BACKEND "wayland,x11m,*"
+    GDK_BACKEND "wayland"
 
     XDG_CURRENT_DESKTOP "Niri"
     XDG_SESSION_TYPE "wayland"

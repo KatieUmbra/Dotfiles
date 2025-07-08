@@ -10,7 +10,7 @@
 # License: MIT
 # Description: yazi keymap config file
 
-[mgr]
+[manager]
 prepend_keymap = [
     # Convert images plugin
     { on   = [ "c", "j" ], run  = "plugin convert --args='--extension=jpg'", desc = "Convert image to JPG" },

@@ -10,7 +10,7 @@
 # License: MIT
 # Description: main yazi config file
 
-[manager]
+[mgr]
 ratio = [2, 3, 3]
 sort_by = "extension"
 sort_dir_first = true

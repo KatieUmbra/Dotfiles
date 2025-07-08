@@ -16,7 +16,7 @@ import "colors" as colors;
 
 // Data
 export const data = #{
-    color: colors::colorschemes.rosepine.moon,
+    color: colors::colorschemes.nord.def,
     /*
      * options:
      * - weeb

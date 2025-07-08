@@ -26,22 +26,22 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
       <dict>
         <key>background</key>
         <!-- {# rcol(data.color.base) #} -->
-        <string>#232136</string>
+        <string>#2e3440</string>
         <key>caret</key>
         <!-- {# rcol(data.color.hh) #} -->
-        <string>#56526e</string>
+        <string>#5e81ac</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.text) #} -->
-        <string>#e0def4</string>
+        <string>#eceff4</string>
         <key>invisibles</key>
         <!-- {# rcol(data.color.surface) #} -->
-        <string>#2a273f</string>
+        <string>#3b4252</string>
         <key>lineHighlight</key>
         <!-- {# rcol(data.color.hl) #} -->
-        <string>#2a283e</string>
+        <string>#8fbcbb</string>
         <key>selection</key>
         <!-- {# rcol(data.color.hm) #} -->
-        <string>#44415a</string>
+        <string>#81a1c1</string>
       </dict>
     </dict>
     <dict>
@@ -55,7 +55,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>italic</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.subtle) #} -->
-        <string>#908caa</string>
+        <string>#e5e9f0</string>
       </dict>
     </dict>
     <dict>
@@ -67,7 +67,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
       <dict>
         <key>foreground</key>
         <!-- {# rcol(data.color.gold) #} -->
-        <string>#f6c177</string>
+        <string>#ebcb8b</string>
       </dict>
     </dict>
     <dict>
@@ -79,7 +79,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
       <dict>
         <key>foreground</key>
         <!-- {# rcol(data.color.gold) #} -->
-        <string>#f6c177</string>
+        <string>#ebcb8b</string>
       </dict>
     </dict>
     <dict>
@@ -93,7 +93,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>bold</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.gold) #} -->
-        <string>#f6c177</string>
+        <string>#ebcb8b</string>
       </dict>
     </dict>
     <dict>
@@ -105,7 +105,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
       <dict>
         <key>foreground</key>
         <!-- {# rcol(data.color.gold) #} -->
-        <string>#f6c177</string>
+        <string>#ebcb8b</string>
       </dict>
     </dict>
     <dict>
@@ -119,7 +119,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>italic</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.text) #} -->
-        <string>#e0def4</string>
+        <string>#eceff4</string>
       </dict>
     </dict>
     <dict>
@@ -131,7 +131,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
       <dict>
         <key>foreground</key>
         <!-- {# rcol(data.color.pine) #} -->
-        <string>#3e8fb0</string>
+        <string>#8fbcbb</string>
       </dict>
     </dict>
     <dict>
@@ -145,7 +145,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string></string>
         <key>foreground</key>
         <!-- {# rcol(data.color.foam) #} -->
-        <string>#9ccfd8</string>
+        <string>#88c0d0</string>
       </dict>
     </dict>
     <dict>
@@ -159,7 +159,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string></string>
         <key>foreground</key>
         <!-- {# rcol(data.color.foam) #} -->
-        <string>#9ccfd8</string>
+        <string>#88c0d0</string>
       </dict>
     </dict>
     <dict>
@@ -173,7 +173,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>bold</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.pine) #} -->
-        <string>#3e8fb0</string>
+        <string>#8fbcbb</string>
       </dict>
     </dict>
     <dict>
@@ -187,7 +187,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>italic </string>
         <key>foreground</key>
         <!-- {# rcol(data.color.pine) #} -->
-        <string>#3e8fb0</string>
+        <string>#8fbcbb</string>
       </dict>
     </dict>
     <dict>
@@ -201,7 +201,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>italic</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.rose) #} -->
-        <string>#ea9a97</string>
+        <string>#d08770</string>
       </dict>
     </dict>
     <dict>
@@ -215,7 +215,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string></string>
         <key>foreground</key>
         <!-- {# rcol(data.color.iris) #} -->
-        <string>#c4a7e7</string>
+        <string>#b48ead</string>
       </dict>
     </dict>
     <dict>
@@ -229,7 +229,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>bold</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.pine) #} -->
-        <string>#3e8fb0</string>
+        <string>#8fbcbb</string>
       </dict>
     </dict>
     <dict>
@@ -243,7 +243,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string></string>
         <key>foreground</key>
         <!-- {# rcol(data.color.iris) #} -->
-        <string>#c4a7e7</string>
+        <string>#b48ead</string>
       </dict>
     </dict>
     <dict>
@@ -257,7 +257,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>bold</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.rose) #} -->
-        <string>#ea9a97</string>
+        <string>#d08770</string>
       </dict>
     </dict>
     <dict>
@@ -271,7 +271,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>bold</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.gold) #} -->
-        <string>#f6c177</string>
+        <string>#ebcb8b</string>
       </dict>
     </dict>
     <dict>
@@ -285,7 +285,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>bold</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.foam) #} -->
-        <string>#9ccfd8</string>
+        <string>#88c0d0</string>
       </dict>
     </dict>
     <dict>
@@ -299,7 +299,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
         <string>bold</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.love) #} -->
-        <string>#eb6f92</string>
+        <string>#bf616a</string>
       </dict>
     </dict>
     <dict>
@@ -311,12 +311,12 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
       <dict>
         <key>background</key>
         <!-- {# rcol(data.color.love) #} -->
-        <string>#eb6f92</string>
+        <string>#bf616a</string>
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
         <!-- {# rcol(data.color.text) #} -->
-        <string>#e0def4</string>
+        <string>#eceff4</string>
       </dict>
     </dict>
     <dict>
@@ -328,10 +328,10 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
       <dict>
         <key>background</key>
         <!-- {# rcol(data.color.iris) #} -->
-        <string>#c4a7e7</string>
+        <string>#b48ead</string>
         <key>foreground</key>
         <!-- {# rcol(data.color.text) #} -->
-        <string>#e0def4</string>
+        <string>#eceff4</string>
       </dict>
     </dict>
     <dict>
@@ -343,7 +343,7 @@ Acknowledgements: this file was based on https://github.com/rose-pine/tm-theme/b
       <dict>
         <key>foreground</key>
         <!-- {# rcol(data.color.subtle) #} -->
-        <string>#908caa</string>
+        <string>#e5e9f0</string>
       </dict>
     </dict>
   </array>

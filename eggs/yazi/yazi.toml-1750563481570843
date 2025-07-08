@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # ▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▖ ▗▖▗▖  ▗▖▗▄▄▖    ▗▄▄▄  ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖   ▗▄▄▄▖ ▗▄▄▖
 # ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌   
@@ -10,39 +8,53 @@
 # Author: Katherine C. (katherine@kaytea.dev)
 # Source: http://github.com/KatieUmbra/Dotfiles
 # License: MIT
-# Description: eww helper shell script that tracks/toggles the volume
+# Description: main yazi config file
 
-compare() (IFS=" "
-  exec awk "BEGIN{if (!($*)) exit(1)}"
-)
+[manager]
+ratio = [2, 3, 3]
+sort_by = "extension"
+sort_dir_first = true
+linemode = "size"
+show_symlink = false
 
-arg=$1
-icon="--icon"
-volume="--volume"
+[opener]
+play = [
+    { run = 'vlc "$@"', orphan = true, for = "linux" }
+]
+edit = [
+    { run = '$EDITOR "$@"', block = true, for = "linux" }
+]
+open = [
+    { run = 'xdg-open "$@"', desc = "Open" }
+]
+md = [
+    { run = 'mdless "$@"', block = true, desc = "Read markdown file", for = "linux" }
+]
+pdf = [
+    { run = "tdf $@", block = true, desc = "Read PDF file", for = "linux" }
+]
+img = [
+    { run = "qimgv $@", orphan = true, desc = "View image file", for = "linux" }
+]
 
-if [[ $arg = $icon ]]; then
-    while sleep 0.1;do
-        volume=$(awk '{ print $2 }' <(wpctl get-volume @DEFAULT_AUDIO_SINK@))
-        muted=$(wpctl get-volume @DEFAULT_SINK@ | grep MUTED)
-        if [[ $? -eq 0 ]]; then
-            echo 5
-        elif compare "$volume == 0"; then
-            echo 5
-        elif compare "$volume < 0.25"; then
-            echo 1
-        elif compare "$volume < 0.50"; then
-            echo 2
-        elif compare "$volume < 0.75"; then
-            echo 3
-        else
-            echo 4
-        fi
-    done
-elif [[ $arg = $volume ]]; then
-    echo "0"
-    while sleep 0.1;do
-        volume=$(awk '{ print $2 }' <(wpctl get-volume @DEFAULT_AUDIO_SINK@))
-        echo $volume
-    done
-fi
+[open]
+prepend_rules = [
+    { name = "*.md", use = ["md", "edit"] },
+    { name = "*.pdf", use = ["pdf"] },
+#     { name = "*.png", use = ["img"] },
+#     { name = "*.jpg", use = ["img"] },
+#     { name = "*.jpeg", use = ["img"] },
+#     { name = "*.gif", use = ["img"] },
+#     { name = "*.webp", use = ["img"] },
+]
 
+[plugin]
+prepend_previewers = [
+    { name = "*.md", run = "mdcat" },
+    { mime = "{image,audio,video}/*", run = "mediainfo"},
+    { mime = "application/subrip", run = "mediainfo"},
+]
+prepend_fetchers = [
+    { id = "git", name = "*", run = "git" },
+    { id = "git", name = "*/", run = "git" },
+]
