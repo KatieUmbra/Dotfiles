@@ -23,7 +23,7 @@ export const data = #{
      * - plain
      * - landscape
      */
-    wallpaper_type: "landscape",
+    wallpaper_type: "weeb",
     font: #{
         family: #{
             monospaced: "MonaspaceNeon-Regular",

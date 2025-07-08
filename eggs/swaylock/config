@@ -11,7 +11,7 @@
 # Description: main config file for swaylock
 
 # {# image_swaylock() #}
-image=~/.config/share/wallpaper/rosepine/moon/landscape.png
+image=~/.config/share/wallpaper/rosepine/moon/weeb.png
 # {# replace_value(data.font.family.regular + "-Regular") #}
 font=WorkSans-Regular
 # {# rnum(data.font.size.title) #}
