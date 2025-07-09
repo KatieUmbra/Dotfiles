@@ -13,7 +13,7 @@
 # Description: eww helper shell script that tracks workspaces
 
 workspaces () {
-    niri msg -j workspaces | jq -cM '[.[] | {id: .idx, name, empty: .active_window_id}] | sort_by(.id)'
+    niri msg -j workspaces | jq -cM '[.[] | select(.output == "eDP-1") | {id: .idx, name, empty: .active_window_id}] | sort_by(.id)'
 }
 
 workspaces
