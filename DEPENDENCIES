@@ -7,6 +7,7 @@ lsd
 awk
 mpv
 tlp
+swww
 yazi
 gvfs
 yolk
@@ -24,6 +25,7 @@ kitty
 socat
 bluez
 neovim
+swaybg
 python
 clipse
 gowall

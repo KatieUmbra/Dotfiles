@@ -440,3 +440,8 @@ layer-rule {
 
     block-out-from "screencast"
 }
+
+layer-rule {
+    match namespace="^wallpaper$"
+    place-within-backdrop true
+} 
