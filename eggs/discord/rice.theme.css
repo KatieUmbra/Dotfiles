@@ -100,25 +100,25 @@ body {
     /* text colors */
     --text-0: var(--bg-4); /* text on colored elements */
     /* {# rcol(data.color.text) #} */
-    --text-1: #e0def4; /* other normally white text */
+    --text-1: #575279; /* other normally white text */
     /* {# rcol(data.color.subtle) #} */
-    --text-2: #908caa; /* headings and important text */
+    --text-2: #797593; /* headings and important text */
     /* {# rcol(data.color.text) #} */
-    --text-3: #e0def4; /* normal text */
+    --text-3: #575279; /* normal text */
     /* {# rcol(data.color.subtle) #} */
-    --text-4: #908caa; /* icon buttons and channels */
+    --text-4: #797593; /* icon buttons and channels */
     /* {# rcol(data.color.muted) #} */
-    --text-5: #6e6a86; /* muted channels/chats and timestamps */
+    --text-5: #9893a5; /* muted channels/chats and timestamps */
 
     /* background and dark colors */
     /* {# rcol(data.color.base) #} */
-    --bg-1: #232136; /* dark buttons when clicked */
+    --bg-1: #faf4ed; /* dark buttons when clicked */
     /* {# rcol(data.color.surface) #} */
-    --bg-2: #2a273f; /* dark buttons */
+    --bg-2: #fffaf3; /* dark buttons */
     /* {# rcol(data.color.overlay) #} */
-    --bg-3: #393552; /* spacing, secondary elements */
+    --bg-3: #f2e9e1; /* spacing, secondary elements */
     /* {# rcol(data.color.base) #} */
-    --bg-4: #232136; /* main background color */
+    --bg-4: #faf4ed; /* main background color */
 	--hover: color-mix(in srgb, var(--bg-3), transparent 60%); /* color of hovered elements. */
 	--active: color-mix(in srgb, var(--bg-3), transparent 80%); /* color of elements when clicked. */
 	--active-2: var(--active); /* color of selected elements. */
@@ -151,60 +151,60 @@ body {
 
     /* base colors */
     /* {# rcol(data.color.love) #} */
-    --red-1: #eb6f92;
+    --red-1: #b4637a;
     /* {# rcol(data.color.love) #} */
-    --red-2: #eb6f92;
+    --red-2: #b4637a;
     /* {# rcol(data.color.love) #} */
-    --red-3: #eb6f92;
+    --red-3: #b4637a;
     /* {# rcol(data.color.love) #} */
-    --red-4: #eb6f92;
+    --red-4: #b4637a;
     /* {# rcol(data.color.love) #} */
-    --red-5: #eb6f92;
+    --red-5: #b4637a;
 
     /* {# rcol(data.color.pine) #} */
-    --green-1: #3e8fb0;
+    --green-1: #286983;
     /* {# rcol(data.color.pine) #} */
-    --green-2: #3e8fb0;
+    --green-2: #286983;
     /* {# rcol(data.color.pine) #} */
-    --green-3: #3e8fb0;
+    --green-3: #286983;
     /* {# rcol(data.color.pine) #} */
-    --green-4: #3e8fb0;
+    --green-4: #286983;
     /* {# rcol(data.color.pine) #} */
-    --green-5: #3e8fb0;
+    --green-5: #286983;
 
     /* {# rcol(data.color.foam) #} */
-    --blue-1: #9ccfd8;
+    --blue-1: #56949f;
     /* {# rcol(data.color.foam) #} */
-    --blue-2: #9ccfd8;
+    --blue-2: #56949f;
     /* {# rcol(data.color.foam) #} */
-    --blue-3: #9ccfd8;
+    --blue-3: #56949f;
     /* {# rcol(data.color.foam) #} */
-    --blue-4: #9ccfd8;
+    --blue-4: #56949f;
     /* {# rcol(data.color.foam) #} */
-    --blue-5: #9ccfd8;
+    --blue-5: #56949f;
 
     /* {# rcol(data.color.gold) #} */
-    --yellow-1: #f6c177;
+    --yellow-1: #ea9d34;
     /* {# rcol(data.color.gold) #} */
-    --yellow-2: #f6c177;
+    --yellow-2: #ea9d34;
     /* {# rcol(data.color.gold) #} */
-    --yellow-3: #f6c177;
+    --yellow-3: #ea9d34;
     /* {# rcol(data.color.gold) #} */
-    --yellow-4: #f6c177;
+    --yellow-4: #ea9d34;
     /* {# rcol(data.color.gold) #} */
-    --yellow-5: #f6c177;
+    --yellow-5: #ea9d34;
 
     /* {# rcol(data.color.iris) #} */
-    --purple-1: #c4a7e7;
+    --purple-1: #907aa9;
     /* {# rcol(data.color.iris) #} */
-    --purple-2: #c4a7e7;
+    --purple-2: #907aa9;
     /* {# rcol(data.color.iris) #} */
-    --purple-3: #c4a7e7;
+    --purple-3: #907aa9;
     /* {# rcol(data.color.iris) #} */
-    --purple-4: #c4a7e7;
+    --purple-4: #907aa9;
     /* {# rcol(data.color.iris) #} */
-    --purple-5: #c4a7e7;
+    --purple-5: #907aa9;
 
     /* {# rcol(data.color.rose) #} */
-    --rose-1: #ea9a97;
+    --rose-1: #d7827e;
 }

@@ -24,7 +24,7 @@ sed -i "s/colorschemes.*/colorschemes.$COLORSCHEME.$VARIANT,/" ~/.config/yolk/yo
 $HOME/.config/yolk/eggs/scripts/reload &> /dev/null
 exit
 ### DATA ###
- Nord Default
+ Nord Default
 󰄛 Catppuccin Latte
 󰄛 Catppuccin Frappe
 󰄛 Catppuccin Macchiato

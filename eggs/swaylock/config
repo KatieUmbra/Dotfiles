@@ -11,7 +11,7 @@
 # Description: main config file for swaylock
 
 # {# image_swaylock() #}
-image=~/.config/share/wallpaper/rosepine/moon/weeb.png
+image=~/.config/share/wallpaper/rosepine/dawn/weeb.png
 # {# replace_value(data.font.family.regular + "-Regular") #}
 font=WorkSans-Regular
 # {# rnum(data.font.size.title) #}
@@ -26,58 +26,58 @@ indicator-radius=100
 indicator-thickness=20
 
 # {# replace_value(data.color.rose - "#") #}
-bs-hl-color=ea9a97
+bs-hl-color=d7827e
 # {# replace_value(data.color.rose - "#") #}
-caps-lock-bs-hl-color=ea9a97
+caps-lock-bs-hl-color=d7827e
 # {# replace_value(data.color.iris - "#") #}
-caps-lock-key-hl-color=c4a7e7
+caps-lock-key-hl-color=907aa9
 # {# replace_value(data.color.base - "#") #}
-inside-color=232136
+inside-color=faf4ed
 # {# replace_value(data.color.base - "#") #}
-inside-clear-color=232136
+inside-clear-color=faf4ed
 # {# replace_value(data.color.base - "#") #}
-inside-caps-lock-color=232136
+inside-caps-lock-color=faf4ed
 # {# replace_value(data.color.base - "#") #}
-inside-ver-color=232136
+inside-ver-color=faf4ed
 # {# replace_value(data.color.base - "#") #}
-inside-wrong-color=232136
+inside-wrong-color=faf4ed
 # {# replace_value(data.color.foam - "#") #}
-key-hl-color=9ccfd8
+key-hl-color=56949f
 # {# replace_value(data.color.foam - "#") #}
-layout-bg-color=9ccfd8
+layout-bg-color=56949f
 # {# replace_value(data.color.base - "#") #}
-layout-border-color=232136
+layout-border-color=faf4ed
 # {# replace_value(data.color.gold - "#") #}
-layout-text-color=f6c177
+layout-text-color=ea9d34
 # {# replace_value(data.color.base - "#") #}
-line-color=232136
+line-color=faf4ed
 # {# replace_value(data.color.base - "#") #}
-line-clear-color=232136
+line-clear-color=faf4ed
 # {# replace_value(data.color.base - "#") #}
-line-caps-lock-color=232136
+line-caps-lock-color=faf4ed
 # {# replace_value(data.color.base - "#") #}
-line-ver-color=232136
+line-ver-color=faf4ed
 # {# replace_value(data.color.base - "#") #}
-line-wrong-color=232136
+line-wrong-color=faf4ed
 # {# replace_value(data.color.base - "#") #}
-ring-color=232136
+ring-color=faf4ed
 # {# replace_value(data.color.rose - "#") #}
-ring-clear-color=ea9a97
+ring-clear-color=d7827e
 # {# replace_value(data.color.base - "#") #}
-ring-caps-lock-color=232136
+ring-caps-lock-color=faf4ed
 # {# replace_value(data.color.pine - "#") #}
-ring-ver-color=3e8fb0
+ring-ver-color=286983
 # {# replace_value(data.color.base - "#") #}
-ring-wrong-color=232136
+ring-wrong-color=faf4ed
 # {# replace_value(data.color.surface - "#") #}
-separator-color=2a273f
+separator-color=fffaf3
 # {# replace_value(data.color.gold - "#") #}
-text-color=f6c177
+text-color=ea9d34
 # {# replace_value(data.color.rose - "#") #}
-text-clear-color=ea9a97
+text-clear-color=d7827e
 # {# replace_value(data.color.iris - "#") #}
-text-caps-lock-color=c4a7e7
+text-caps-lock-color=907aa9
 # {# replace_value(data.color.gold - "#") #}
-text-ver-color=f6c177
+text-ver-color=ea9d34
 # {# replace_value(data.color.love - "#") #}
-text-wrong-color=eb6f92
+text-wrong-color=b4637a

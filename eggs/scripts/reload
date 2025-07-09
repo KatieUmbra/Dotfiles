@@ -14,7 +14,7 @@
 
 yolk sync
 kill -USR1 $(pidof kitty)
-$HOME/.config/scripts/reload_wallpaper
 makoctl reload
 pkill eww
 eww open bar
+$HOME/.config/scripts/reload_wallpaper

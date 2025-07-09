@@ -8,7 +8,7 @@
 
       .cls-2 {
         /* {# rcol(data.color.text) #} */
-        fill: #e0def4;
+        fill: #575279;
       }
     </style>
   </defs>

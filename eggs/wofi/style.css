@@ -24,7 +24,7 @@ Description: style file for wofi
 
 window {
     /* {# rcol(data.color.base) #} */
-    background-color: #232136;
+    background-color: #faf4ed;
     /* {# rnum(data.styling.border.rounding) #} */
     border-radius: 10px;
 }
@@ -36,21 +36,21 @@ window {
     /* {# rnum(data.styling.border.rounding) #} */
     border-radius: 10px;
     /* {# rcol(data.color.base) #} */
-    background-color: #232136;
+    background-color: #faf4ed;
     min-height: 4rem;
     /* {# rnum(data.styling.padding.large) #} */
     padding: 0.75rem
     /* {# rnum(data.styling.padding.xl) #} */
     2rem;
     /* {# rcol(data.color.text) #} */
-    color: #e0def4;
+    color: #575279;
     box-shadow: none;
     margin: 4rem 2rem;
 }
 
 #inner-box {
     /* {# rcol(data.color.base) #} */
-    background-color: #232136;
+    background-color: #faf4ed;
     /* {# rnum(data.styling.border.rounding) #} */
     border-radius: 10px;
 }
@@ -69,7 +69,7 @@ window {
     /* {# rnum(data.styling.padding.xl) #} */
     padding: 2rem;
     /* {# rcol(data.color.base) #} */
-    background-color: #232136;
+    background-color: #faf4ed;
     border-radius:  0 0
     /* {# rnum(data.styling.border.rounding) #} */
                     10px
@@ -90,12 +90,12 @@ window {
     /* {# rnum(data.styling.padding.xl) #} */
     2rem;
     /* {# rcol(data.color.text) #} */
-    color: #e0def4;
+    color: #575279;
 } 
 
 #entry:selected {
     /* {# rcol(data.color.overlay) #} */
-    background-color: #393552;
+    background-color: #f2e9e1;
     /* {# rnum(data.styling.border.rounding) #} */
     outline: none;
 }
