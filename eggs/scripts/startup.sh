@@ -13,7 +13,7 @@
 # Description: script that runs all other scripts inside ./startup
 
 # {# variables_wallpaper() #}
-THEME=rosepine;VARIANT=dawn;TYPE=weeb
+THEME=rosepine;VARIANT=moon;TYPE=weeb
 
 swww img --transition-type wipe --transition-duration 1 "$HOME/.config/share/wallpaper/$THEME/$VARIANT/$TYPE.png"
 swaybg -i "$HOME/.config/share/wallpaper/$THEME/$VARIANT/$TYPE.png"

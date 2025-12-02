@@ -16,7 +16,7 @@ import "colors" as colors;
 
 // Data
 export const data = #{
-    color: colors::colorschemes.rosepine.dawn,
+    color: colors::colorschemes.rosepine.moon,
     /*
      * options:
      * - weeb
@@ -26,7 +26,7 @@ export const data = #{
     wallpaper_type: "weeb",
     font: #{
         family: #{
-            monospaced: "MonaspaceNeon-Regular",
+            monospaced: "Monaspace Neon",
             regular: "WorkSans",
         },
         size: #{

@@ -14,7 +14,7 @@
 
 set -euo pipefail
 
-SELECTION="$(sed '1,/^### DATA ###$/d' $0 | wofi -p "theme" -S dmenu -i -n -a | cut -d ' ' -f 2,3 | tr -d '\n' | awk '{print tolower($0)}')"
+SELECTION="$(sed '1,/^### DATA ###$/d' $0 | wofi -p "theme" -S dmenu -I -n -a -W 726 -H 270 | cut -d ' ' -f 2,3 | tr -d '\n' | awk '{print tolower($0)}')"
 COLORSCHEME="$(echo $SELECTION | cut -d ' ' -f 1)"
 VARIANT="$(echo $SELECTION | cut -d ' ' -f 2)"
 if [[ $VARIANT = "default" ]]; then

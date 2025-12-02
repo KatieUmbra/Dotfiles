@@ -14,7 +14,7 @@
 
 set -euo pipefail
 
-SELECTION="$(sed '1,/^### DATA ###$/d' $0 | wofi -p "wallpaper" -S dmenu -i -n -a | cut -d ' ' -f 2 | tr -d '\n' | awk '{print tolower($0)}')"
+SELECTION="$(sed '1,/^### DATA ###$/d' $0 | wofi -p "wallpaper" -S dmenu -I -n -a -W 726 -H 270 | cut -d ' ' -f 2 | tr -d '\n' | awk '{print tolower($0)}')"
 sed -i "s/    wallpaper_type.*/    wallpaper_type: \"$SELECTION\",/" ~/.config/yolk/yolk.rhai
 $HOME/.config/yolk/eggs/scripts/reload_wallpaper &> /dev/null
 exit

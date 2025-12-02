@@ -14,4 +14,5 @@ prompt=Start typing...
 term=kitty
 image_size=32
 width=726
-height=570
+height=270
+hide-scroll
