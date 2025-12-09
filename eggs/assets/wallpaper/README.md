@@ -6,9 +6,11 @@
     - [landscape](https://whvn.cc/d6mg33)
     - [plain](https://whvn.cc/5drkj3)
 - Moon
-    - [weeb](https://whvn.cc/j5q35y)
+    - [weeb](https://danbooru.donmai.us/posts/4603838?q=jubot7)
+    - [weeb1]()
+    - [weeb2](https://whvn.cc/j5q35y)
     - [landscape](https://whvn.cc/g836wq)
-    - [plain](https://whvn.cc/mpxek9)
+    - [plain](https://whvn.cc/4yj28l)
 - Dawn
     - [weeb](https://whvn.cc/gpv8wl)
     - [landscape](https://whvn.cc/dp88ol)
