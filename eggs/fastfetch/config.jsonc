@@ -81,7 +81,7 @@ Description: config file for fastfetch
             "format": "{1} ({3})"
         },
         {
-            "key": "{#39}│ {#35} memory  {#39}│",
+            "key": "{#39}│ {#35}󰍛 memory  {#39}│",
             "type": "memory",
             "format": "{1} ({3})"
         },
@@ -95,7 +95,7 @@ Description: config file for fastfetch
             "type": "custom"
         },
         {
-            "key": "{#39}│ {#39} colors  {#39}│ 󰮯 ",
+            "key": "{#39}│ {#39} colors  {#39}│ 󰮯 ",
             "type": "colors",
             "symbol": "circle"
         },

@@ -111,6 +111,10 @@ export PATH="$PATH:/home/Kathy/.spicetify"
 # Wakatime
 export WAKATIME_HOME="$HOME/.wakatime"
 
+# Vcpkg
+export VCPKG_ROOT="$HOME/.local/share/vcpkg/"
+export PATH="$PATH:$VCPKG_ROOT"
+
 # ================
 # [[ Vanity ]]
 # ================
@@ -120,4 +124,4 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 PROMPT_COMMAND="export PROMPT_COMMAND=echo"
 precmd() { precmd() { echo "" } }
 alias clear="precmd() { precmd() { echo } } && clear"
-eval "$(timeout 5 starship init zsh)"
+eval "$(starship init zsh)"

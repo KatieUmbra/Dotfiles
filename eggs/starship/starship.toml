@@ -16,6 +16,7 @@
 add_newline = false
 # Prompt configuration
 format = '[](purple) $username [󰣐 ](purple) [](blue)$directory[](blue) $character'
+scan_timeout = 10000
 
 right_format = """
 $localip\

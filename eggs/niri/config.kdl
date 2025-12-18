@@ -350,7 +350,7 @@ window-rule {
 
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
-    match app-id=r#"librewolf$"# title="^Picture-in-Picture$"
+    match app-id=r#"zen$"# title="^Picture-in-Picture$"
     open-floating true
 }
 
@@ -405,8 +405,9 @@ window-rule {
 }
 
 window-rule {
-    match app-id="LibreWolf"
+    match app-id="zen"
     open-on-workspace "browser"
+    open-maximized true
     default-column-width { proportion 1.0; }
 }
 
