@@ -72,6 +72,7 @@ layout {
     // {# rnum(data.styling.border.gaps) #}
     gaps 10
     center-focused-column "on-overflow"
+    background-color "transparent"
 
     preset-column-widths {
         proportion 0.33333
@@ -412,7 +413,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="vesktop" app-id="spotify"
+    match app-id="vesktop" app-id="spotify" app-id="tidal-hifi"
     open-on-workspace "discord"
     default-column-width { proportion 1.0; }
 }
@@ -443,6 +444,7 @@ layer-rule {
 }
 
 layer-rule {
+    match namespace="swww-daemon"
     match namespace="^wallpaper$"
     place-within-backdrop true
-} 
+}
