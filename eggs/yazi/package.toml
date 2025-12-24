@@ -34,11 +34,6 @@ rev = "8945e54"
 hash = "f28138c2e11e87962b66d583fef724c3"
 
 [[plugin.deps]]
-use = "boydaihungst/mediainfo"
-rev = "d0be054"
-hash = "c2af4afa521e307ef81ac038077f38f9"
-
-[[plugin.deps]]
 use = "atareao/convert"
 rev = "ce060d9"
 hash = "1c0465351f2a344e842f065ab316f265"
@@ -52,6 +47,16 @@ hash = "e17c11b605d989568a1d1741ca17c584"
 use = "GrzegorzKozub/mdcat"
 rev = "7b7380a"
 hash = "40c20e6c1085d1f45309b9f148bf4f6e"
+
+[[plugin.deps]]
+use = "AminurAlam/yazi-plugins:preview-audio"
+rev = "84884ff"
+hash = "8e00a0a012d761dc84e0722aa6a3be5b"
+
+[[plugin.deps]]
+use = "boydaihungst/mediainfo"
+rev = "af8bdf4"
+hash = "43fa632820cc91919c4e713652140b48"
 
 [flavor]
 deps = []

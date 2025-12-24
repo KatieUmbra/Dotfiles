@@ -1,3 +1,5 @@
+uv
+ty
 iw
 jq
 git
@@ -7,6 +9,7 @@ lsd
 awk
 mpv
 tlp
+ruff
 swww
 yazi
 gvfs
@@ -62,6 +65,7 @@ ttf-dm-mono-git
 polkit-kde-agent
 bibata-cursor-git
 ffmpegthumbnailer
+ffmpeg
 whitesur-gtk-theme
 xdg-desktop-portal
 kvantum-theme-whitesur

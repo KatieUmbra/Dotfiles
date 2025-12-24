@@ -8,69 +8,58 @@
 ;; Author: Katherine C. (katherine@kaytea.dev)
 ;; Source: http://github.com/KatieUmbra/Dotfiles
 ;; License: MIT
-;; Description: main config file for eww
+;; Description: main config file for the volume popup
 
-(include "./workspaces.yuck")
-(include "./sliders.yuck")
-(include "./infoScales.yuck")
-(include "./player.yuck")
-(include "./menu.yuck")
-(include "./shortcuts.yuck")
-(include "./system.yuck")
-(include "./toggles.yuck")
-(include "./tray.yuck")
-(include "./calendar.yuck")
-(include "./volume.yuck")
-
-(defwidget launcher []
-    (box
-        (eventbox
-            :class "launcher-button bar-element"
-            :cursor "pointer"
-            :onclick "${EWW_CMD} open menu --toggle"
-            (image :path "./icons/home-icon.svg"
-                   :image-height 25
-                   :image-width 25
+(defwidget volumeW []
+    (centerbox
+        :orientation "h"
+        :class "volume-widget"
+        (box
+            :halign "start"
+            :space-evenly false
+            (image
+                :hexpand false
+                :path "./icons/audio/${volume-icon}.svg"
+                ;; {# rnum(data.icon.size) #}
+                :image-height 20
+                ;; {# rnum(data.icon.size) #}
+                :image-width 20
+            )
+        )
+        (box
+            :halign "center"
+            (progress
+                :class "volume-slider"
+                :min 0
+                :max 100
+                :orientation "h"
+                :round-digits 0
+                :value "${( volume * 100 ) ?: 0}"
+                :active true
+                :vexpand true
+            )
+        )
+        (box
+            :halign "end"
+            :space-evenly false
+            (label
+                :class "volume-label"
+                :text "${min(round(( volume * 100 ) ?: 0, 0), 100)}%"
             )
         )
     )
 )
 
-(defwindow bar
+(defwindow volume
       :monitor 0
-      :geometry (geometry 	:x "0%"
+      :geometry (geometry 	:x "10px"
                             :y "1%"
-                            :width "99%"
+                            :width "10%"
                             :height "5%"
-                            :anchor "top center")
+                            :anchor "bottom left")
       :stacking "fg"
       :exclusive "true"
       :focusable "false"
-      :namespace "bar"
-      (centerbox
-          :orientation "h"
-          :class "main-widget"
-          (box
-              :space-evenly false
-              :spacing 10
-              :halign "start"
-              (launcher)
-              (shortcuts)
-              (scales)
-              (bar-tray)
-          )
-          (box
-              :spacing 10
-              :halign "center"
-              :space-evenly false
-              (workspaces)
-          )
-          (box
-              :spacing 10
-              :halign "end"
-              :space-evenly false
-              (playerBar)
-              (system)
-          )
-      )
-)
+      :namespace "volume"
+      (volumeW)
+  )

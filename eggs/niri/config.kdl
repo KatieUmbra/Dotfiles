@@ -1,10 +1,10 @@
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // ▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▖ ▗▖▗▖  ▗▖▗▄▄▖    ▗▄▄▄  ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖   ▗▄▄▄▖ ▗▄▄▖
-// ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌   
+// ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌
 // ▐▛▚▖ ▐▛▀▜▌ █  ▐▛▀▜▌  ▐▌  ▝▀▚▖    ▐▌  █▐▌ ▐▌ █  ▐▛▀▀▘  █  ▐▌   ▐▛▀▀▘ ▝▀▚▖
 // ▐▌ ▐▌▐▌ ▐▌ █  ▐▌ ▐▌  ▐▌ ▗▄▄▞▘    ▐▙▄▄▀▝▚▄▞▘ █  ▐▌   ▗▄█▄▖▐▙▄▄▖▐▙▄▄▖▗▄▄▞▘
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// 
+//
 // Author: Katherine C. (katherine@kaytea.dev)
 // Source: http://github.com/KatieUmbra/Dotfiles
 // License: MIT
@@ -210,9 +210,9 @@ binds {
 
     XF86MonBrightnessUp     allow-when-locked=true { spawn "brightnessctl" "s" "5%+"; }
     XF86MonBrightnessDown   allow-when-locked=true { spawn "brightnessctl" "s" "5%-"; }
-    XF86AudioRaiseVolume    allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
-    XF86AudioLowerVolume    allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
-    XF86AudioMute           allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    XF86AudioRaiseVolume    allow-when-locked=true { spawn "~/.config/yolk/eggs/scripts/change_volume.sh" "--higher" "0.05"; }
+    XF86AudioLowerVolume    allow-when-locked=true { spawn "~/.config/yolk/eggs/scripts/change_volume.sh" "--lower" "0.05"; }
+    XF86AudioMute           allow-when-locked=true { spawn "~/.config/yolk/eggs/scripts/change_volume.sh" "--mute"; }
     XF86AudioMicMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
     XF86AudioNext           allow-when-locked=true { spawn "playerctl" "next"; }
     XF86AudioPause          allow-when-locked=true { spawn "playerctl" "play-pause"; }
@@ -427,6 +427,7 @@ layer-rule {
     match namespace="menu"
     match namespace="calendar"
     match namespace="notifications"
+    match namespace="volume"
 
     // {# rnum(data.styling.border.rounding) #}
     geometry-corner-radius 10

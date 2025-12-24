@@ -10,11 +10,8 @@
 # Author: Katherine C. (katherine@kaytea.dev)
 # Source: http://github.com/KatieUmbra/Dotfiles
 # License: MIT
-# Description: script to quickly reload the config
+# Description: eww helper shell script that runs the python script (needed for sourcing)
 
-yolk sync
-kill -USR1 $(pidof kitty)
-makoctl reload
-pkill eww
-eww open bar
-$HOME/.config/scripts/reload_wallpaper
+cd "$(dirname "$0")"
+source .venv/bin/activate
+uv run volume_popup_detail.py

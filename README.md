@@ -28,6 +28,13 @@
 
 4. run `sudo ln -s /usr/bin/kitty /usr/bin/gnome-terminal` for wofi terminal apps
 
+6. install a couple python dependencies for eww script
+- Navigate to `$HOME/.config/yolk/eggs/eww/scripts/`
+- run `$ uv venv`
+- activate the virtual environment `$ source .venv/bin/activate`
+- install watchdog `$ uv pip install watchdog`
+- install resettabletimer `$ uv pip install resettabletimer`
+
 5. run `yolk sync`
 
 ### Post install
@@ -50,7 +57,7 @@
 ## Showcase
 
 <div align="center">
-    
+
 ### Rose Pine
 ![moon](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/rosepine-moon.gif?raw=true)
 ![dawn](https://github.com/KatieUmbra/Dotfiles/blob/main/eggs/assets/showcase/rosepine-dawn.gif?raw=true)

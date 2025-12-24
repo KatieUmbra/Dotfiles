@@ -1,10 +1,10 @@
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # ▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▖ ▗▖▗▖  ▗▖▗▄▄▖    ▗▄▄▄  ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖   ▗▄▄▄▖ ▗▄▄▖
-# ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌   
+# ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌
 # ▐▛▚▖ ▐▛▀▜▌ █  ▐▛▀▜▌  ▐▌  ▝▀▚▖    ▐▌  █▐▌ ▐▌ █  ▐▛▀▀▘  █  ▐▌   ▐▛▀▀▘ ▝▀▚▖
 # ▐▌ ▐▌▐▌ ▐▌ █  ▐▌ ▐▌  ▐▌ ▗▄▄▞▘    ▐▙▄▄▀▝▚▄▞▘ █  ▐▌   ▗▄█▄▖▐▙▄▄▖▐▙▄▄▖▗▄▄▞▘
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# 
+#
 # Author: Katherine C. (katherine@kaytea.dev)
 # Source: http://github.com/KatieUmbra/Dotfiles
 # License: MIT
@@ -41,20 +41,37 @@ img = [
 prepend_rules = [
     { name = "*.md", use = ["md", "edit"] },
     { name = "*.pdf", use = ["pdf"] },
-#     { name = "*.png", use = ["img"] },
-#     { name = "*.jpg", use = ["img"] },
-#     { name = "*.jpeg", use = ["img"] },
-#     { name = "*.gif", use = ["img"] },
-#     { name = "*.webp", use = ["img"] },
+    { name = "*.png", use = ["img"] },
+    { name = "*.jpg", use = ["img"] },
+    { name = "*.jpeg", use = ["img"] },
+    { name = "*.gif", use = ["img"] },
+    { name = "*.webp", use = ["img"] },
 ]
 
 [plugin]
 prepend_previewers = [
     { name = "*.md", run = "mdcat" },
-    { mime = "{image,audio,video}/*", run = "mediainfo"},
-    { mime = "application/subrip", run = "mediainfo"},
+    { mime = 'audio/mpegurl', run = 'code' },
+    { mime = 'audio/*', run = 'preview-audio' },
+    { mime = "{audio,video,image}/*", run = "mediainfo"},
+    { mime = "application/subrip", run = "mediainfo" },
+    { mime = "application/postscript", run = "mediainfo" },
 ]
 prepend_fetchers = [
     { id = "git", name = "*", run = "git" },
     { id = "git", name = "*/", run = "git" },
+    { id="audio", mime = 'audio/mpegurl', run = 'code' },
+    { id="audio", mime = 'audio/*', run = 'preview-audio' },
 ]
+prepend_preloaders = [
+    { mime = "{audio,video,image}/*", run = "mediainfo" },
+    { mime = "application/subrip", run = "mediainfo" },
+    { mime = "application/postscript", run = "mediainfo" },
+]
+
+# Supress deprecation warnings
+[manager]
+_v4_suppress_deprecation_warnings = true
+
+[tasks]
+image_alloc      = 1073741824

@@ -1,10 +1,10 @@
 ;; ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ;; ▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▖ ▗▖▗▖  ▗▖▗▄▄▖    ▗▄▄▄  ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖   ▗▄▄▄▖ ▗▄▄▖
-;; ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌   
+;; ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌
 ;; ▐▛▚▖ ▐▛▀▜▌ █  ▐▛▀▜▌  ▐▌  ▝▀▚▖    ▐▌  █▐▌ ▐▌ █  ▐▛▀▀▘  █  ▐▌   ▐▛▀▀▘ ▝▀▚▖
 ;; ▐▌ ▐▌▐▌ ▐▌ █  ▐▌ ▐▌  ▐▌ ▗▄▄▞▘    ▐▙▄▄▀▝▚▄▞▘ █  ▐▌   ▗▄█▄▖▐▙▄▄▖▐▙▄▄▖▗▄▄▞▘
 ;; ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-;; 
+;;
 ;; Author: Katherine C. (katherine@kaytea.dev)
 ;; Source: http://github.com/KatieUmbra/Dotfiles
 ;; License: MIT
@@ -31,7 +31,7 @@
                 (box
                     :space-evenly false
                     (image
-                        :style "background-image: url('${(substring(playerMetadata?.art, 0, 1) == "f" ? 
+                        :style "background-image: url('${(substring(playerMetadata?.art, 0, 1) == "f" ?
                         substring(playerMetadata?.art, 7, strlength(playerMetadata?.art) - 7) : playerMetadata?.art) ?: "./icons/music.svg"
                         }')"
                         :class "bar-image"
@@ -92,7 +92,7 @@
 
 (defwidget playerFull []
       (box
-            :style "background-image: url('${(substring(playerMetadata?.art, 0, 1) == "f" ? 
+            :style "background-image: url('${(substring(playerMetadata?.art, 0, 1) == "f" ?
             substring(playerMetadata?.art, 7, strlength(playerMetadata?.art) - 7) : playerMetadata?.art) ?: "../assets/player-default.jpg"
             }')"
             :class "playerbg"

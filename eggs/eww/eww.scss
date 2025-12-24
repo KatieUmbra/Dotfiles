@@ -114,7 +114,7 @@ tooltip {
 * =============================
 */
 .progress-general {
-    margin: 0 
+    margin: 0
     // {# rnum(data.styling.margin.small) #}
     0.25rem;
     background-color: $overlay;
@@ -196,7 +196,7 @@ tooltip {
 *  section: WORKSPACES
 * =============================
 */
-.workspace-entry { 
+.workspace-entry {
     margin: 0.5rem;
 }
 
@@ -250,7 +250,7 @@ tooltip {
 .system-widget {
     image {
         // {# rnum(data.styling.margin.small) #}
-        margin: 0.25rem 
+        margin: 0.25rem
         // {# rnum(data.styling.margin.medium) #}
         0.5rem;
     }
@@ -462,4 +462,37 @@ tooltip {
     // {# rnum(data.styling.margin.largest) #}
     margin: 1rem;
     color: $hh;
+}
+
+/*
+* =============================
+*  section: VOLUME
+* =============================
+*/
+
+.volume-widget {
+    // {# rnum(data.styling.padding.largest) #}
+    background-color: $base;
+    // {# rnum(data.styling.border.rounding) #}
+    border-radius: 10px;
+    box {
+        padding: 1rem;
+    }
+    progress {
+        min-height: 22px;
+        // {# rnum(data.styling.border.rounding) #}
+        border-radius: 10px;
+        background: $text;
+        margin-bottom: 20px;
+    }
+    .volume-slider {
+        background: $overlay;
+        // {# rnum(data.styling.border.rounding) #}
+        border-radius: 10px;
+    }
+    .volume-label {
+        // {# rnum(data.font.size.title) #}
+        font-size: 16pt;
+        font-weight: normal;
+    }
 }
