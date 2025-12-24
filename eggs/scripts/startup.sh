@@ -13,7 +13,7 @@
 # Description: script that runs all other scripts inside ./startup
 
 # {# variables_wallpaper() #}
-THEME=rosepine
+THEME=rosepine;VARIANT=moon;TYPE=weeb
 VARIANT=moon
 TYPE=weeb
 

@@ -115,7 +115,7 @@ All the config files are available inside `~/.config/yolk`
     - [x] Refactor
     - [x] Calendar widget
     - [x] Per-colorscheme icons
-    - [ ] Volume key popup
+    - [x] Volume key popup
     - [ ] Cheatsheet
     - [ ] System information window
         - [ ] Ram
@@ -151,7 +151,7 @@ All the config files are available inside `~/.config/yolk`
 - [x] Bat colorscheme
 - [x] Btop colorscheme
 - [x] Neovim colorscheme compatibility
-- [ ] Volume key sounds
+- [x] Volume key sounds
 
 ## Acknowledgements
 

@@ -14,7 +14,7 @@
 
 yolk sync
 # {# variables_wallpaper() #}
-THEME=rosepine
+THEME=rosepine;VARIANT=moon;TYPE=weeb
 VARIANT=moon
 TYPE=weeb
 swww img --transition-type wipe --transition-duration 1 "$HOME/.config/share/wallpaper/$THEME/$VARIANT/$TYPE.png"

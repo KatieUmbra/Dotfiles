@@ -39,7 +39,7 @@ def timer_handler():
 
 
 def timer_thread():
-    delay = 5
+    delay = 3
     timer = ResettableTimer(delay, timer_handler)
     timer.start()
     while True:
