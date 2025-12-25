@@ -5,7 +5,7 @@
     <style>
       .st0 {
         /* {# rcol(data.color.text) #} */
-        fill: #e0def4;
+        fill: #eceff4;
       }
     </style>
   </defs>

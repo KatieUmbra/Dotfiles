@@ -13,10 +13,10 @@
 # Description: script to quickly reload the wallpaper
 
 yolk sync
-# {# variables_wallpaper() #}
-THEME=rosepine;VARIANT=moon;TYPE=weeb
-VARIANT=moon
+# {# wallpaper_theme() #}
+THEME=nord
+# {# wallpaper_variant() #}
+VARIANT=default
+# {# wallpaper_type() #}
 TYPE=weeb
 swww img --transition-type wipe --transition-duration 1 "$HOME/.config/share/wallpaper/$THEME/$VARIANT/$TYPE.png"
-pkill swaybg
-swaybg -i "$HOME/.config/share/wallpaper/$THEME/$VARIANT/$TYPE.png" &

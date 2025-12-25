@@ -12,18 +12,18 @@
 
 [color]
 # {# rcol(data.color.base) #}
-background = '#232136'
+background = '#2e3440'
 gradient = 1
 gradient_count = 6
 # {# rcol(data.color.pine) #}
-gradient_color_1 = '#3e8fb0'
+gradient_color_1 = '#8fbcbb'
 # {# rcol(data.color.foam) #}
-gradient_color_2 = '#9ccfd8'
+gradient_color_2 = '#88c0d0'
 # {# rcol(data.color.iris) #}
-gradient_color_3 = '#c4a7e7'
+gradient_color_3 = '#b48ead'
 # {# rcol(data.color.rose) #}
-gradient_color_4 = '#ea9a97'
+gradient_color_4 = '#d08770'
 # {# rcol(data.color.gold) #}
-gradient_color_5 = '#f6c177'
+gradient_color_5 = '#ebcb8b'
 # {# rcol(data.color.love) #}
-gradient_color_6 = '#eb6f92'
+gradient_color_6 = '#bf616a'

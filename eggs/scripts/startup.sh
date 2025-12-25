@@ -12,9 +12,11 @@
 # License: MIT
 # Description: script that runs all other scripts inside ./startup
 
-# {# variables_wallpaper() #}
-THEME=rosepine;VARIANT=moon;TYPE=weeb
-VARIANT=moon
+# {# wallpaper_theme() #}
+THEME=nord
+# {# wallpaper_variant() #}
+VARIANT=default
+# {# wallpaper_type() #}
 TYPE=weeb
 
 ($HOME/.config/eww/scripts/volume_popup.sh &)

@@ -16,7 +16,7 @@ import "colors" as colors;
 
 // Data
 export const data = #{
-    color: colors::colorschemes.rosepine.moon,
+    color: colors::colorschemes.nord.def,
     /*
      * options:
      * - weeb
@@ -76,8 +76,16 @@ fn image_swaylock() {
     return image_mako() + ".png";
 }
 
-fn variables_wallpaper() {
-    return "THEME="+data.color.name+";VARIANT="+data.color.variant+";TYPE="+data.wallpaper_type;
+fn wallpaper_theme() {
+    return "THEME="+data.color.name
+}
+
+fn wallpaper_variant() {
+    return "VARIANT="+data.color.variant
+}
+
+fn wallpaper_type() {
+    return "TYPE="+data.wallpaper_type
 }
 
 // Eggs
