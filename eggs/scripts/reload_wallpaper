@@ -18,5 +18,5 @@ THEME=nord
 # {# wallpaper_variant() #}
 VARIANT=default
 # {# wallpaper_type() #}
-TYPE=weeb
+TYPE=landscape
 swww img --transition-type wipe --transition-duration 1 "$HOME/.config/share/wallpaper/$THEME/$VARIANT/$TYPE.png"

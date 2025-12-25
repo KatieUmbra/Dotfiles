@@ -11,7 +11,7 @@
 # Description: main config file for swaylock
 
 # {# image_swaylock() #}
-image=~/.config/share/wallpaper/nord/default/weeb.png
+image=~/.config/share/wallpaper/nord/default/landscape.png
 # {# replace_value(data.font.family.regular + "-Regular") #}
 font=WorkSans-Regular
 # {# rnum(data.font.size.title) #}

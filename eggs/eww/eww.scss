@@ -494,5 +494,7 @@ tooltip {
         // {# rnum(data.font.size.title) #}
         font-size: 16pt;
         font-weight: normal;
+        // {# rcol(data.color.text)#}
+        color: $text;
     }
 }
