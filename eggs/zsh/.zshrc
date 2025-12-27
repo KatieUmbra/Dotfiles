@@ -121,6 +121,9 @@ export PATH="$PATH:$VCPKG_ROOT"
 # [[ Vanity ]]
 # ================
 
+# Man pager
+export MANPAGER="bat -l man -p "
+
 # Starship Prompt
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 PROMPT_COMMAND="export PROMPT_COMMAND=echo"

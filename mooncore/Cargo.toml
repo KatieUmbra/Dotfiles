@@ -1,0 +1,10 @@
+[package]
+name = "mooncore"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.100"
+clap = { version = "4.5.53", features = ["derive"] }
+niri-ipc = { version = "25.11.0", features = ["json-schema"] }
+tokio = { version = "1.48.0", features = ["full"] }

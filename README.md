@@ -28,14 +28,16 @@
 
 4. run `sudo ln -s /usr/bin/kitty /usr/bin/gnome-terminal` for wofi terminal apps
 
-6. install a couple python dependencies for eww script
+5. install a couple python dependencies for eww script
 - Navigate to `$HOME/.config/yolk/eggs/eww/scripts/`
 - run `$ uv venv`
 - activate the virtual environment `$ source .venv/bin/activate`
 - install watchdog `$ uv pip install watchdog`
 - install resettabletimer `$ uv pip install resettabletimer`
 
-5. run `yolk sync`
+6. Download [Feather icons](https://feathericons.com/) and unzip it inside `~/.local/share/icons/feather`
+
+7. run `yolk sync`
 
 ### Post install
 

@@ -13,11 +13,11 @@
 # Description: script that runs all other scripts inside ./startup
 
 # {# wallpaper_theme() #}
-THEME=nord
+THEME=rosepine
 # {# wallpaper_variant() #}
-VARIANT=default
+VARIANT=moon
 # {# wallpaper_type() #}
-TYPE=landscape
+TYPE=weeb
 
 ($HOME/.config/eww/scripts/volume_popup.sh &)
 pkill swaybg

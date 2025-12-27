@@ -1,0 +1,58 @@
+;; ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+;; ▗▖ ▗▖ ▗▄▖▗▄▄▄▖▗▖ ▗▖▗▖  ▗▖▗▄▄▖    ▗▄▄▄  ▗▄▖▗▄▄▄▖▗▄▄▄▖▗▄▄▄▖▗▖   ▗▄▄▄▖ ▗▄▄▖
+;; ▐▌▗▞▘▐▌ ▐▌ █  ▐▌ ▐▌ ▝▚▞▘▐▌       ▐▌  █▐▌ ▐▌ █  ▐▌     █  ▐▌   ▐▌   ▐▌
+;; ▐▛▚▖ ▐▛▀▜▌ █  ▐▛▀▜▌  ▐▌  ▝▀▚▖    ▐▌  █▐▌ ▐▌ █  ▐▛▀▀▘  █  ▐▌   ▐▛▀▀▘ ▝▀▚▖
+;; ▐▌ ▐▌▐▌ ▐▌ █  ▐▌ ▐▌  ▐▌ ▗▄▄▞▘    ▐▙▄▄▀▝▚▄▞▘ █  ▐▌   ▗▄█▄▖▐▙▄▄▖▐▙▄▄▖▗▄▄▞▘
+;; ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+;;
+;; Author: Katherine C. (katherine@kaytea.dev)
+;; Source: http://github.com/KatieUmbra/Dotfiles
+;; License: MIT
+;; Description: the bar widget file
+
+;; Left widgets
+(include "./launcher.widget.yuck")
+(include "./shortcuts.widget.yuck")
+(include "./sysinfo.widget.yuck")
+(include "./tray.widget.yuck")
+
+;; Center workspaces
+(include "./workspaces.widget.yuck")
+
+;; Right workspaces
+(include "./player.widget.yuck")
+(include "./system.widget.yuck")
+(include "./timedate.widget.yuck")
+
+(defwidget WidBar []
+  (centerbox
+    :orientation "horizontal"
+    :class "bar-widget"
+    (box
+      :space-evenly false
+      ;; {# replace_number(data.styling.gaps) #}
+      :spacing 10
+      :halign start
+      (WidLauncher)
+      (WidShortcuts)
+      (WidSysinfo)
+      (WidTray)
+      )
+    (box
+      :space-evenly false
+      ;; {# replace_number(data.styling.gaps) #}
+      :spacing 10
+      :halign start
+      (WidWorkspaces)
+      )
+    (box
+      :space-evenly false
+      ;; {# replace_number(data.styling.gaps) #}
+      :spacing 10
+      :halign start
+      (WidPlayer)
+      (WidSystem)
+      (WidTimedate)
+      )
+    )
+  )

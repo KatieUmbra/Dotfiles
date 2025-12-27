@@ -17,4 +17,5 @@ kill -USR1 $(pidof kitty)
 makoctl reload
 pkill eww
 eww open bar
+bat cache --build
 $HOME/.config/scripts/reload_wallpaper

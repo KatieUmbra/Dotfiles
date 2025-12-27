@@ -16,14 +16,14 @@ import "colors" as colors;
 
 // Data
 export const data = #{
-    color: colors::colorschemes.nord.def,
+    color: colors::colorschemes.rosepine.moon,
     /*
      * options:
      * - weeb
      * - plain
      * - landscape
      */
-    wallpaper_type: "landscape",
+    wallpaper_type: "weeb",
     font: #{
         family: #{
             monospaced: "Monaspace Neon",
@@ -48,8 +48,8 @@ export const data = #{
             small: 0.25,
             medium: 0.5,
             large: 0.75,
-            largest: 1,
-            xl: 2,
+            xl: 1,
+            largest: 2,
         },
         margin: #{
             tiny: 0.125,
@@ -187,5 +187,10 @@ export let eggs = #{
         targets: "~/.config/fum",
         templates: ["config.jsonc"],
         enabled: true,
+    },
+    lsd: #{
+        targets: "~/.config/lsd",
+        templates: ["icons.yaml"],
+        enabled: true
     }
 };
