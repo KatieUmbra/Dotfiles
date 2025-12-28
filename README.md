@@ -11,6 +11,7 @@
 
 1. Have a clean install of artix linux
 2. Make sure arch repositories are enabled
+3. *OPTIONAL* Have a display manager that works with [Niri](https://wiki.archlinux.org/title/Niri#Starting)
 
 ### Install
 
@@ -38,6 +39,25 @@
 6. Download [Feather icons](https://feathericons.com/) and unzip it inside `~/.local/share/icons/feather`
 
 7. run `yolk sync`
+
+#### Recommended but optional steps
+
+Elkowar recommends to build eww yourself instead of installing an aur build, so if you want less buggy functionality, do the following:
+
+- [Build eww from source](https://elkowar.github.io/eww)
+- create a `bin` folder inside `~/.local`
+- copy/move the built eww binary inside `~/.local/bin` and name it eww-bin
+    ```sh
+    # example
+    cp target/release/eww ~/.local/bin/eww-bin
+    ```
+- make an ABSOLUTE symlink from `eww-bin` to `/usr/bin/eww`
+    ```sh
+    # example, replace YOUR_USER with your actual user
+    sudo ln -sf sudo ln -sf /home/YOUR_USER/.local/bin/eww-bin /usr/bin/eww
+    ```
+
+alternatively you can do [cargo install](https://doc.rust-lang.org/cargo/commands/cargo-install.html) however this is up to you to figure out :P
 
 ### Post install
 
@@ -128,6 +148,9 @@ All the config files are available inside `~/.config/yolk`
         - [ ] Username
         - [ ] User face
         - [ ] Pacman updates
+- [ ] Complete Eww redesign
+    - [ ] Backend (mooncore)
+    - [ ] Frontent
 - [ ] Colorscheme
     - [x] Nord
     - [x] Catpuccin
@@ -159,3 +182,4 @@ All the config files are available inside `~/.config/yolk`
 
 - [Lightly inspired by](https://github.com/gh0stzk/dotfiles)
 - [Icons heavily based on icons8](https://icons8.com)
+- [Eww redesign by](https://github.com/1e165) (Thx tiff :3)
