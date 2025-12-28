@@ -18,6 +18,7 @@ from pathlib import Path
 from queue import Queue
 from threading import Thread
 
+from readerwriterlock import rwlock
 from resettabletimer import ResettableTimer
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
@@ -26,7 +27,8 @@ from watchdog.observers.api import BaseObserver
 message_queue: Queue[bool] = Queue()
 abs_path = os.path.abspath(__file__)
 
-print(abs_path)
+window_open_lock = rwlock.RWLockFairD()
+window_open = False
 
 
 class ModifyHandler(FileSystemEventHandler):
@@ -35,7 +37,15 @@ class ModifyHandler(FileSystemEventHandler):
 
 
 def timer_handler():
-    subprocess.run(["eww", "close", "volume"])
+    wlock = window_open_lock.gen_wlock()
+    if wlock.acquire(blocking=True, timeout=5):
+        try:
+            global window_open
+            if window_open:
+                subprocess.run(["eww", "close", "volume"])
+                window_open = False
+        finally:
+            wlock.release()
 
 
 def timer_thread():
@@ -46,7 +56,15 @@ def timer_thread():
         try:
             message = message_queue.get()
             timer.reset()
-            subprocess.run(["eww", "open", "volume"])
+            wlock = window_open_lock.gen_wlock()
+            if wlock.acquire(blocking=True, timeout=5):
+                try:
+                    global window_open
+                    if not window_open:
+                        subprocess.run(["eww", "open", "volume"])
+                        window_open = True
+                finally:
+                    wlock.release()
             if message == False:
                 break
         except KeyboardInterrupt:
