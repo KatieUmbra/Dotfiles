@@ -197,7 +197,7 @@ binds {
     Super+Alt+L { spawn "swaylock"; }
 
     Mod+Return { spawn "kitty"; }
-    Mod+Space { spawn "wofi" "-S" "drun" "-I" "-n" "-a"; }
+    Mod+Space { spawn "wofi" "-S" "drun" "-I" "-n" "-a" "--height=540" "--width=726"; }
     Mod+Shift+T { spawn "~/.config/wofi/wofi-theme"; }
     Mod+Shift+W { spawn "~/.config/wofi/wofi-wallpaper"; }
 

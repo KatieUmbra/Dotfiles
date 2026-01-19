@@ -90,7 +90,7 @@ tooltip {
 */
 .launcher-button {
     image {
-        // {# rnum(data.styling.margin.largest) #}
+        // {# rnum(data.styling.margin.large) #}
         margin: 1rem;
     }
 }
@@ -149,8 +149,8 @@ tooltip {
     background-color: $base;
     // {# rnum(data.styling.border.rounding) #}
     border-radius: 10px;
-    // {# rnum(data.styling.padding.largest) #}
-    padding: 1rem;
+    // {# rnum(data.styling.padding.large) #}
+    padding: 2rem;
     image {
         // {# rnum(data.styling.padding.medium) #}
         padding: 0.5rem;
@@ -258,7 +258,7 @@ tooltip {
         label {
             // {# rnum(data.styling.margin.tiny) #}
             margin: 0.125rem
-            // {# rnum(data.styling.margin.xl) #}
+            // {# rnum(data.styling.margin.largets) #}
             2rem;
             color: $text;
         }
@@ -286,8 +286,8 @@ tooltip {
     animation: bg-rotate 30s linear infinite;
     // {# rnum(data.styling.border.rounding) #}
     border-radius: 10px;
-    // {# rnum(data.styling.padding.largest) #}
-    padding: 1rem;
+    // {# rnum(data.styling.padding.large) #}
+    padding: 2rem;
 }
 
 /*
@@ -302,7 +302,7 @@ tooltip {
 
 .menu-date {
     color: $text;
-    // {# rnum(data.styling.margin.largest) #}
+    // {# rnum(data.styling.margin.large) #}
     margin: 1rem;
 }
 
@@ -373,10 +373,10 @@ tooltip {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
-    // {# rnum(data.styling.padding.largest) #}
+    // {# rnum(data.styling.padding.large) #}
     padding:  1rem
-              // {# rnum(data.styling.padding.xl) #}
-              2rem;
+              // {# rnum(data.styling.padding.large) #}
+              1rem;
     // {# rnum(data.styling.margin.medium) #}
     margin: 0.5rem;
     // {# rnum(data.styling.border.rounding) #}
@@ -415,8 +415,8 @@ tooltip {
 * =============================
 */
 .calendar-widget {
-    // {# rnum(data.styling.padding.largest) #}
-    padding: 1rem;
+    // {# rnum(data.styling.padding.large) #}
+    padding: 2rem;
     background-color: $base;
     // {# rnum(data.styling.border.rounding) #}
     border-radius: 10px;
@@ -424,8 +424,8 @@ tooltip {
         background-color: $surface;
         // {# rnum(data.styling.border.rounding) #}
         border-radius:10px;
-        // {# rnum(data.styling.padding.largest) #}
-        padding: 1rem;
+        // {# rnum(data.styling.padding.large) #}
+        padding: 2rem;
         color: $text;
         calendar {
             &:indeterminate {
@@ -451,7 +451,7 @@ tooltip {
 
 .calendar-time {
     font-size: 30pt;
-    // {# rnum(data.styling.margin.largest) #}
+    // {# rnum(data.styling.margin.large) #}
     margin: 1rem;
     margin-bottom: 0;
     color: $text;
@@ -459,7 +459,7 @@ tooltip {
 
 .calendar-date {
     font-size: 15pt;
-    // {# rnum(data.styling.margin.largest) #}
+    // {# rnum(data.styling.margin.large) #}
     margin: 1rem;
     color: $hh;
 }
@@ -471,7 +471,7 @@ tooltip {
 */
 
 .volume-widget {
-    // {# rnum(data.styling.padding.largest) #}
+    // {# rnum(data.styling.padding.large) #}
     background-color: $base;
     // {# rnum(data.styling.border.rounding) #}
     border-radius: 10px;
