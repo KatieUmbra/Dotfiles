@@ -17,7 +17,7 @@ THEME=rosepine
 # {# wallpaper_variant() #}
 VARIANT=moon
 # {# wallpaper_type() #}
-TYPE=weeb
+TYPE=plain
 
 ($HOME/.config/eww/scripts/volume_popup.sh &)
 pkill swaybg

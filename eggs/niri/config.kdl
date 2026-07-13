@@ -127,7 +127,7 @@ spawn-at-startup "/usr/lib/xdg-desktop-portal-gtk"
 spawn-at-startup "/usr/lib/xdg-desktop-portal-gnome"
 spawn-at-startup "~/.config/scripts/startup.sh"
 spawn-at-startup "dbus-update-activation-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-spawn-at-startup "swww-daemon"
+spawn-at-startup "awww-daemon"
 
 environment {
     DISPLAY ":0"

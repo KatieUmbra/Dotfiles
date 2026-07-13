@@ -18,5 +18,5 @@ THEME=rosepine
 # {# wallpaper_variant() #}
 VARIANT=moon
 # {# wallpaper_type() #}
-TYPE=weeb
+TYPE=plain
 awww img --transition-type wipe --transition-duration 1 "$HOME/.config/share/wallpaper/$THEME/$VARIANT/$TYPE.png"
