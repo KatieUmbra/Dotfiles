@@ -419,6 +419,7 @@ window-rule {
 }
 window-rule {
     match app-id="vesktop"
+    match app-id="discord"
     block-out-from "screencast"
     default-column-width { proportion 1.0; }
 }
@@ -445,7 +446,7 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="swww-daemon"
+    match namespace="awww-daemon"
     match namespace="^wallpaper$"
     place-within-backdrop true
 }

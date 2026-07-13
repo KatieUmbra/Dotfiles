@@ -11,7 +11,7 @@ awk
 mpv
 tlp
 ruff
-swww
+awww
 yazi
 gtk3
 gvfs
@@ -36,7 +36,7 @@ python
 clipse
 gowall
 upower
-wltype
+wtype
 eww-git
 wlogout
 poppler
