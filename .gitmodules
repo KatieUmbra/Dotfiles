@@ -1,21 +1,21 @@
 [submodule "eggs/zsh/plugins/zsh-autopair"]
 	path = eggs/zsh/plugins/zsh-autopair
-	url = https://github.com/hlissner/zsh-autopair.git
+	url = git@github.com/hlissner/zsh-autopair.git
 [submodule "eggs/zsh/plugins/zsh-autosuggestions"]
 	path = eggs/zsh/plugins/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
+	url = git@github.com/zsh-users/zsh-autosuggestions
 [submodule "eggs/zsh/plugins/zsh-syntax-highlighting"]
 	path = eggs/zsh/plugins/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting
+	url = git@github.com/zsh-users/zsh-syntax-highlighting
 [submodule "eggs/zsh/plugins/zsh-z"]
 	path = eggs/zsh/plugins/zsh-z
-	url = https://github.com/agkozak/zsh-z
+	url = git@github.com/agkozak/zsh-z
 [submodule "eggs/nvim"]
 	path = eggs/nvim
 	url = git@github.com:KatieUmbra/neovim
 [submodule "eggs/yazi/plugins/restore.yazi"]
 	path = eggs/yazi/plugins/restore.yazi
-	url = https://github.com/boydaihungst/restore.yazi
+	url = git@github.com/boydaihungst/restore.yazi
 [submodule "eggs/wofi/wofi-emoji"]
 	path = eggs/wofi/wofi-emoji
 	url = git@github.com:KatieUmbra/wofi-emoji.git
