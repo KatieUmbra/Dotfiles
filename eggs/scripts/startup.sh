@@ -13,9 +13,9 @@
 # Description: script that runs all other scripts inside ./startup
 
 # {# wallpaper_theme() #}
-THEME=rosepine
+THEME=nord
 # {# wallpaper_variant() #}
-VARIANT=moon
+VARIANT=default
 # {# wallpaper_type() #}
 TYPE=plain
 

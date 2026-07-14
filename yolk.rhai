@@ -16,7 +16,7 @@ import "colors" as colors;
 
 // Data
 export const data = #{
-    color: colors::colorschemes.rosepine.moon,
+    color: colors::colorschemes.nord.def,
     /*
      * options:
      * - weeb
@@ -99,11 +99,6 @@ export let eggs = #{
         targets: "~/.config/zsh",
         templates: [".zshrc", ".fzf_theme"],
         enabled: true
-    },
-    eww: #{
-        targets: "~/.config/eww",
-        templates: ["*", "**/*.svg", "**/**/*.svg"],
-        enabled: true,
     },
     starship : #{
         targets: "~/.config/starship",

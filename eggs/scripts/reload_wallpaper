@@ -14,9 +14,9 @@
 
 yolk sync
 # {# wallpaper_theme() #}
-THEME=rosepine
+THEME=nord
 # {# wallpaper_variant() #}
-VARIANT=moon
+VARIANT=default
 # {# wallpaper_type() #}
 TYPE=plain
 awww img --transition-type wipe --transition-duration 1 "$HOME/.config/share/wallpaper/$THEME/$VARIANT/$TYPE.png"

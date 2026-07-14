@@ -91,7 +91,7 @@ tooltip {
 .launcher-button {
     image {
         // {# rnum(data.styling.margin.large) #}
-        margin: 1rem;
+        margin: 0.75rem;
     }
 }
 
@@ -150,7 +150,7 @@ tooltip {
     // {# rnum(data.styling.border.rounding) #}
     border-radius: 10px;
     // {# rnum(data.styling.padding.large) #}
-    padding: 2rem;
+    padding: 0.75rem;
     image {
         // {# rnum(data.styling.padding.medium) #}
         padding: 0.5rem;
@@ -258,7 +258,6 @@ tooltip {
         label {
             // {# rnum(data.styling.margin.tiny) #}
             margin: 0.125rem
-            // {# rnum(data.styling.margin.largets) #}
             2rem;
             color: $text;
         }
@@ -287,7 +286,7 @@ tooltip {
     // {# rnum(data.styling.border.rounding) #}
     border-radius: 10px;
     // {# rnum(data.styling.padding.large) #}
-    padding: 2rem;
+    padding: 0.75rem;
 }
 
 /*
@@ -303,7 +302,7 @@ tooltip {
 .menu-date {
     color: $text;
     // {# rnum(data.styling.margin.large) #}
-    margin: 1rem;
+    margin: 0.75rem;
 }
 
 /*
@@ -323,7 +322,7 @@ tooltip {
     border-radius: 100000px;
     image {
         // {# rnum(data.styling.padding.largest) #}
-        padding: 1rem;
+        padding: 2rem;
     }
 }
 
@@ -374,9 +373,9 @@ tooltip {
     background-size: cover;
     background-blend-mode: darken;
     // {# rnum(data.styling.padding.large) #}
-    padding:  1rem
+    padding:  0.75rem
               // {# rnum(data.styling.padding.large) #}
-              1rem;
+              0.75rem;
     // {# rnum(data.styling.margin.medium) #}
     margin: 0.5rem;
     // {# rnum(data.styling.border.rounding) #}
@@ -416,7 +415,7 @@ tooltip {
 */
 .calendar-widget {
     // {# rnum(data.styling.padding.large) #}
-    padding: 2rem;
+    padding: 0.75rem;
     background-color: $base;
     // {# rnum(data.styling.border.rounding) #}
     border-radius: 10px;
@@ -425,7 +424,7 @@ tooltip {
         // {# rnum(data.styling.border.rounding) #}
         border-radius:10px;
         // {# rnum(data.styling.padding.large) #}
-        padding: 2rem;
+        padding: 0.75rem;
         color: $text;
         calendar {
             &:indeterminate {
@@ -452,7 +451,7 @@ tooltip {
 .calendar-time {
     font-size: 30pt;
     // {# rnum(data.styling.margin.large) #}
-    margin: 1rem;
+    margin: 0.75rem;
     margin-bottom: 0;
     color: $text;
 }
@@ -460,7 +459,7 @@ tooltip {
 .calendar-date {
     font-size: 15pt;
     // {# rnum(data.styling.margin.large) #}
-    margin: 1rem;
+    margin: 0.75rem;
     color: $hh;
 }
 

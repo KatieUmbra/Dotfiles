@@ -12,7 +12,7 @@
 	url = https://github.com/agkozak/zsh-z
 [submodule "eggs/nvim"]
 	path = eggs/nvim
-	url = https://github.com/KatieUmbra/neovim
+	url = git@github.com:KatieUmbra/neovim
 [submodule "eggs/yazi/plugins/restore.yazi"]
 	path = eggs/yazi/plugins/restore.yazi
 	url = https://github.com/boydaihungst/restore.yazi
