@@ -23,7 +23,7 @@ export const data = #{
      * - plain
      * - landscape
      */
-    wallpaper_type: "plain",
+    wallpaper_type: "weeb",
     font: #{
         family: #{
             monospaced: "Monaspace Neon",
@@ -100,6 +100,18 @@ export let eggs = #{
         templates: [".zshrc", ".fzf_theme"],
         enabled: true
     },
+<<<<<<< HEAD
+=======
+    eww: #{
+        targets: "~/.config/eww",
+        templates: ["*", "**/*.svg", "**/**/*.svg"],
+        enabled: true,
+    },
+	ewwii: #{
+		targets: "~/.config/ewwii",
+		templates: ["*.nbcl", "*.scss", "*", "**/*.svg", "**/**/*.svg"]
+	},
+>>>>>>> 665ce5c (feat: began eww overhaul with new backend and migration to regular arch linux)
     starship : #{
         targets: "~/.config/starship",
         enalbed: true,

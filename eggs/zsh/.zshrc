@@ -43,10 +43,16 @@ bindkey -e
 # [[ Plugins ]]
 # =============
 
+autoload -Uz compinit
+compinit
+
 # fzf colorscheme
 source $HOME/.config/zsh/.fzf_theme
 # fzf completion
 source <(fzf --zsh)
+
+#Ewwii completion
+source <(ewwii shell-completions --shell zsh)
 
 PLUGINS="$HOME/.config/zsh/plugins"
 
@@ -69,8 +75,6 @@ autopair-init
 # [[ Customization ]]
 # =============
 
-# Highlight tab
-autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
 

@@ -258,7 +258,12 @@ tooltip {
         label {
             // {# rnum(data.styling.margin.tiny) #}
             margin: 0.125rem
+<<<<<<< HEAD
             2rem;
+=======
+            // {# rnum(data.styling.margin.largest) #}
+            1rem;
+>>>>>>> 665ce5c (feat: began eww overhaul with new backend and migration to regular arch linux)
             color: $text;
         }
     }

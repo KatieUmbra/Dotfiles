@@ -115,9 +115,6 @@ layout {
     }
 }
 
-spawn-at-startup "pipewire"
-spawn-at-startup "pipewire-pulse"
-spawn-at-startup "wireplumber"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "eww" "open" "bar"
 spawn-at-startup "clipse" "--listen"
@@ -403,6 +400,9 @@ window-rule {
 window-rule {
     match app-id="kitty"
     open-on-workspace "terminal"
+    background-effect {
+        blur true
+    }
 }
 
 window-rule {
@@ -410,16 +410,18 @@ window-rule {
     open-on-workspace "browser"
     open-maximized true
     default-column-width { proportion 1.0; }
+    background-effect {
+        blur true
+    }
 }
 
 window-rule {
-    match app-id="vesktop" app-id="spotify" app-id="tidal-hifi"
+    match app-id="vesktop" app-id="spotify" app-id="tidal-hifi" app-id="qbz" app-id="discord"
     open-on-workspace "discord"
     default-column-width { proportion 1.0; }
 }
 window-rule {
-    match app-id="vesktop"
-    match app-id="discord"
+    match app-id="vesktop" app-id="discord"
     block-out-from "screencast"
     default-column-width { proportion 1.0; }
 }

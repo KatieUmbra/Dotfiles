@@ -35,9 +35,9 @@
         )
         (eventbox
             :cursor "pointer"
-            :onclick "tidal-hifi & disown tidal-hifi"
+            :onclick "qbz & disown qbz"
             (image
-                :path "${iconFolder}tidal.svg"
+                :path "${iconFolder}music-app.svg"
                 :image-height 35
                 :image-width 35
             )

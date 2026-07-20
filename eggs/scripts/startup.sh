@@ -17,7 +17,7 @@ THEME=nord
 # {# wallpaper_variant() #}
 VARIANT=default
 # {# wallpaper_type() #}
-TYPE=plain
+TYPE=weeb
 
 ($HOME/.config/eww/scripts/volume_popup.sh &)
 pkill swaybg
