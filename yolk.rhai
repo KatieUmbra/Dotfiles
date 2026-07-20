@@ -16,7 +16,7 @@ import "colors" as colors;
 
 // Data
 export const data = #{
-    color: colors::colorschemes.nord.def,
+    color: colors::colorschemes.rosepine.moon,
     /*
      * options:
      * - weeb
@@ -100,8 +100,7 @@ export let eggs = #{
         templates: [".zshrc", ".fzf_theme"],
         enabled: true
     },
-<<<<<<< HEAD
-=======
+
     eww: #{
         targets: "~/.config/eww",
         templates: ["*", "**/*.svg", "**/**/*.svg"],
@@ -111,7 +110,7 @@ export let eggs = #{
 		targets: "~/.config/ewwii",
 		templates: ["*.nbcl", "*.scss", "*", "**/*.svg", "**/**/*.svg"]
 	},
->>>>>>> 665ce5c (feat: began eww overhaul with new backend and migration to regular arch linux)
+
     starship : #{
         targets: "~/.config/starship",
         enalbed: true,
